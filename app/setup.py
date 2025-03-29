@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.routing import APIRouter
+from fastapi.middleware.cors import CORSMiddleware
 
 from container import AppContainer
 
@@ -25,8 +26,20 @@ def _create_app() -> FastAPI:
         terms_of_service=APP_TERMS_OF_SERVICE,
         contact=APP_CONTACT,
     )
+    add_middleware(app)
     app.container = _build_application_container()
     app.include_router(_build_v1_router())
+    return app
+
+
+def add_middleware(app):
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=["*"],
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
     return app
 
 
