@@ -9,6 +9,11 @@ from file_io.infrastructure.adapters.readers.polars.parquet_reader import (
     PolarsParquetReader,
 )
 
+from file_io.infrastructure.adapters.readers.dask.csv_reader import DaskCSVReader
+from file_io.infrastructure.adapters.readers.dask.parquet_reader import (
+    DaskParquetReader,
+)
+
 PARQUET_READERS = [
     PandasCSVReader,
     PandasJSONReader,
@@ -20,7 +25,13 @@ POLARS_RESDERS = [
     PolarsParquetReader,
 ]
 
+DASK_READERS = [
+    DaskCSVReader,
+    DaskParquetReader,
+]
+
 __ALL__ = [
     PARQUET_READERS,
     POLARS_RESDERS,
+    DASK_READERS,
 ]
