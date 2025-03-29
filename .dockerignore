@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches
+*.egg-info/
+.eggs/
+.cache
+.pip/
+.pytest_cache/
+
+# Test artifacts
+.coverage
+.htmlcov/
+.tox/
+nosetests.xml
+test-reports/
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+env.bak/
+env.bak2/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_meta
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Development tools
+node_modules/
