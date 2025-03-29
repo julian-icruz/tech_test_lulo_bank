@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from file_io.domain.ports import FileWriter
-from file_io.infrastructure.adapters.writers.base.s3_writer import BaseS3Writer
+from file_io.infrastructure.adapters.writers import BaseS3Writer
 
 
 @dataclass

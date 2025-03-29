@@ -39,6 +39,13 @@ from file_io.infrastructure.adapters.writers.html.html_writer import HTMLWriter
 from file_io.infrastructure.adapters.writers.html.aws_writer import HTMLWriterToS3
 
 
+# ------------------------------- PDF ------------------------------- #
+from file_io.infrastructure.adapters.writers.pdf.pdfkit_writer import PDFKitWriter
+from file_io.infrastructure.adapters.writers.pdf.weasyprint_writer import (
+    WeasyPrintWriter,
+)
+from file_io.infrastructure.adapters.writers.pdf.aws_writer import PDFWriterToS3
+
 BASE_WRITERS = [
     BaseS3Writer,
 ]
@@ -74,6 +81,12 @@ HTML_WRITERS = [
     HTMLWriterToS3,
 ]
 
+PDF_WRITERS = [
+    PDFKitWriter,
+    WeasyPrintWriter,
+    PDFWriterToS3,
+]
+
 __ALL__ = [
     BASE_WRITERS,
     PANDAS_WRITERS,
@@ -81,4 +94,5 @@ __ALL__ = [
     JSON_WRITERS,
     YAML_WRITERS,
     HTML_WRITERS,
+    PDF_WRITERS,
 ]
