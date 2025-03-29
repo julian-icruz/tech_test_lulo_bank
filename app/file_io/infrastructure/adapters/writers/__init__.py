@@ -1,5 +1,6 @@
 from file_io.infrastructure.adapters.writers.base.s3_writer import BaseS3Writer
 
+# ------------------------------- PANDAS ------------------------------- #
 from file_io.infrastructure.adapters.writers.pandas.csv_writer import PandasCSVWriter
 from file_io.infrastructure.adapters.writers.pandas.json_writer import PandasJSONWriter
 from file_io.infrastructure.adapters.writers.pandas.parquet_writer import (
@@ -11,6 +12,15 @@ from file_io.infrastructure.adapters.writers.pandas.aws_writer import (
     PandasParquetWriterToS3,
 )
 
+# ------------------------------- POLARS ------------------------------- #
+from file_io.infrastructure.adapters.writers.polars.csv_writer import PolarsCSVWriter
+from file_io.infrastructure.adapters.writers.polars.parquet_writer import (
+    PolarsParquetWriter,
+)
+from file_io.infrastructure.adapters.writers.polars.aws_writer import (
+    PolarsCSVWriterToS3,
+    PolarsParquetWriterToS3,
+)
 
 BASE_WRITERS = [
     BaseS3Writer,
@@ -25,7 +35,15 @@ PANDAS_WRITERS = [
     PandasParquetWriterToS3,
 ]
 
+POLARS_WRITERS = [
+    PolarsCSVWriter,
+    PolarsParquetWriter,
+    PolarsCSVWriterToS3,
+    PolarsParquetWriterToS3,
+]
+
 __ALL__ = [
     BASE_WRITERS,
     PANDAS_WRITERS,
+    POLARS_WRITERS,
 ]
