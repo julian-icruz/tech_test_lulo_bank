@@ -28,6 +28,13 @@ from file_io.infrastructure.adapters.writers.json.aws_writer import (
     JSONWriterToS3,
 )
 
+# ------------------------------- YAML ------------------------------- #
+from file_io.infrastructure.adapters.writers.yaml.yaml_writer import YAMLWriter
+from file_io.infrastructure.adapters.writers.yaml.aws_writer import (
+    YAMLWriterToS3,
+)
+
+
 BASE_WRITERS = [
     BaseS3Writer,
 ]
@@ -53,9 +60,15 @@ JSON_WRITERS = [
     JSONWriterToS3,
 ]
 
+YAML_WRITERS = [
+    YAMLWriter,
+    YAMLWriterToS3,
+]
+
 __ALL__ = [
     BASE_WRITERS,
     PANDAS_WRITERS,
     POLARS_WRITERS,
     JSON_WRITERS,
+    YAML_WRITERS,
 ]
