@@ -1,7 +1,7 @@
 from dependency_injector.providers import Dict, Factory
 from dependency_injector.containers import DeclarativeContainer
 
-from file_io.infrastructure.adapters import (
+from file_io.infrastructure.adapters.readers import (
     PandasCSVReader,
     PandasJSONReader,
     PandasParquetReader,

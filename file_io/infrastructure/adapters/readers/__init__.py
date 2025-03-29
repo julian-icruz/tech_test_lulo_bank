@@ -1,3 +1,5 @@
+from file_io.infrastructure.adapters.readers.base.s3_reader import BaseS3Reader
+
 from file_io.infrastructure.adapters.readers.pandas.csv_reader import PandasCSVReader
 from file_io.infrastructure.adapters.readers.pandas.json_reader import PandasJSONReader
 from file_io.infrastructure.adapters.readers.pandas.parquet_reader import (
@@ -17,6 +19,10 @@ from file_io.infrastructure.adapters.readers.dask.parquet_reader import (
 from file_io.infrastructure.adapters.readers.json.json_reader import JSONReader
 
 from file_io.infrastructure.adapters.readers.yaml.yaml_reader import YAMLReader
+
+BASE_READERS = [
+    BaseS3Reader,
+]
 
 PARQUET_READERS = [
     PandasCSVReader,
@@ -43,6 +49,7 @@ YAML_READERS = [
 ]
 
 READERS = [
+    BASE_READERS,
     PARQUET_READERS,
     POLARS_RESDERS,
     DASK_READERS,
