@@ -3,6 +3,10 @@ from app.file_io.infrastructure.adapters.readers import PandasCSVReader
 
 
 def test_pandas_csv_reader_reads_file_correctly(csv_file_path):
+    """
+    Test that PandasCSVReader correctly reads a CSV file and returns a DataFrame
+    with the expected content and structure.
+    """
     reader = PandasCSVReader()
 
     df = reader.read(csv_file_path)
