@@ -1,0 +1,27 @@
+services:
+  tech-test-lulo:
+    build:
+      context: ./
+      dockerfile: dockerfiles/dockerfile.local
+    image: tech-test-lulo:latest
+    container_name: tech-test-lulo
+    volumes:
+      - ./app:/app
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
+
+  tech-test-lulo-debug:
+    build:
+      context: ./
+      dockerfile: dockerfiles/dockerfile.debug
+    image: tech-test-lulo:debug
+    container_name: tech-test-lulo-debug
+    volumes:
+      - ./app:/app
+    env_file:
+      - .env
+    ports:
+      - 5678:5678
+      - 8081:8080
