@@ -1,6 +1,6 @@
-from fastapi import FastAPI
+import setup
 
-app = FastAPI()
+app = setup._create_app()
 
 @app.get("/")
 def read_root():
