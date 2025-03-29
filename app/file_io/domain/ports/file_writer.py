@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 
 class FileWriter(ABC):
     @abstractmethod
-    def write(self, data: Any, path: str):
+    def write(self, data: Any, path: str, **kwargs):
         """
         Write the provided data to the given file path.
         Format and encoding depend on the implementation.
