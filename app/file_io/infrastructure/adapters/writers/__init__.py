@@ -22,6 +22,12 @@ from file_io.infrastructure.adapters.writers.polars.aws_writer import (
     PolarsParquetWriterToS3,
 )
 
+# -------------------------------- JSON ------------------------------- #
+from file_io.infrastructure.adapters.writers.json.json_writer import JSONWriter
+from file_io.infrastructure.adapters.writers.json.aws_writer import (
+    JSONWriterToS3,
+)
+
 BASE_WRITERS = [
     BaseS3Writer,
 ]
@@ -42,8 +48,14 @@ POLARS_WRITERS = [
     PolarsParquetWriterToS3,
 ]
 
+JSON_WRITERS = [
+    JSONWriter,
+    JSONWriterToS3,
+]
+
 __ALL__ = [
     BASE_WRITERS,
     PANDAS_WRITERS,
     POLARS_WRITERS,
+    JSON_WRITERS,
 ]
