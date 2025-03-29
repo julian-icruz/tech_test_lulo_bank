@@ -1,5 +1,5 @@
 import polars as pl
-from file_io.domain.ports import FileReader
+from app.file_io.domain.ports import FileReader
 
 
 class PolarsCSVReader(FileReader):

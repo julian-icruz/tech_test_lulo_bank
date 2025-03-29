@@ -1,5 +1,5 @@
 import pandas as pd
-from file_io.domain.ports import FileReader
+from app.file_io.domain.ports import FileReader
 
 
 class PandasCSVReader(FileReader):

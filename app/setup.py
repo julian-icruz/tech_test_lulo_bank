@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.routing import APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 
-from container import AppContainer
+from app.container import AppContainer
 
 
 APP_TITLE = "Api technical test for Lulo Bank"
