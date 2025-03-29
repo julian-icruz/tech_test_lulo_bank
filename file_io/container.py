@@ -44,7 +44,7 @@ class FileIOContainer(DeclarativeContainer):
     Where:
         - source: "local" or "aws"
         - format: "csv", "json", "parquet", "yaml"
-        - engine: "pandas", "polars", "dask", or "structured" (native parsers)
+        - engine: "pandas", "polars", "dask", "json" (native parsers) or "yaml" (native parser).
 
     Examples:
         >>> reader = container.readers()["aws"]["csv"]["pandas"]
@@ -68,7 +68,7 @@ class FileIOContainer(DeclarativeContainer):
         ),
         json=Dict(
             pandas=Factory(PandasJSONReader),
-            structured=Factory(JSONReader),
+            json=Factory(JSONReader),
         ),
         parquet=Dict(
             pandas=Factory(PandasParquetReader),
@@ -76,7 +76,7 @@ class FileIOContainer(DeclarativeContainer):
             dask=Factory(DaskParquetReader),
         ),
         yaml=Dict(
-            pandas=Factory(YAMLReader),
+            yaml=Factory(YAMLReader),
         ),
     )
 
@@ -88,7 +88,7 @@ class FileIOContainer(DeclarativeContainer):
         ),
         json=Dict(
             pandas=Factory(PandasJSONReaderFromS3, s3=s3_adapter),
-            structured=Factory(JSONReaderFromS3, s3=s3_adapter),
+            json=Factory(JSONReaderFromS3, s3=s3_adapter),
         ),
         parquet=Dict(
             pandas=Factory(PandasParquetReaderFromS3, s3=s3_adapter),
@@ -96,7 +96,7 @@ class FileIOContainer(DeclarativeContainer):
             dask=Factory(DaskParquetReaderFromS3, s3=s3_adapter),
         ),
         yaml=Dict(
-            pandas=Factory(YAMLReaderFromS3, s3=s3_adapter),
+            yaml=Factory(YAMLReaderFromS3, s3=s3_adapter),
         ),
     )
 
