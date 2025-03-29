@@ -1,4 +1,7 @@
 from dependency_injector import containers
 
+from file_io import FileIOContainer
+
+
 class AppContainer(containers.DeclarativeContainer):
-    pass
+    file_io = FileIOContainer()
