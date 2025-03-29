@@ -10,12 +10,16 @@ class S3Adapter:
     with the bucket passed explicitly per method call.
     """
 
-    def __init__(self, region_name: str = "us-east-1"):
+    def __init__(self, region_name: str | None = None):
         """
-        Initialize the S3 client.
+        Initializes the boto3 S3 client.
 
         Args:
-            region_name (str): AWS region (default is "us-east-1").
+            region_name (str | None): Optional. Explicit region name.
+                If not provided, will use:
+                - AWS_DEFAULT_REGION from env
+                - ~/.aws/config
+                - boto3 fallback chain
         """
         self.client = boto3.client("s3", region_name=region_name)
 
