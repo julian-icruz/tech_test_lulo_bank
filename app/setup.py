@@ -1,9 +1,13 @@
 from fastapi import FastAPI
 from fastapi.routing import APIRouter
 
+from container import AppContainer
+
 
 APP_TITLE = "Api technical test for Lulo Bank"
-APP_DESCRIPTION = "This is the api technical test for Lulo Bank to see the documentation go to /docs"
+APP_DESCRIPTION = (
+    "This is the api technical test for Lulo Bank to see the documentation go to /docs"
+)
 APP_VERSION = "0.0.1"
 APP_TERMS_OF_SERVICE = "http://example.com/terms/"
 APP_CONTACT = {
@@ -21,8 +25,15 @@ def _create_app() -> FastAPI:
         terms_of_service=APP_TERMS_OF_SERVICE,
         contact=APP_CONTACT,
     )
+    app.container = _build_application_container()
     app.include_router(_build_v1_router())
     return app
+
+
+def _build_application_container():
+    container = AppContainer()
+    container.init_resources()
+    return container
 
 
 def _build_v1_router():
