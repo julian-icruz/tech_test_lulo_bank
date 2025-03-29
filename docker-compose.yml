@@ -6,7 +6,7 @@ services:
     image: tech-test-lulo:latest
     container_name: tech-test-lulo
     volumes:
-      - ./app:/app
+      - ./app:/src/app
     env_file:
       - .env
     ports:
