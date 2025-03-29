@@ -14,6 +14,10 @@ from file_io.infrastructure.adapters.readers.dask.parquet_reader import (
     DaskParquetReader,
 )
 
+from file_io.infrastructure.adapters.readers.structured.json_reader import JSONReader
+from file_io.infrastructure.adapters.readers.structured.yaml_reader import YAMLReader
+
+
 PARQUET_READERS = [
     PandasCSVReader,
     PandasJSONReader,
@@ -30,8 +34,18 @@ DASK_READERS = [
     DaskParquetReader,
 ]
 
-__ALL__ = [
+STRUCTURED_READERS = [
+    JSONReader,
+    YAMLReader,
+]
+
+
+READERS = [
     PARQUET_READERS,
     POLARS_RESDERS,
     DASK_READERS,
+]
+
+__ALL__ = [
+    READERS,
 ]
