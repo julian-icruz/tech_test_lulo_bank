@@ -17,6 +17,9 @@ from file_io.infrastructure.adapters.readers.dask.parquet_reader import (
 from file_io.infrastructure.adapters.readers.structured.json_reader import JSONReader
 from file_io.infrastructure.adapters.readers.structured.yaml_reader import YAMLReader
 
+from file_io.infrastructure.adapters.readers.aws.s3_text_reader import S3TextReader
+from file_io.infrastructure.adapters.readers.aws.s3_binary_reader import S3BinaryReader
+
 
 PARQUET_READERS = [
     PandasCSVReader,
@@ -39,6 +42,10 @@ STRUCTURED_READERS = [
     YAMLReader,
 ]
 
+AWS_READERS = [
+    S3TextReader,
+    S3BinaryReader,
+]
 
 READERS = [
     PARQUET_READERS,
