@@ -34,6 +34,10 @@ from file_io.infrastructure.adapters.writers.yaml.aws_writer import (
     YAMLWriterToS3,
 )
 
+# ------------------------------- HTML ------------------------------- #
+from file_io.infrastructure.adapters.writers.html.html_writer import HTMLWriter
+from file_io.infrastructure.adapters.writers.html.aws_writer import HTMLWriterToS3
+
 
 BASE_WRITERS = [
     BaseS3Writer,
@@ -65,10 +69,16 @@ YAML_WRITERS = [
     YAMLWriterToS3,
 ]
 
+HTML_WRITERS = [
+    HTMLWriter,
+    HTMLWriterToS3,
+]
+
 __ALL__ = [
     BASE_WRITERS,
     PANDAS_WRITERS,
     POLARS_WRITERS,
     JSON_WRITERS,
     YAML_WRITERS,
+    HTML_WRITERS,
 ]
