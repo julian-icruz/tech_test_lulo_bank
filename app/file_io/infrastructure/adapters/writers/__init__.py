@@ -41,9 +41,6 @@ from file_io.infrastructure.adapters.writers.html.aws_writer import HTMLWriterTo
 
 # ------------------------------- PDF ------------------------------- #
 from file_io.infrastructure.adapters.writers.pdf.pdfkit_writer import PDFKitWriter
-from file_io.infrastructure.adapters.writers.pdf.weasyprint_writer import (
-    WeasyPrintWriter,
-)
 from file_io.infrastructure.adapters.writers.pdf.aws_writer import PDFWriterToS3
 
 BASE_WRITERS = [
@@ -83,7 +80,6 @@ HTML_WRITERS = [
 
 PDF_WRITERS = [
     PDFKitWriter,
-    WeasyPrintWriter,
     PDFWriterToS3,
 ]
 

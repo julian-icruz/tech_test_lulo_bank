@@ -2,6 +2,7 @@ from dependency_injector.containers import DeclarativeContainer
 from dependency_injector.providers import Dict, Factory, Singleton
 
 from file_io.infrastructure.clients import S3Adapter
+
 from file_io.infrastructure.adapters.readers import (
     # -------------- PANDAS ---------------- #
     PandasCSVReader,
@@ -28,34 +29,75 @@ from file_io.infrastructure.adapters.readers import (
     YAMLReaderFromS3,
 )
 
+from file_io.infrastructure.adapters.writers import (
+    # -------------- PANDAS ---------------- #
+    PandasCSVWriter,
+    PandasJSONWriter,
+    PandasParquetWriter,
+    PandasCSVWriterToS3,
+    PandasJSONWriterToS3,
+    PandasParquetWriterToS3,
+    # -------------- POLARS ---------------- #
+    PolarsCSVWriter,
+    PolarsParquetWriter,
+    PolarsCSVWriterToS3,
+    PolarsParquetWriterToS3,
+    # -------------- JSON ---------------- #
+    JSONWriter,
+    JSONWriterToS3,
+    # -------------- YAML ---------------- #
+    YAMLWriter,
+    YAMLWriterToS3,
+    # -------------- HTML ---------------- #
+    HTMLWriter,
+    HTMLWriterToS3,
+    # -------------- PDF ---------------- #
+    PDFKitWriter,
+    PDFWriterToS3,
+)
+
 
 class FileIOContainer(DeclarativeContainer):
     """
-    Dependency injection container for all file readers (local and AWS).
+    Dependency injection container for File I/O adapters (readers & writers).
 
-    This container organizes and provides factory instances for different
-    types of file readers based on the data source (local or AWS),
-    file format (CSV, JSON, Parquet, YAML), and the parsing engine
-    (pandas, polars, dask, or native loaders).
+    This container provides structured access to file readers and writers for different
+    formats (CSV, JSON, Parquet, YAML, HTML, PDF) and sources (local filesystem, AWS S3).
 
+    It supports multiple engines (pandas, polars, dask, native libraries like json/yaml)
+    and abstracts away S3 logic using a shared singleton S3Adapter.
+
+    ----------------------------
     Structure:
         readers[source][format][engine]
+        writers[source][format][engine]
 
     Where:
         - source: "local" or "aws"
-        - format: "csv", "json", "parquet", "yaml"
-        - engine: "pandas", "polars", "dask", "json" (native parsers) or "yaml" (native parser).
+        - format: "csv", "json", "parquet", "yaml", "html", "pdf"
+        - engine:
+            - For CSV/Parquet/JSON: "pandas", "polars", "dask", or "json"
+            - For YAML: "yaml"
+            - For HTML: "html"
+            - For PDF: "pdfkit", "weasyprint"
 
+    ----------------------------
     Examples:
         >>> reader = container.readers()["aws"]["csv"]["pandas"]
-        >>> df = reader.read("path/to/file.csv", bucket="my-bucket")
+        >>> df = reader.read("data.csv", bucket="my-bucket")
 
-        >>> reader = container.readers()["local"]["yaml"]["pandas"]
-        >>> config = reader.read("config.yaml")
+        >>> writer = container.writers()["local"]["pdf"]["weasyprint"]
+        >>> writer.write("<h1>Report</h1>", "report.pdf")
 
+        >>> writer = container.writers()["aws"]["json"]["json"]
+        >>> writer.write({"name": "J"}, "user.json", bucket="my-bucket")
+
+    ----------------------------
     Notes:
-        - All AWS readers require the 'bucket' parameter to be passed via kwargs.
-        - S3 readers share a singleton S3Adapter instance.
+        - All AWS readers and writers require a 'bucket' keyword argument.
+        - `s3_adapter` is injected once via Singleton for all AWS dependencies.
+        - This structure allows flexible selection and extension of adapters.
+        - Supports vertical slicing and hexagonal architecture principles.
     """
 
     s3_adapter = Singleton(S3Adapter)
@@ -100,7 +142,59 @@ class FileIOContainer(DeclarativeContainer):
         ),
     )
 
+    local_writers = Dict(
+        csv=Dict(
+            pandas=Factory(PandasCSVWriter),
+            polars=Factory(PolarsCSVWriter),
+        ),
+        json=Dict(
+            pandas=Factory(PandasJSONWriter),
+            json=Factory(JSONWriter),
+        ),
+        parquet=Dict(
+            pandas=Factory(PandasParquetWriter),
+            polars=Factory(PolarsParquetWriter),
+        ),
+        yaml=Dict(
+            yaml=Factory(YAMLWriter),
+        ),
+        html=Dict(
+            html=Factory(HTMLWriter),
+        ),
+        pdf=Dict(
+            pdfkit=Factory(PDFKitWriter),
+        ),
+    )
+
+    aws_writers = Dict(
+        csv=Dict(
+            pandas=Factory(PandasCSVWriterToS3, s3=s3_adapter),
+            polars=Factory(PolarsCSVWriterToS3, s3=s3_adapter),
+        ),
+        json=Dict(
+            pandas=Factory(PandasJSONWriterToS3, s3=s3_adapter),
+            json=Factory(JSONWriterToS3, s3=s3_adapter),
+        ),
+        parquet=Dict(
+            pandas=Factory(PandasParquetWriterToS3, s3=s3_adapter),
+            polars=Factory(PolarsParquetWriterToS3, s3=s3_adapter),
+        ),
+        yaml=Dict(
+            yaml=Factory(YAMLWriterToS3, s3=s3_adapter),
+        ),
+        html=Dict(
+            html=Factory(HTMLWriterToS3, s3=s3_adapter),
+        ),
+        pdf=Dict(
+            pdf=Factory(PDFWriterToS3, s3=s3_adapter),
+        ),
+    )
+
     readers = Dict(
         local=local_readers,
         aws=aws_readers,
+    )
+    writers = Dict(
+        local=local_writers,
+        aws=aws_writers,
     )
