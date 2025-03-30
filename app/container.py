@@ -8,4 +8,6 @@ from app.extract import ExtractContainer
 class AppContainer(containers.DeclarativeContainer):
     file_io = FileIOContainer()
     db_connections = DBConnectionsContainer()
-    extract = ExtractContainer()
+    extract = ExtractContainer(
+        file_io=file_io,
+    )

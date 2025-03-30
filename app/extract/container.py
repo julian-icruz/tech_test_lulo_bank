@@ -1,8 +1,9 @@
+from dependency_injector.providers import Singleton, Dependency, Callable
 from dependency_injector.containers import DeclarativeContainer, WiringConfiguration
-from dependency_injector.providers import Singleton
 
-from app.extract.domain.services import ExtractService
 from app.extract.infrastructure.adapters.http import TVMazeAPIAdapter
+from app.extract.domain.services import ExtractService
+from app.extract.application.services import ExtractStorageService
 
 
 class ExtractContainer(DeclarativeContainer):
@@ -19,9 +20,17 @@ class ExtractContainer(DeclarativeContainer):
         ]
     )
 
+    file_io = Dependency()
+
     tvmaze_api_adapter = Singleton(TVMazeAPIAdapter)
 
     extract_service = Singleton(
         ExtractService,
         extractor_adapter=tvmaze_api_adapter,
+    )
+
+    extract_storage_service = Singleton(
+        ExtractStorageService,
+        extract_service=extract_service,
+        writers=Callable(lambda file_io: file_io.writers, file_io),
     )

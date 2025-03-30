@@ -7,6 +7,7 @@ services:
     container_name: tech-test-lulo
     volumes:
       - ./app:/src/app
+      - ./json:/src/json
     env_file:
       - .env
     ports:
@@ -20,6 +21,7 @@ services:
   #   container_name: tech-test-lulo-debug
   #   volumes:
   #     - ./app:/src/app
+  #     - ./json:/src/json
   #   env_file:
   #     - .env
   #   ports:
