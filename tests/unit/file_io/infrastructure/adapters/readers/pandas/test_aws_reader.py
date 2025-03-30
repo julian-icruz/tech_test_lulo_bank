@@ -50,3 +50,17 @@ def test_parquet_reader_from_s3_reads_correctly(s3_mock_client):
     df_result = reader.read("data/file.parquet", bucket="my-bucket")
 
     pd.testing.assert_frame_equal(df_result, df_expected)
+
+
+def test_parquet_reader_from_s3_reads_snappy_correctly(s3_mock_client):
+    """Reads a Snappy-compressed Parquet file from S3 using a mocked S3 client and returns a valid DataFrame."""
+    df_expected = pd.DataFrame({"x": [100, 200], "y": ["foo", "bar"]})
+    table = pa.Table.from_pandas(df_expected)
+    buffer = BytesIO()
+    pq.write_table(table, buffer, compression="snappy")
+    s3_mock_client.download_bytes.return_value = buffer.getvalue()
+
+    reader = PandasParquetReaderFromS3(s3=s3_mock_client)
+    df_result = reader.read("data/snappy_file.parquet", bucket="my-bucket")
+
+    pd.testing.assert_frame_equal(df_result, df_expected)
