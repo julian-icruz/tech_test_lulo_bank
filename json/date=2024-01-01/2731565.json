@@ -1,0 +1,89 @@
+{
+    "id": 2731565,
+    "url": "https://www.tvmaze.com/episodes/2731565/maine-cabin-masters-9x07-a-twofer-in-west-gardiner",
+    "name": "A Twofer in West Gardiner",
+    "season": 9,
+    "number": 7,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "21:00",
+    "airstamp": "2024-01-02T02:00:00+00:00",
+    "runtime": 60,
+    "rating": {
+        "average": null
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/498/1245379.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/498/1245379.jpg"
+    },
+    "summary": "<p>The Maine Cabin Masters update a pair of cabins right on the water.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2731565"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/23972",
+            "name": "Maine Cabin Masters"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 23972,
+            "url": "https://www.tvmaze.com/shows/23972/maine-cabin-masters",
+            "name": "Maine Cabin Masters",
+            "type": "Reality",
+            "language": "English",
+            "genres": [
+                "DIY"
+            ],
+            "status": "Running",
+            "runtime": 60,
+            "averageRuntime": 60,
+            "premiered": "2016-02-23",
+            "ended": null,
+            "officialSite": "https://magnolia.com/watch/show/ddb0e160-e23c-56b6-b2e0-0c1a632dc81a/maine-cabin-masters/",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": 6.6
+            },
+            "weight": 92,
+            "network": {
+                "id": 90,
+                "name": "Magnolia Network",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": null
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 322708,
+                "imdb": "tt6906110"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/486/1216730.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/486/1216730.jpg"
+            },
+            "summary": "<p>In <b>Maine Cabin Masters</b>, builder Chase Morrill is teaming up with his sister, brother-in-law and best friend to save and transform abandoned cabins buried deep in the remote woods of Maine. From historic cottages nearly a century old, to camp cabins in need of some major TLC, they'll give these properties the facelift they've needed for decades. And, you never know what you might find when you go for a walk in the woods.</p>",
+            "updated": 1741711522,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/23972"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3170015",
+                    "name": "Sprucing Up Spruce Mountain"
+                }
+            }
+        }
+    }
+}

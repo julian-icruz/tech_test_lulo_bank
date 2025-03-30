@@ -1,0 +1,85 @@
+{
+    "id": 2730310,
+    "url": "https://www.tvmaze.com/episodes/2730310/sklifosovskij-11x13-seria-205",
+    "name": "\u0421\u0435\u0440\u0438\u044f 205",
+    "season": 11,
+    "number": 13,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "21:20",
+    "airstamp": "2024-01-01T09:20:00+00:00",
+    "runtime": 52,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2730310"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/24443",
+            "name": "\u0421\u043a\u043b\u0438\u0444\u043e\u0441\u043e\u0432\u0441\u043a\u0438\u0439"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 24443,
+            "url": "https://www.tvmaze.com/shows/24443/sklifosovskij",
+            "name": "\u0421\u043a\u043b\u0438\u0444\u043e\u0441\u043e\u0432\u0441\u043a\u0438\u0439",
+            "type": "Scripted",
+            "language": "Russian",
+            "genres": [
+                "Drama",
+                "Medical"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 50,
+            "premiered": "2012-09-24",
+            "ended": null,
+            "officialSite": "https://smotrim.ru/brand/69183?utm_source=search&utm_campaign=autocomplete",
+            "schedule": {
+                "time": "21:20",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 34,
+            "network": null,
+            "webChannel": {
+                "id": 491,
+                "name": "\u0421\u043c\u043e\u0442\u0440\u0438\u043c",
+                "country": {
+                    "name": "Russian Federation",
+                    "code": "RU",
+                    "timezone": "Asia/Kamchatka"
+                },
+                "officialSite": "https://smotrim.ru/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/301/754059.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/301/754059.jpg"
+            },
+            "summary": null,
+            "updated": 1735326708,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/24443"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3092780",
+                    "name": "\u0421\u0435\u0440\u0438\u044f 224"
+                }
+            }
+        }
+    }
+}

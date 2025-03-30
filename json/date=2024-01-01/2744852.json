@@ -1,0 +1,84 @@
+{
+    "id": 2744852,
+    "url": "https://www.tvmaze.com/episodes/2744852/fck-thats-delicious-7x27-street-market-fine-dining-feat-amine-salehe-bembury-from-paris-with-love-part-deux",
+    "name": "STREET MARKET FINE DINING FEAT. AMIN\u00c9 & SALEHE BEMBURY | FROM PARIS WITH LOVE PART DEUX",
+    "season": 7,
+    "number": 27,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": 30,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2744852"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/13219",
+            "name": "F*ck That's Delicious"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 13219,
+            "url": "https://www.tvmaze.com/shows/13219/fck-thats-delicious",
+            "name": "F*ck That's Delicious",
+            "type": "Reality",
+            "language": "English",
+            "genres": [
+                "Comedy",
+                "Food",
+                "Travel"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 28,
+            "premiered": "2016-02-29",
+            "ended": null,
+            "officialSite": "https://www.viceland.com/en_us/show/fck-thats-delicious",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": 5.6
+            },
+            "weight": 46,
+            "network": null,
+            "webChannel": {
+                "id": 21,
+                "name": "YouTube",
+                "country": null,
+                "officialSite": "https://www.youtube.com"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 281403,
+                "imdb": "tt5866048"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/402/1007221.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/402/1007221.jpg"
+            },
+            "summary": "<p><b>F*ck That's Delicious</b> chronicles the life and eating habits of rap's greatest bon vivant, Action Bronson. With the help of his long-time friends and collaborators Meyhem Lauren and Big Body Bes, Action shows us that life is meant to be enjoyed as much as possible.</p>",
+            "updated": 1742484018,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/13219"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3180425",
+                    "name": "RARE WINE TASTING IN THE FRENCH COUNTRYSIDE | FROM PARIS WITH LOVE PART TROIS"
+                }
+            }
+        }
+    }
+}

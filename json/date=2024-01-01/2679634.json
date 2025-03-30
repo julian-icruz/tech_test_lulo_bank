@@ -1,0 +1,85 @@
+{
+    "id": 2679634,
+    "url": "https://www.tvmaze.com/episodes/2679634/harlan-cobens-fool-me-once-1x08-episode-8",
+    "name": "Episode 8",
+    "season": 1,
+    "number": 8,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": 35,
+    "rating": {
+        "average": 6.7
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/497/1244793.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/497/1244793.jpg"
+    },
+    "summary": "<p>With the last pieces of the puzzle starting to fall into place, Maya confronts her husband's family one last time, and Kierce seeks help from Corey.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2679634"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/67105",
+            "name": "Harlan Coben's Fool Me Once"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 67105,
+            "url": "https://www.tvmaze.com/shows/67105/harlan-cobens-fool-me-once",
+            "name": "Harlan Coben's Fool Me Once",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Crime",
+                "Thriller",
+                "Mystery"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 48,
+            "premiered": "2024-01-01",
+            "ended": "2024-01-01",
+            "officialSite": "https://www.netflix.com/title/81588093",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": 6.7
+            },
+            "weight": 97,
+            "network": null,
+            "webChannel": {
+                "id": 1,
+                "name": "Netflix",
+                "country": null,
+                "officialSite": "https://www.netflix.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 431352,
+                "imdb": "tt5611024"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/498/1245356.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/498/1245356.jpg"
+            },
+            "summary": "<p><b>Fool Me Once </b>follows Maya Stern who is trying to come to terms with the brutal murder of her husband, Joe. But when Maya installs a nanny-cam to keep an eye on her young daughter, she is shocked to see a man she recognises in her house. Her husband, who she thought was dead.</p><p>Detective Sergeant Sami Kierce leads the homicide investigation into Joe's death while grappling with secrets of his own. Meanwhile, Maya's niece and nephew, Abby and Daniel, are trying to find the truth about their mother's murder, several months earlier. Are the two cases connected? <i>Fool Me Once</i> follows these characters on a thrilling hunt for the truth that will reveal shocking secrets and change their lives forever.</p>",
+            "updated": 1726851049,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/67105"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2679634",
+                    "name": "Episode 8"
+                }
+            }
+        }
+    }
+}

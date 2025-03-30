@@ -1,0 +1,83 @@
+{
+    "id": 2704540,
+    "url": "https://www.tvmaze.com/episodes/2704540/cravity-park-8x05-ep91-biti-gajoong-1",
+    "name": "EP.91 [Biti Gajoong 1]",
+    "season": 8,
+    "number": 5,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": null,
+    "rating": {
+        "average": null
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/502/1257218.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/502/1257218.jpg"
+    },
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2704540"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/63310",
+            "name": "CRAVITY PARK"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 63310,
+            "url": "https://www.tvmaze.com/shows/63310/cravity-park",
+            "name": "CRAVITY PARK",
+            "type": "Reality",
+            "language": "Korean",
+            "genres": [],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 20,
+            "premiered": "2020-06-01",
+            "ended": null,
+            "officialSite": "https://youtube.com/playlist?list=PLI1Lvk7rTFhp62g8btny8rZvz4bkRYxTL",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 8,
+            "network": null,
+            "webChannel": {
+                "id": 21,
+                "name": "YouTube",
+                "country": null,
+                "officialSite": "https://www.youtube.com"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 386037,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/417/1044018.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/417/1044018.jpg"
+            },
+            "summary": "<p>CRAVITY members producing their own variety show through their own concepts every week. The series showcases different sides of the group through unique and refreshing concepts.</p>",
+            "updated": 1736233329,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/63310"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2982895",
+                    "name": "EP.102"
+                }
+            }
+        }
+    }
+}

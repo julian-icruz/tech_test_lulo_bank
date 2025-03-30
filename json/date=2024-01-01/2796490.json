@@ -1,0 +1,84 @@
+{
+    "id": 2796490,
+    "url": "https://www.tvmaze.com/episodes/2796490/since-the-red-moon-appeared-1x04-episode-4",
+    "name": "Episode 4",
+    "season": 1,
+    "number": 4,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "10:00",
+    "airstamp": "2024-01-01T02:00:00+00:00",
+    "runtime": 18,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2796490"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/75213",
+            "name": "Since the Red Moon Appeared"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 75213,
+            "url": "https://www.tvmaze.com/shows/75213/since-the-red-moon-appeared",
+            "name": "Since the Red Moon Appeared",
+            "type": "Animation",
+            "language": "Chinese",
+            "genres": [],
+            "status": "Running",
+            "runtime": 18,
+            "averageRuntime": 18,
+            "premiered": "2023-12-25",
+            "ended": null,
+            "officialSite": "https://v.qq.com/x/cover/mzc00200aoe8a04/b0047hs8oh4.html",
+            "schedule": {
+                "time": "10:00",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 4,
+            "network": null,
+            "webChannel": {
+                "id": 104,
+                "name": "Tencent QQ",
+                "country": {
+                    "name": "China",
+                    "code": "CN",
+                    "timezone": "Asia/Shanghai"
+                },
+                "officialSite": "https://v.qq.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 444127,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/507/1269076.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/507/1269076.jpg"
+            },
+            "summary": "<p>The story tells the story of a blood-red moon suddenly appearing in the sky, which is known as the red moon event in history. The remaining survivors had to hide in the city protected by high walls. Among the survivors, some people also suffered from mental mutations. Among them, those who could not control their own mental mutations would emit mental plague and radiation. It contaminates the normal people around it and poses a great threat to the surviving humans.</p>",
+            "updated": 1710343057,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/75213"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2796502",
+                    "name": "Episode 16"
+                }
+            }
+        }
+    }
+}

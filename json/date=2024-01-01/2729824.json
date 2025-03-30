@@ -1,0 +1,92 @@
+{
+    "id": 2729824,
+    "url": "https://www.tvmaze.com/episodes/2729824/neighbours-39x61-episode-8964",
+    "name": "Episode 8964",
+    "season": 39,
+    "number": 61,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": 23,
+    "rating": {
+        "average": 7
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/498/1245353.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/498/1245353.jpg"
+    },
+    "summary": "<p>Terese nurses a quiet discomfort. Karl is concerned about Holly's relationship. Aaron and Cara concoct a cunning plan.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2729824"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/5420",
+            "name": "Neighbours"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 5420,
+            "url": "https://www.tvmaze.com/shows/5420/neighbours",
+            "name": "Neighbours",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 30,
+            "premiered": "1985-03-18",
+            "ended": null,
+            "officialSite": "https://www.amazon.co.uk/gp/video/detail/B0C6X5F8C8/ref=atv_dp_season_select_s2023",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": 7.2
+            },
+            "weight": 94,
+            "network": null,
+            "webChannel": {
+                "id": 3,
+                "name": "Prime Video",
+                "country": null,
+                "officialSite": "https://www.primevideo.com"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 76719,
+                "imdb": "tt0088580"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/471/1178200.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/471/1178200.jpg"
+            },
+            "summary": "<p>The continuation of the long-running daily drama series\u2014about the lives, loves, and challenges of the residents on Ramsay Street in Erinsborough, Australia, a fictional suburb of Melbourne.\u00a0</p>",
+            "updated": 1743070689,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/5420"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3176541",
+                    "name": "Episode 9215"
+                },
+                "nextepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3183338",
+                    "name": "Episode 9216"
+                }
+            }
+        }
+    }
+}

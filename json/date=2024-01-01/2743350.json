@@ -1,0 +1,82 @@
+{
+    "id": 2743350,
+    "url": "https://www.tvmaze.com/episodes/2743350/imperatricy-1x01-ekaterina",
+    "name": "\u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0430",
+    "season": 1,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T00:00:00+00:00",
+    "runtime": 41,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2743350"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/73893",
+            "name": "\u0418\u043c\u043f\u0435\u0440\u0430\u0442\u0440\u0438\u0446\u044b"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 73893,
+            "url": "https://www.tvmaze.com/shows/73893/imperatricy",
+            "name": "\u0418\u043c\u043f\u0435\u0440\u0430\u0442\u0440\u0438\u0446\u044b",
+            "type": "Documentary",
+            "language": null,
+            "genres": [
+                "Drama",
+                "History"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 39,
+            "premiered": "2024-01-01",
+            "ended": "2024-01-01",
+            "officialSite": "https://premier.one/show/imperatritsy-mini-serial",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 4,
+            "network": null,
+            "webChannel": {
+                "id": 281,
+                "name": "Premier",
+                "country": {
+                    "name": "Russian Federation",
+                    "code": "RU",
+                    "timezone": "Asia/Kamchatka"
+                },
+                "officialSite": "https://premier.one/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": null,
+            "summary": null,
+            "updated": 1705416247,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/73893"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2743354",
+                    "name": "\u0422\u0440\u0438\u0443\u043c\u0444"
+                }
+            }
+        }
+    }
+}

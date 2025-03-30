@@ -1,0 +1,85 @@
+{
+    "id": 2670549,
+    "url": "https://www.tvmaze.com/episodes/2670549/du-bu-xiao-yao-1x378-episode-378",
+    "name": "Episode 378",
+    "season": 1,
+    "number": 378,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": 12,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2670549"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/63719",
+            "name": "Du bu xiao yao"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 63719,
+            "url": "https://www.tvmaze.com/shows/63719/du-bu-xiao-yao",
+            "name": "Du bu xiao yao",
+            "type": "Animation",
+            "language": "Chinese",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Anime"
+            ],
+            "status": "Running",
+            "runtime": 12,
+            "averageRuntime": 12,
+            "premiered": "2020-06-18",
+            "ended": null,
+            "officialSite": "https://v.qq.com/x/search/?q=%E7%8B%AC%E6%AD%A5%E9%80%8D%E9%81%A5&stag=0&smartbox_ab=",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday",
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 29,
+            "network": null,
+            "webChannel": {
+                "id": 21,
+                "name": "YouTube",
+                "country": null,
+                "officialSite": "https://www.youtube.com"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 392238,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/419/1049676.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/419/1049676.jpg"
+            },
+            "summary": "<p>The universe is vast, producing countless types of life forms. These life forms form all kinds of souls. All races and spirits have different races and different beliefs, but the same is the extravagant hope for Taoism. Any living beings are dusted with Dao heart, they are not willing to do this, they become powerful and even live forever by enlightening Dao through practice. The Avenue of Heaven and Earth is like luck, where the able live. The road to the great road is the road to struggle for the road, which has caused the struggle of all races and souls. An era can only support a few people to gain the Tao. Those who have attained the Tao think that standing on the top of the world, they can be free in the future. But I found that even Dao. It's also hard to escape bad luck. There is a ruler above them, harvesting one era after another, and the cultivators of the world want to maintain their ambitions. Ten thousand races and all spirits are just nourished by these rulers. These masters harvest the Taoists, harvest the spirituality of each world, and destroy one by one. The Taoists in the past were unwilling to be reaped and resisted constantly, but failed every time. Until\u2026 the protagonist Ye Yu appeared, he peeled away one time and one secret. As he unfolded an epic picture scroll, in this magnificent world, he continued to grow, experience love and friendship, cleanse the dusted Taoist heart, and finally confront the master who harvests all races.</p>",
+            "updated": 1733505609,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/63719"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3077672",
+                    "name": "Episode 480"
+                }
+            }
+        }
+    }
+}

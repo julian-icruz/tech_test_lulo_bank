@@ -1,0 +1,94 @@
+{
+    "id": 2719121,
+    "url": "https://www.tvmaze.com/episodes/2719121/predposlednaa-instancia-3x02-seria-22",
+    "name": "\u0421\u0435\u0440\u0438\u044f 22",
+    "season": 3,
+    "number": 2,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T00:00:00+00:00",
+    "runtime": 25,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2719121"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/59205",
+            "name": "\u041f\u0440\u0435\u0434\u043f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u0438\u043d\u0441\u0442\u0430\u043d\u0446\u0438\u044f"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 59205,
+            "url": "https://www.tvmaze.com/shows/59205/predposlednaa-instancia",
+            "name": "\u041f\u0440\u0435\u0434\u043f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u0438\u043d\u0441\u0442\u0430\u043d\u0446\u0438\u044f",
+            "type": "Scripted",
+            "language": "Russian",
+            "genres": [
+                "Drama",
+                "Comedy",
+                "Supernatural"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 26,
+            "premiered": "2022-01-01",
+            "ended": "2024-01-08",
+            "officialSite": "https://okko.tv/serial/predposlednjaja-instancija",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 58,
+            "network": null,
+            "webChannel": {
+                "id": 366,
+                "name": "Okko",
+                "country": {
+                    "name": "Russian Federation",
+                    "code": "RU",
+                    "timezone": "Asia/Kamchatka"
+                },
+                "officialSite": "https://okko.tv/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/388/970660.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/388/970660.jpg"
+            },
+            "summary": null,
+            "updated": 1704783571,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/59205"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2719129",
+                    "name": "\u0421\u0435\u0440\u0438\u044f 30"
+                }
+            }
+        }
+    }
+}

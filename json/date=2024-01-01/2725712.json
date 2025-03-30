@@ -1,0 +1,88 @@
+{
+    "id": 2725712,
+    "url": "https://www.tvmaze.com/episodes/2725712/sanningen-1x03-villospar",
+    "name": "Villosp\u00e5r",
+    "season": 1,
+    "number": 3,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "00:00",
+    "airstamp": "2024-01-01T23:00:00+00:00",
+    "runtime": 40,
+    "rating": {
+        "average": null
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/497/1243606.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/497/1243606.jpg"
+    },
+    "summary": "<p>Iris gets angry that Katti's problems spill over to her. At work, the collaboration with Kerstin sizzles, but Iris refuses to let go of the Benjamin case. A medium contacts the police and claims that there is a valuable clue at the discovery site.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2725712"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/72738",
+            "name": "Sanningen"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 72738,
+            "url": "https://www.tvmaze.com/shows/72738/sanningen",
+            "name": "Sanningen",
+            "type": "Scripted",
+            "language": "Swedish",
+            "genres": [
+                "Drama",
+                "Crime"
+            ],
+            "status": "To Be Determined",
+            "runtime": null,
+            "averageRuntime": 40,
+            "premiered": "2023-12-25",
+            "ended": null,
+            "officialSite": "https://www.tv4play.se/program/c8c0d2ca6bd81bf5a291/sanningen",
+            "schedule": {
+                "time": "00:00",
+                "days": []
+            },
+            "rating": {
+                "average": 5.8
+            },
+            "weight": 87,
+            "network": null,
+            "webChannel": {
+                "id": 155,
+                "name": "TV4 Play",
+                "country": {
+                    "name": "Sweden",
+                    "code": "SE",
+                    "timezone": "Europe/Stockholm"
+                },
+                "officialSite": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 443351,
+                "imdb": "tt19818812"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/496/1240359.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/496/1240359.jpg"
+            },
+            "summary": "<p>Iris Broman is the new manager of the Kalla Fall group in Malm\u00f6. She has just broken up from her old life in Stockholm and moved into her half-sister's house by the sea in Ystad. On the same day that Iris starts her new job, a skull is found in the forest.</p>",
+            "updated": 1730013576,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/72738"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2725736",
+                    "name": "F\u00f6rsoningen"
+                }
+            }
+        }
+    }
+}

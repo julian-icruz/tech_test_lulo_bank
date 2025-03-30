@@ -1,0 +1,87 @@
+{
+    "id": 2740507,
+    "url": "https://www.tvmaze.com/episodes/2740507/family-feud-canada-5x57-episode-57",
+    "name": "Episode 57",
+    "season": 5,
+    "number": 57,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "09:00",
+    "airstamp": "2024-01-01T13:00:00+00:00",
+    "runtime": 30,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2740507"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/42893",
+            "name": "Family Feud Canada"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 42893,
+            "url": "https://www.tvmaze.com/shows/42893/family-feud-canada",
+            "name": "Family Feud Canada",
+            "type": "Game Show",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 30,
+            "averageRuntime": 30,
+            "premiered": "2019-12-16",
+            "ended": null,
+            "officialSite": "https://www.cbc.ca/television/familyfeud",
+            "schedule": {
+                "time": "19:30",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 70,
+            "network": {
+                "id": 36,
+                "name": "CBC",
+                "country": {
+                    "name": "Canada",
+                    "code": "CA",
+                    "timezone": "America/Toronto"
+                },
+                "officialSite": "https://www.cbc.ca/"
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 373031,
+                "imdb": "tt11478344"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/404/1012038.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/404/1012038.jpg"
+            },
+            "summary": "<p>Comedian and <i>Mr. D</i> star Gerry Dee hosts <b>Family Feud Canada</b>. Gerry invites families from across Canada to compete to guess the most popular answers to fun, family-friendly survey questions.</p>",
+            "updated": 1740268805,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/42893"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3155567",
+                    "name": "Episode 52"
+                }
+            }
+        }
+    }
+}

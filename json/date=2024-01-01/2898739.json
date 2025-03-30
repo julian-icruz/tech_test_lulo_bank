@@ -1,0 +1,85 @@
+{
+    "id": 2898739,
+    "url": "https://www.tvmaze.com/episodes/2898739/cbs-news-247-2024-01-01-episode-1",
+    "name": "Episode 1",
+    "season": 2024,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "12:00",
+    "airstamp": "2024-01-01T17:00:00+00:00",
+    "runtime": 300,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2898739"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/77453",
+            "name": "CBS News 24/7"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 77453,
+            "url": "https://www.tvmaze.com/shows/77453/cbs-news-247",
+            "name": "CBS News 24/7",
+            "type": "News",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 300,
+            "averageRuntime": 300,
+            "premiered": "2024-01-01",
+            "ended": null,
+            "officialSite": null,
+            "schedule": {
+                "time": "12:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 4,
+            "network": null,
+            "webChannel": {
+                "id": 607,
+                "name": "CBS News",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": null,
+            "summary": "<p>Live news and top stories on CBS News 24/7.</p>",
+            "updated": 1717337743,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/77453"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2898872",
+                    "name": "Episode 133"
+                }
+            }
+        }
+    }
+}

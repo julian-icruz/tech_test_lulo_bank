@@ -1,0 +1,87 @@
+{
+    "id": 2657625,
+    "url": "https://www.tvmaze.com/episodes/2657625/wwe-monday-night-raw-31x01-1597-day-one-pechanga-arena-in-san-diego-ca",
+    "name": "#1597 - Day One: Pechanga Arena in San Diego, CA",
+    "season": 31,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "20:00",
+    "airstamp": "2024-01-02T01:00:00+00:00",
+    "runtime": 180,
+    "rating": {
+        "average": 9
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/498/1245287.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/498/1245287.jpg"
+    },
+    "summary": "<p>The People's Champion made his earth-shattering return to Raw to lay the smack down on Jinder Mahal and hint that he wants a spot at The Head of the Table.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2657625"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/802",
+            "name": "WWE Monday Night RAW"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 802,
+            "url": "https://www.tvmaze.com/shows/802/wwe-monday-night-raw",
+            "name": "WWE Monday Night RAW",
+            "type": "Sports",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 180,
+            "premiered": "1993-01-11",
+            "ended": null,
+            "officialSite": "http://www.wwe.com/",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": 7.5
+            },
+            "weight": 90,
+            "network": null,
+            "webChannel": {
+                "id": 1,
+                "name": "Netflix",
+                "country": null,
+                "officialSite": "https://www.netflix.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 6659,
+                "thetvdb": 76779,
+                "imdb": "tt0185103"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/550/1377130.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/550/1377130.jpg"
+            },
+            "summary": "<p><b>WWE Monday Night RAW</b> is World Wrestling Entertainment's (formerly the WWF and the WWWF before that) premiere wrestling event and brand. Since its launch in 1993, WWE Monday Night RAW continues to air live on Monday nights. It is generally seen as the company's flagship program due to its prolific history, high ratings, weekly live format, and emphasis on pay-per-views. Monday Night RAW is high profile enough to attract frequent visits from celebrities who usually serve as guest hosts for a single live event. Since its first episode, the show has been broadcast live or recorded from more than 197 different arenas in 165 cities and towns in seven different nations: including the United States, Canada, the United Kingdom twice a year, Afghanistan for a special Tribute to the Troops, Germany, Japan, Italy and Mexico.</p>",
+            "updated": 1742889851,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/802"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3050545",
+                    "name": "#1661 - OVO Hydro in Glasgow, Scotland"
+                },
+                "nextepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3050546",
+                    "name": "#1662 - The O2 in London, United Kingdom"
+                }
+            }
+        }
+    }
+}

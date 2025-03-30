@@ -1,0 +1,93 @@
+{
+    "id": 2725195,
+    "url": "https://www.tvmaze.com/episodes/2725195/youll-never-walk-alone-1x09-episode-9",
+    "name": "Episode 9",
+    "season": 1,
+    "number": 9,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "18:00",
+    "airstamp": "2024-01-01T10:00:00+00:00",
+    "runtime": 40,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2725195"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/73639",
+            "name": "You'll Never Walk Alone"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 73639,
+            "url": "https://www.tvmaze.com/shows/73639/youll-never-walk-alone",
+            "name": "You'll Never Walk Alone",
+            "type": "Scripted",
+            "language": "Chinese",
+            "genres": [
+                "Drama",
+                "Romance"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 40,
+            "premiered": "2023-12-29",
+            "ended": "2024-01-20",
+            "officialSite": "https://v.youku.com/v_nextstage/id_cbfa46c4220f4d69abce.html?spm=a2h0c.8166622.PhoneSokuProgram_1.dtitle",
+            "schedule": {
+                "time": "18:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 7,
+            "network": null,
+            "webChannel": {
+                "id": 118,
+                "name": "Youku",
+                "country": {
+                    "name": "China",
+                    "code": "CN",
+                    "timezone": "Asia/Shanghai"
+                },
+                "officialSite": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 443249,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/496/1240398.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/496/1240398.jpg"
+            },
+            "summary": "<p>Xia Yuan, an executive of a travel company, got engaged to her boyfriend Song Hangyu on her 30th birthday. It was a great harvest in both career and love. But at the engagement party, Song Hangyu disappeared. Xia Yuan found out that Song Hangyu had gone abroad, so he dropped everything and gave himself a year to look for Song Hangyu. On the other hand, Hao Weiwei, who had a relationship with Xia Yuan in Shanghai, was arranged by his father to go abroad to work and train due to the bankruptcy of his father's company. Ye Siqi, a girl born in 1995, and Qiao Bin, who grew up in Shanghai, got married and divorced. Ye Siqi, who was hot-headed and wanted to pursue a new life, also embarked on a journey. Qiao Bin, who regretted the divorce, followed Ye Siqi's footsteps and went abroad. They met by chance and went on the road together.</p>",
+            "updated": 1705727403,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/73639"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2725214",
+                    "name": "Episode 28"
+                }
+            }
+        }
+    }
+}

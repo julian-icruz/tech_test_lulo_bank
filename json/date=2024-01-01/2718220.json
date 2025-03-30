@@ -1,0 +1,94 @@
+{
+    "id": 2718220,
+    "url": "https://www.tvmaze.com/episodes/2718220/manuna-3x08-seria-8",
+    "name": "\u0421\u0435\u0440\u0438\u044f 8",
+    "season": 3,
+    "number": 8,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T00:00:00+00:00",
+    "runtime": 20,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2718220"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/59484",
+            "name": "\u041c\u0430\u043d\u044e\u043d\u044f"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 59484,
+            "url": "https://www.tvmaze.com/shows/59484/manuna",
+            "name": "\u041c\u0430\u043d\u044e\u043d\u044f",
+            "type": "Scripted",
+            "language": "Russian",
+            "genres": [
+                "Comedy",
+                "Adventure",
+                "Children"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 20,
+            "premiered": "2021-12-15",
+            "ended": null,
+            "officialSite": "https://okko.tv/serial/manjunja",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": 6.3
+            },
+            "weight": 32,
+            "network": null,
+            "webChannel": {
+                "id": 366,
+                "name": "Okko",
+                "country": {
+                    "name": "Russian Federation",
+                    "code": "RU",
+                    "timezone": "Asia/Kamchatka"
+                },
+                "officialSite": "https://okko.tv/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 413379,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/383/957782.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/383/957782.jpg"
+            },
+            "summary": null,
+            "updated": 1703404987,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/59484"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2718223",
+                    "name": "\u0421\u0435\u0440\u0438\u044f 10"
+                }
+            }
+        }
+    }
+}

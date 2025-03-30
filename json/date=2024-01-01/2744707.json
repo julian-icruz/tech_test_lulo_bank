@@ -1,0 +1,84 @@
+{
+    "id": 2744707,
+    "url": "https://www.tvmaze.com/episodes/2744707/pasilan-myrkky-manni-1x01-katko",
+    "name": "K\u00e4tk\u00f6",
+    "season": 1,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T10:00:00+00:00",
+    "runtime": 22,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2744707"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/74063",
+            "name": "Pasilan myrkky - Manni"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 74063,
+            "url": "https://www.tvmaze.com/shows/74063/pasilan-myrkky-manni",
+            "name": "Pasilan myrkky - Manni",
+            "type": "Scripted",
+            "language": "Finnish",
+            "genres": [],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 24,
+            "premiered": "2024-01-01",
+            "ended": null,
+            "officialSite": "https://elisaviihde.fi/ruutuplus/sarjat/4447753/pasilan-myrkky-manni",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 13,
+            "network": null,
+            "webChannel": {
+                "id": 293,
+                "name": "Elisa Viihde",
+                "country": {
+                    "name": "Finland",
+                    "code": "FI",
+                    "timezone": "Europe/Helsinki"
+                },
+                "officialSite": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 444072,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/500/1250591.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/500/1250591.jpg"
+            },
+            "summary": null,
+            "updated": 1705523600,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/74063"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2744714",
+                    "name": "J\u00e4rvenp\u00e4\u00e4"
+                }
+            }
+        }
+    }
+}

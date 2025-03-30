@@ -1,0 +1,87 @@
+{
+    "id": 2873697,
+    "url": "https://www.tvmaze.com/episodes/2873697/al-khaen-1x47-47-alhlqt",
+    "name": "47 \u0627\u0644\u062d\u0644\u0642\u0629",
+    "season": 1,
+    "number": 47,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": 43,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2873697"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/77144",
+            "name": "Al Kha'en"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 77144,
+            "url": "https://www.tvmaze.com/shows/77144/al-khaen",
+            "name": "Al Kha'en",
+            "type": "Scripted",
+            "language": "Arabic",
+            "genres": [
+                "Drama",
+                "Mystery"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 45,
+            "premiered": "2023-11-05",
+            "ended": "2024-02-29",
+            "officialSite": "https://shahid.mbc.net/en/series/Al-Khaen/series-1003747",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 1,
+            "network": null,
+            "webChannel": {
+                "id": 379,
+                "name": "Shahid",
+                "country": null,
+                "officialSite": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 441523,
+                "imdb": "tt29894652"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/519/1299433.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/519/1299433.jpg"
+            },
+            "summary": "<p>Dr. Aseel's perfect life is shattered when she discovers that her husband Seif is having an affair. Her subsequent quest for vengeance takes her down a dark path.</p>",
+            "updated": 1716053213,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/77144"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2873740",
+                    "name": "90 \u0627\u0644\u062d\u0644\u0642\u0629"
+                }
+            }
+        }
+    }
+}

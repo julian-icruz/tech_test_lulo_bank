@@ -1,0 +1,99 @@
+{
+    "id": 2728785,
+    "url": "https://www.tvmaze.com/episodes/2728785/days-of-our-lives-2024-01-01-ep-14760",
+    "name": "Ep. #14760",
+    "season": 2024,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T17:00:00+00:00",
+    "runtime": 38,
+    "rating": {
+        "average": null
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/530/1326520.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/530/1326520.jpg"
+    },
+    "summary": "<p>Tate finds Holly a victim of tainted pills, and Nicole is devastated.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2728785"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/812",
+            "name": "Days of Our Lives"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 812,
+            "url": "https://www.tvmaze.com/shows/812/days-of-our-lives",
+            "name": "Days of Our Lives",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Family",
+                "Romance"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 58,
+            "premiered": "1965-11-08",
+            "ended": null,
+            "officialSite": "https://www.peacocktv.com/stream-tv/days-of-our-lives",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 7
+            },
+            "weight": 93,
+            "network": null,
+            "webChannel": {
+                "id": 347,
+                "name": "Peacock",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://www.peacocktv.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 3256,
+                "thetvdb": 70366,
+                "imdb": "tt0058796"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/519/1298651.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/519/1298651.jpg"
+            },
+            "summary": "<p><b>Days of our Lives</b> is set in the fictitious Midwestern town of Salem. The core families are the Bradys, the Hortons and the DiMeras, and the multi-layered storylines involve elements of romance, adventure, mystery, comedy and drama.</p><p>Beginning on September 12, 2022, DAYS became exclusive to streaming on Peacock.</p>",
+            "updated": 1741221112,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/812"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3163722",
+                    "name": "Ep. #15084"
+                },
+                "nextepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3163723",
+                    "name": "Ep. #15085"
+                }
+            }
+        }
+    }
+}

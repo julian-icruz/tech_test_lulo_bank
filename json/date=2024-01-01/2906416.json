@@ -1,0 +1,82 @@
+{
+    "id": 2906416,
+    "url": "https://www.tvmaze.com/episodes/2906416/2-bears-1-cave-2024-01-01-ep-217-calling-comics-for-2-bears-5k",
+    "name": "Ep. 217 Calling Comics for 2 Bears 5K",
+    "season": 2024,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": 88,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2906416"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/77660",
+            "name": "2 Bears, 1 Cave"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 77660,
+            "url": "https://www.tvmaze.com/shows/77660/2-bears-1-cave",
+            "name": "2 Bears, 1 Cave",
+            "type": "Talk Show",
+            "language": null,
+            "genres": [
+                "Comedy"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 77,
+            "premiered": "2019-07-01",
+            "ended": null,
+            "officialSite": "https://www.youtube.com/playlist?list=PL-i3EV1v5hLeT91DuXckUf6tsbMfLgZno",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 7,
+            "network": null,
+            "webChannel": {
+                "id": 21,
+                "name": "YouTube",
+                "country": null,
+                "officialSite": "https://www.youtube.com"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 379047,
+                "imdb": "tt12058204"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/522/1306697.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/522/1306697.jpg"
+            },
+            "summary": "<p>Weekly, comedian best friends Tom Segura and Bert Kreischer get together in the bear cave at YMH Studios to do what bears do: make each other laugh.</p>",
+            "updated": 1743360617,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/77660"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3190407",
+                    "name": "Ep 281 The Bears Take South By Southwest"
+                }
+            }
+        }
+    }
+}

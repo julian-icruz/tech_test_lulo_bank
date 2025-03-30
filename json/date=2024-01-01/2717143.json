@@ -1,0 +1,92 @@
+{
+    "id": 2717143,
+    "url": "https://www.tvmaze.com/episodes/2717143/blossoms-1x13-episode-13",
+    "name": "Episode 13",
+    "season": 1,
+    "number": 13,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "19:30",
+    "airstamp": "2024-01-01T11:30:00+00:00",
+    "runtime": 45,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2717143"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/49504",
+            "name": "Blossoms"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 49504,
+            "url": "https://www.tvmaze.com/shows/49504/blossoms",
+            "name": "Blossoms",
+            "type": "Scripted",
+            "language": "Chinese",
+            "genres": [
+                "Drama"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": null,
+            "premiered": "2023-12-27",
+            "ended": "2024-01-09",
+            "officialSite": "https://v.qq.com/x/cover/mzc00200whsp9r6/x004439i17k.html",
+            "schedule": {
+                "time": "18:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 36,
+            "network": null,
+            "webChannel": {
+                "id": 104,
+                "name": "Tencent QQ",
+                "country": {
+                    "name": "China",
+                    "code": "CN",
+                    "timezone": "Asia/Shanghai"
+                },
+                "officialSite": "https://v.qq.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 386338,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/435/1088020.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/435/1088020.jpg"
+            },
+            "summary": "<p>Set against the backdrop of massive economic growth in the 1990s, it follows A Bao, a self-made millionaire and his journey from being a young opportunist with a troubled past to accumulating dazzling wealth in the city of Shanghai. It also follows his entanglement with four women who represent the pursuits of his life: adventure, honour, love and innocence.</p>",
+            "updated": 1704806263,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/49504"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2717160",
+                    "name": "Episode 30"
+                }
+            }
+        }
+    }
+}

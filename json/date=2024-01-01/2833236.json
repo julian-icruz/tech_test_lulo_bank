@@ -1,0 +1,85 @@
+{
+    "id": 2833236,
+    "url": "https://www.tvmaze.com/episodes/2833236/abc-news-live-reports-2024-01-01-episode-1",
+    "name": "Episode 1",
+    "season": 2024,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "17:00",
+    "airstamp": "2024-01-01T22:00:00+00:00",
+    "runtime": 120,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2833236"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/76220",
+            "name": "ABC News Live Reports"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 76220,
+            "url": "https://www.tvmaze.com/shows/76220/abc-news-live-reports",
+            "name": "ABC News Live Reports",
+            "type": "News",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 120,
+            "premiered": "2024-01-01",
+            "ended": null,
+            "officialSite": "https://abcnews.go.com/Live",
+            "schedule": {
+                "time": "17:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 7,
+            "network": null,
+            "webChannel": {
+                "id": 616,
+                "name": "ABC News Live",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://abcnews.go.com/Live"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": null,
+            "summary": "<p><b>ABC News Live Reports</b> is the rare national newscast based in Los Angeles, in what the network is billing as an \"outside the Beltway\" focus on politics for the 2024 election cycle.\u00a0</p>",
+            "updated": 1725650330,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/76220"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2996130",
+                    "name": "Episode 196"
+                }
+            }
+        }
+    }
+}

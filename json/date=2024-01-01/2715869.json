@@ -1,0 +1,91 @@
+{
+    "id": 2715869,
+    "url": "https://www.tvmaze.com/episodes/2715869/hver-gang-vi-motes-14x02-tom-matoma-lagergren-del-2",
+    "name": "Tom \u00abMatoma\u00bb Lagergren - del 2",
+    "season": 14,
+    "number": 2,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T11:00:00+00:00",
+    "runtime": 25,
+    "rating": {
+        "average": null
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236483.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/494/1236483.jpg"
+    },
+    "summary": "<p>Tom \"Matoma\" Lagergren opens this year's season. A lot of magic awaits when his songs will be dressed in, among other things, dance band suits and Sami language costumes.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2715869"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/11502",
+            "name": "Hver gang vi m\u00f8tes"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 11502,
+            "url": "https://www.tvmaze.com/shows/11502/hver-gang-vi-motes",
+            "name": "Hver gang vi m\u00f8tes",
+            "type": "Reality",
+            "language": "Norwegian",
+            "genres": [
+                "Music"
+            ],
+            "status": "To Be Determined",
+            "runtime": null,
+            "averageRuntime": 58,
+            "premiered": "2012-01-28",
+            "ended": null,
+            "officialSite": "https://play.tv2.no/programmer/underholdning/hver-gang-vi-moetes",
+            "schedule": {
+                "time": "03:00",
+                "days": [
+                    "Wednesday",
+                    "Saturday",
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 67,
+            "network": null,
+            "webChannel": {
+                "id": 327,
+                "name": "TV 2 Play",
+                "country": {
+                    "name": "Norway",
+                    "code": "NO",
+                    "timezone": "Europe/Oslo"
+                },
+                "officialSite": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 34149,
+                "thetvdb": 257720,
+                "imdb": "tt7057262"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/549/1374377.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/549/1374377.jpg"
+            },
+            "summary": "<p>Artists spend eight days together at a farm outside the city of Moss, where each artist attempts to do their own version of another artists well-known songs, with each person getting an episode featuring all of their songs being performed by the other musicians.</p>",
+            "updated": 1739789931,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/11502"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3095483",
+                    "name": "Duetter \u2013 del 2"
+                }
+            }
+        }
+    }
+}

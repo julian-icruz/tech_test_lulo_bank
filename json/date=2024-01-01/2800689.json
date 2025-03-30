@@ -1,0 +1,87 @@
+{
+    "id": 2800689,
+    "url": "https://www.tvmaze.com/episodes/2800689/rooster-teeth-podcast-2024-01-01-is-2024-the-year-i-get-worse",
+    "name": "Is 2024 The Year I Get WORSE?",
+    "season": 2024,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T17:00:00+00:00",
+    "runtime": 90,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2800689"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/6146",
+            "name": "Rooster Teeth Podcast"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 6146,
+            "url": "https://www.tvmaze.com/shows/6146/rooster-teeth-podcast",
+            "name": "Rooster Teeth Podcast",
+            "type": "Talk Show",
+            "language": "English",
+            "genres": [
+                "Comedy"
+            ],
+            "status": "Ended",
+            "runtime": 90,
+            "averageRuntime": 90,
+            "premiered": "2008-12-09",
+            "ended": "2024-04-15",
+            "officialSite": "https://roosterteeth.com/series/rt-podcast",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday",
+                    "Tuesday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 32,
+            "network": null,
+            "webChannel": {
+                "id": 32,
+                "name": "Rooster Teeth",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://roosterteeth.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 264458,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/23/59538.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/23/59538.jpg"
+            },
+            "summary": "<p>On a more or less weekly basis the Rooster Teeth (creators of Red vs. Blue) crew discuss gaming, films and projects that they are currently working on.</p>",
+            "updated": 1737158117,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/6146"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2832298",
+                    "name": "Why Are We Here?"
+                }
+            }
+        }
+    }
+}

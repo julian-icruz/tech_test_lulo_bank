@@ -1,0 +1,86 @@
+{
+    "id": 2732797,
+    "url": "https://www.tvmaze.com/episodes/2732797/planet-lulin-1x04-the-truth-is-really-out-there",
+    "name": "The Truth Is Really Out There",
+    "season": 1,
+    "number": 4,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T01:00:00+00:00",
+    "runtime": 21,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": "<p>Alpha Squad's diorama is destroyed and Lulin is found at the scene! Lulin must question friends, enemies, and even herself, to find the real culprit.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2732797"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/73780",
+            "name": "Planet Lulin"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 73780,
+            "url": "https://www.tvmaze.com/shows/73780/planet-lulin",
+            "name": "Planet Lulin",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Children",
+                "Fantasy",
+                "Science-Fiction"
+            ],
+            "status": "To Be Determined",
+            "runtime": null,
+            "averageRuntime": 22,
+            "premiered": "2024-01-01",
+            "ended": null,
+            "officialSite": "https://iview.abc.net.au/show/planet-lulin",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 31,
+            "network": null,
+            "webChannel": {
+                "id": 149,
+                "name": "ABC iview",
+                "country": {
+                    "name": "Australia",
+                    "code": "AU",
+                    "timezone": "Australia/Sydney"
+                },
+                "officialSite": "https://iview.abc.net.au/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 444536,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/498/1246029.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/498/1246029.jpg"
+            },
+            "summary": "<p>Lulin wasn't expecting to develop alien powers, or intergalactic invaders to crash her school science comp, but hey, Year 6 is full of surprises!</p>",
+            "updated": 1705107854,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/73780"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2732803",
+                    "name": "The Void"
+                }
+            }
+        }
+    }
+}

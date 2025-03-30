@@ -1,0 +1,88 @@
+{
+    "id": 2731469,
+    "url": "https://www.tvmaze.com/episodes/2731469/the-proud-emperor-of-eternity-1x02-episode-2",
+    "name": "Episode 2",
+    "season": 1,
+    "number": 2,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T04:00:00+00:00",
+    "runtime": 16,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2731469"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/73749",
+            "name": "The Proud Emperor of Eternity"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 73749,
+            "url": "https://www.tvmaze.com/shows/73749/the-proud-emperor-of-eternity",
+            "name": "The Proud Emperor of Eternity",
+            "type": "Animation",
+            "language": "Chinese",
+            "genres": [
+                "Anime",
+                "Mystery",
+                "Supernatural"
+            ],
+            "status": "Running",
+            "runtime": 16,
+            "averageRuntime": 16,
+            "premiered": "2024-01-01",
+            "ended": null,
+            "officialSite": null,
+            "schedule": {
+                "time": "10:00",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 23,
+            "network": null,
+            "webChannel": {
+                "id": 118,
+                "name": "Youku",
+                "country": {
+                    "name": "China",
+                    "code": "CN",
+                    "timezone": "Asia/Shanghai"
+                },
+                "officialSite": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 444082,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/498/1245232.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/498/1245232.jpg"
+            },
+            "summary": null,
+            "updated": 1709565521,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/73749"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2790347",
+                    "name": "Episode 20"
+                }
+            }
+        }
+    }
+}

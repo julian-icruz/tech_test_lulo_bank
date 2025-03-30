@@ -1,0 +1,97 @@
+{
+    "id": 2689735,
+    "url": "https://www.tvmaze.com/episodes/2689735/goede-tijden-slechte-tijden-34x73-aflevering-6848",
+    "name": "Aflevering 6848",
+    "season": 34,
+    "number": 73,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "20:00",
+    "airstamp": "2024-01-01T19:00:00+00:00",
+    "runtime": 23,
+    "rating": {
+        "average": null
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/497/1244267.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/497/1244267.jpg"
+    },
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2689735"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/2504",
+            "name": "Goede Tijden, Slechte Tijden"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 2504,
+            "url": "https://www.tvmaze.com/shows/2504/goede-tijden-slechte-tijden",
+            "name": "Goede Tijden, Slechte Tijden",
+            "type": "Scripted",
+            "language": "Dutch",
+            "genres": [
+                "Drama",
+                "Romance"
+            ],
+            "status": "Running",
+            "runtime": 23,
+            "averageRuntime": 25,
+            "premiered": "1990-10-01",
+            "ended": null,
+            "officialSite": "http://gtst.nl/#!/",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 80,
+            "network": {
+                "id": 112,
+                "name": "RTL4",
+                "country": {
+                    "name": "Netherlands",
+                    "code": "NL",
+                    "timezone": "Europe/Amsterdam"
+                },
+                "officialSite": null
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 19056,
+                "thetvdb": 104271,
+                "imdb": "tt0096597"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/332/830481.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/332/830481.jpg"
+            },
+            "summary": null,
+            "updated": 1743351434,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/2504"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3163348",
+                    "name": "Aflevering 7059"
+                },
+                "nextepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3163349",
+                    "name": "Aflevering 7060"
+                }
+            }
+        }
+    }
+}

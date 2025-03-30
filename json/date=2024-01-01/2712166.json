@@ -1,0 +1,84 @@
+{
+    "id": 2712166,
+    "url": "https://www.tvmaze.com/episodes/2712166/robson-greens-weekend-escapes-2x13-lee-ingleby",
+    "name": "Lee Ingleby",
+    "season": 2,
+    "number": 13,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "18:30",
+    "airstamp": "2024-01-01T18:30:00+00:00",
+    "runtime": 29,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": "<p>Robson meets up with screen star Lee Ingleby in the historic city of Durham before the pair head deep into the Weardale countryside.</p><p>The pair sample a forest fitness class in Hamsterley Forest and take control of a Rolls Royce-powered train at the Weardale railway before heading to their digs on a local farm. After a night of listening to nature, they take on a raft-building course in a disused quarry.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2712166"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/66609",
+            "name": "Robson Green's Weekend Escapes"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 66609,
+            "url": "https://www.tvmaze.com/shows/66609/robson-greens-weekend-escapes",
+            "name": "Robson Green's Weekend Escapes",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [
+                "Travel"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 29,
+            "premiered": "2023-01-23",
+            "ended": null,
+            "officialSite": "https://www.bbc.co.uk/programmes/p0dp32m9",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": 6.6
+            },
+            "weight": 38,
+            "network": null,
+            "webChannel": {
+                "id": 26,
+                "name": "BBC iPlayer",
+                "country": {
+                    "name": "United Kingdom",
+                    "code": "GB",
+                    "timezone": "Europe/London"
+                },
+                "officialSite": "https://www.bbc.co.uk/iplayer"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/443/1108694.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/443/1108694.jpg"
+            },
+            "summary": "<p>Relax, reset and recharge. Robson takes the roads less travelled across his beloved North East England. With famous friends, he finds wellbeing and adventure in wonderful places.</p>",
+            "updated": 1739488651,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/66609"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3143787",
+                    "name": "Matheson Green"
+                }
+            }
+        }
+    }
+}

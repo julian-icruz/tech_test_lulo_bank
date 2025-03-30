@@ -1,0 +1,78 @@
+{
+    "id": 2795026,
+    "url": "https://www.tvmaze.com/episodes/2795026/engineering-evolved-1x05-episode-5",
+    "name": "Episode 5",
+    "season": 1,
+    "number": 5,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": 52,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2795026"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/75271",
+            "name": "Engineering Evolved"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 75271,
+            "url": "https://www.tvmaze.com/shows/75271/engineering-evolved",
+            "name": "Engineering Evolved",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 53,
+            "premiered": "2023-12-04",
+            "ended": null,
+            "officialSite": "https://www.primevideo.com/dp/amzn1.dv.gti.dd84f933-3f7d-4950-90ef-bd8d3e3de080",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 59,
+            "network": null,
+            "webChannel": {
+                "id": 3,
+                "name": "Prime Video",
+                "country": null,
+                "officialSite": "https://www.primevideo.com"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 447332,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/508/1270196.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/508/1270196.jpg"
+            },
+            "summary": "<p><b>Engineering Evolved</b> takes you on a captivating ride through the evolution of transportation. From high-speed trains to submarines, each episode uncovers the engineering marvels that shape our world.</p>",
+            "updated": 1710189261,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/75271"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2795027",
+                    "name": "Episode 6"
+                }
+            }
+        }
+    }
+}

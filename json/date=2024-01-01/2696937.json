@@ -1,0 +1,93 @@
+{
+    "id": 2696937,
+    "url": "https://www.tvmaze.com/episodes/2696937/supreme-god-emperor-1x340-episode-340",
+    "name": "Episode 340",
+    "season": 1,
+    "number": 340,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "10:00",
+    "airstamp": "2024-01-01T02:00:00+00:00",
+    "runtime": 10,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2696937"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/55019",
+            "name": "Supreme God Emperor"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 55019,
+            "url": "https://www.tvmaze.com/shows/55019/supreme-god-emperor",
+            "name": "Supreme God Emperor",
+            "type": "Animation",
+            "language": "Chinese",
+            "genres": [
+                "Adventure",
+                "Anime",
+                "Fantasy"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 10,
+            "premiered": "2020-05-18",
+            "ended": null,
+            "officialSite": "https://v.qq.com/x/search/?q=\u65e0\u4e0a\u795e\u5e1d&stag=&smartbox_ab=",
+            "schedule": {
+                "time": "10:00",
+                "days": [
+                    "Monday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 80,
+            "network": null,
+            "webChannel": {
+                "id": 104,
+                "name": "Tencent QQ",
+                "country": {
+                    "name": "China",
+                    "code": "CN",
+                    "timezone": "Asia/Shanghai"
+                },
+                "officialSite": "https://v.qq.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 388383,
+                "imdb": "tt20603062"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/311/778540.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/311/778540.jpg"
+            },
+            "summary": "<p>Ten thousand years ago, Muyun's fairy King was secretly accounted for by holding a Zhuxian figure, and after a long sleep, he awakened in the famous \"Muyun waste\" of the southern Yun Empire in the Land of Heaven. When Muyun first woke up, he was deliberately bothered by the student Miaoxianyu. Muyun easily completed the Miaoxianyu trap, and he gave more and more alchemy skills by analogy, so the Alchemy masters outside the door could not ask for appreciation. Endless back home, Mu Yun learns that he is about to marry Nona Qin Qin Mengyao. Qin Mengyao was cold and toxic, but could not live until he was 20 years old. The marriage was only for the sake of pastoralists and family of Qin. However, under Mu Linchen's enticement, Mu Yun approves the family's issue on the condition of alchemy.</p><p><br />\u00a0</p>",
+            "updated": 1739374185,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/55019"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3145310",
+                    "name": "Episode 469"
+                },
+                "nextepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3145311",
+                    "name": "Episode 470"
+                }
+            }
+        }
+    }
+}

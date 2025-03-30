@@ -1,0 +1,84 @@
+{
+    "id": 2743381,
+    "url": "https://www.tvmaze.com/episodes/2743381/talkoma-fd-1x01-pirate-world-fd",
+    "name": "Pirate World FD",
+    "season": 1,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": 64,
+    "rating": {
+        "average": null
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/500/1250141.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/500/1250141.jpg"
+    },
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2743381"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/74029",
+            "name": "Talkoma FD"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 74029,
+            "url": "https://www.tvmaze.com/shows/74029/talkoma-fd",
+            "name": "Talkoma FD",
+            "type": "Talk Show",
+            "language": null,
+            "genres": [],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 62,
+            "premiered": "2024-01-01",
+            "ended": null,
+            "officialSite": "https://www.youtube.com/@LemmeHeffernan",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday",
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 9,
+            "network": null,
+            "webChannel": {
+                "id": 21,
+                "name": "YouTube",
+                "country": null,
+                "officialSite": "https://www.youtube.com"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/500/1250140.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/500/1250140.jpg"
+            },
+            "summary": "<p>Welcome to <b>Talkoma FD</b> a weekly behind the scenes show for season 4 of Tacoma FD with your hosts Kevin Heffernan &amp; Steve Lemme.\u00a0</p>",
+            "updated": 1706729995,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/74029"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2760230",
+                    "name": "Chicken Fight"
+                }
+            }
+        }
+    }
+}

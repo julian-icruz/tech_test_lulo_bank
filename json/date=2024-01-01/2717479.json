@@ -1,0 +1,93 @@
+{
+    "id": 2717479,
+    "url": "https://www.tvmaze.com/episodes/2717479/derailment-1x28-episode-28",
+    "name": "Episode 28",
+    "season": 1,
+    "number": 28,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "20:00",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": 45,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2717479"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/69781",
+            "name": "Derailment"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 69781,
+            "url": "https://www.tvmaze.com/shows/69781/derailment",
+            "name": "Derailment",
+            "type": "Scripted",
+            "language": "Chinese",
+            "genres": [
+                "Fantasy",
+                "Romance"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 45,
+            "premiered": "2023-12-14",
+            "ended": "2024-01-02",
+            "officialSite": "https://v.youku.tv/v_show/id_XNTk1OTI3MzIzNg==.html?spm=a2hja.14919748_WEBHOME_JINGXUAN.drawer7.d_zj1_5&s=fcddf83d5ed64f27ba9d&scm=20140719.manual.37534.show_fcddf83d5ed64f27ba9d",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 34,
+            "network": null,
+            "webChannel": {
+                "id": 118,
+                "name": "Youku",
+                "country": {
+                    "name": "China",
+                    "code": "CN",
+                    "timezone": "Asia/Shanghai"
+                },
+                "officialSite": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 434045,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/492/1232271.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/492/1232271.jpg"
+            },
+            "summary": "<p>Jiang Xiaoyuan finds herself struggling with her identity as she travels across parallel universes that never seem to intersect. In her original world, she is an invincible wealthy daughter, but in another place, she becomes an ordinary working girl who has absolutely nothing. Along the way, she meets the mysterious Qi Lian and together, they search for the truth involving the mystery surrounding her. Stripped of wealth, family background, appearance, and education, Jiang Xiaoyuan sets herself on a journey to find pieces of her \"real\" identity.</p>",
+            "updated": 1704177335,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/69781"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2717481",
+                    "name": "Episode 30"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "id": 2729394,
+    "url": "https://www.tvmaze.com/episodes/2729394/you-are-what-you-eat-a-twin-experiment-1x03-episode-3",
+    "name": "Episode 3",
+    "season": 1,
+    "number": 3,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": 49,
+    "rating": {
+        "average": null
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/497/1244812.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/497/1244812.jpg"
+    },
+    "summary": "<p>The twins adjust to cooking their own meals. With some animal products linked to health problems, innovators turn to plants for sustainable alternatives.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2729394"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/73410",
+            "name": "You Are What You Eat: A Twin Experiment"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 73410,
+            "url": "https://www.tvmaze.com/shows/73410/you-are-what-you-eat-a-twin-experiment",
+            "name": "You Are What You Eat: A Twin Experiment",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [
+                "Food",
+                "Medical"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 50,
+            "premiered": "2024-01-01",
+            "ended": "2024-01-01",
+            "officialSite": "https://www.netflix.com/title/81133260",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 43,
+            "network": null,
+            "webChannel": {
+                "id": 1,
+                "name": "Netflix",
+                "country": null,
+                "officialSite": "https://www.netflix.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/497/1244762.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/497/1244762.jpg"
+            },
+            "summary": "<p>Identical twins change their diets and lifestyles for eight weeks in a unique scientific experiment designed to explore how certain foods impact the body.</p>",
+            "updated": 1704117585,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/73410"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2729395",
+                    "name": "Episode 4"
+                }
+            }
+        }
+    }
+}

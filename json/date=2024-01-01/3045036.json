@@ -1,0 +1,87 @@
+{
+    "id": 3045036,
+    "url": "https://www.tvmaze.com/episodes/3045036/making-a-serial-killer-2x01-derrick-todd-lee",
+    "name": "Derrick Todd Lee",
+    "season": 2,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "00:00",
+    "airstamp": "2024-01-02T05:00:00+00:00",
+    "runtime": 43,
+    "rating": {
+        "average": null
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/542/1356081.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/542/1356081.jpg"
+    },
+    "summary": "<p>Derrick Todd Lee, known as the Baton Rouge Serial Killer, terrorized Louisiana from 1992 to 2003, eluding capture for years. Eventually, advanced DNA testing would help police close the net.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/3045036"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/69960",
+            "name": "Making a Serial Killer"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 69960,
+            "url": "https://www.tvmaze.com/shows/69960/making-a-serial-killer",
+            "name": "Making a Serial Killer",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [
+                "Crime"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 43,
+            "premiered": "2021-01-01",
+            "ended": "2024-01-10",
+            "officialSite": null,
+            "schedule": {
+                "time": "00:00",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 77,
+            "network": null,
+            "webChannel": {
+                "id": 572,
+                "name": "FilmRise",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://filmrise.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 430673,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/469/1173162.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/469/1173162.jpg"
+            },
+            "summary": "<p>What makes a Serial Killer tick? For each of the 10 multiple-murderers featured, <b>Making a Serial Killer</b> offers an answer.</p><p>America's youngest serial killer thought owning a loud dog was enough to kill one of his victims. One woman claimed she had the right to kill men because of what she had suffered when younger.</p><p>Reasons given for murder by each killer is forensically dissected in a series with gripping detective stories, heart-breaking first-person reports and interview footage from interrogation rooms as detectives themselves try to understand the actions of the serial killers they sit opposite.</p><p>We witness the world's first trans-gender serial killer, we witness the probable next victim of a multiple killer released and hear the chilling voice of Connecticut's worst serial killer as he blames his victims for their death.</p>",
+            "updated": 1743268979,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/69960"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3045045",
+                    "name": "Howell Donaldson"
+                }
+            }
+        }
+    }
+}

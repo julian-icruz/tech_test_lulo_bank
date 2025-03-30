@@ -1,0 +1,92 @@
+{
+    "id": 2729738,
+    "url": "https://www.tvmaze.com/episodes/2729738/nbc-news-daily-2024-01-01-episode-1",
+    "name": "Episode 1",
+    "season": 2024,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "12:00",
+    "airstamp": "2024-01-01T17:00:00+00:00",
+    "runtime": 240,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2729738"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/73192",
+            "name": "NBC News Daily"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 73192,
+            "url": "https://www.tvmaze.com/shows/73192/nbc-news-daily",
+            "name": "NBC News Daily",
+            "type": "News",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 240,
+            "premiered": "2022-09-12",
+            "ended": null,
+            "officialSite": "https://www.nbcnews.com/now",
+            "schedule": {
+                "time": "12:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 58,
+            "network": null,
+            "webChannel": {
+                "id": 11,
+                "name": "NBC.com",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 424057,
+                "imdb": "tt21450424"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/497/1243761.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/497/1243761.jpg"
+            },
+            "summary": "<p>NBC News provides viewers with up-to-the-minute national and international news.</p>",
+            "updated": 1743180882,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/73192"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3179261",
+                    "name": "Episode 62"
+                },
+                "nextepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3184980",
+                    "name": "Episode 63"
+                }
+            }
+        }
+    }
+}

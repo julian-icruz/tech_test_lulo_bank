@@ -1,0 +1,84 @@
+{
+    "id": 2712165,
+    "url": "https://www.tvmaze.com/episodes/2712165/robson-greens-weekend-escapes-2x12-olly-smith",
+    "name": "Olly Smith",
+    "season": 2,
+    "number": 12,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "18:30",
+    "airstamp": "2024-01-01T18:30:00+00:00",
+    "runtime": 29,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": "<p>Robson invites Olly Smith, award-winning wine enthusiast and TV personality, to sample a weekend escape in the Scottish Borders.</p><p>Hoping to tickle his palette, Robson drives cross country from Newcastle to Jedburgh to show Olly one of his favourite scenic car journeys. Once across the border, Robson leads his guest directly to an alpaca walk before they sample a woodland sound bathing session, visit a badger watching hide and visit the pretty St Mary's Loch to enjoy lunch on a paddle board.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2712165"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/66609",
+            "name": "Robson Green's Weekend Escapes"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 66609,
+            "url": "https://www.tvmaze.com/shows/66609/robson-greens-weekend-escapes",
+            "name": "Robson Green's Weekend Escapes",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [
+                "Travel"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 29,
+            "premiered": "2023-01-23",
+            "ended": null,
+            "officialSite": "https://www.bbc.co.uk/programmes/p0dp32m9",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": 6.6
+            },
+            "weight": 38,
+            "network": null,
+            "webChannel": {
+                "id": 26,
+                "name": "BBC iPlayer",
+                "country": {
+                    "name": "United Kingdom",
+                    "code": "GB",
+                    "timezone": "Europe/London"
+                },
+                "officialSite": "https://www.bbc.co.uk/iplayer"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/443/1108694.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/443/1108694.jpg"
+            },
+            "summary": "<p>Relax, reset and recharge. Robson takes the roads less travelled across his beloved North East England. With famous friends, he finds wellbeing and adventure in wonderful places.</p>",
+            "updated": 1739488651,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/66609"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3143787",
+                    "name": "Matheson Green"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "id": 2625941,
+    "url": "https://www.tvmaze.com/episodes/2625941/raw-talk-8x01-raw-talk-196",
+    "name": "Raw Talk 196",
+    "season": 8,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T17:00:00+00:00",
+    "runtime": 30,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2625941"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/22473",
+            "name": "RAW Talk"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 22473,
+            "url": "https://www.tvmaze.com/shows/22473/raw-talk",
+            "name": "RAW Talk",
+            "type": "Talk Show",
+            "language": "English",
+            "genres": [
+                "Sports"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 30,
+            "premiered": "2016-10-30",
+            "ended": null,
+            "officialSite": "https://watch.wwe.com/in-ring/Raw-Talk-1004",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 60,
+            "network": null,
+            "webChannel": {
+                "id": 15,
+                "name": "WWE Network",
+                "country": null,
+                "officialSite": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 335558,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/409/1024249.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/409/1024249.jpg"
+            },
+            "summary": "<p>On <b>RAW Talk</b>, Renee Young catches up with your favorite WWE RAW Superstars after each episode of \"RAW\" airs on the USA Network to hear their thoughts on all of that evening's action.</p>",
+            "updated": 1704104449,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/22473"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2723164",
+                    "name": "Raw Talk 247"
+                }
+            }
+        }
+    }
+}

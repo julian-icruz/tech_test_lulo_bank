@@ -1,0 +1,85 @@
+{
+    "id": 2831451,
+    "url": "https://www.tvmaze.com/episodes/2831451/cbs-news-latest-headlines-2024-01-01-episode-1",
+    "name": "Episode 1",
+    "season": 2024,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "13:00",
+    "airstamp": "2024-01-01T18:00:00+00:00",
+    "runtime": 240,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2831451"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/76075",
+            "name": "CBS News Latest Headlines"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 76075,
+            "url": "https://www.tvmaze.com/shows/76075/cbs-news-latest-headlines",
+            "name": "CBS News Latest Headlines",
+            "type": "News",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 240,
+            "averageRuntime": 240,
+            "premiered": "2024-01-01",
+            "ended": null,
+            "officialSite": "https://www.cbsnews.com/",
+            "schedule": {
+                "time": "13:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 4,
+            "network": null,
+            "webChannel": {
+                "id": 607,
+                "name": "CBS News",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": null,
+            "summary": "<p>The latest headlines and top stories from CBS News.</p>",
+            "updated": 1713833937,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/76075"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2837604",
+                    "name": "Episode 111"
+                }
+            }
+        }
+    }
+}

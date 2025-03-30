@@ -1,0 +1,94 @@
+{
+    "id": 2722969,
+    "url": "https://www.tvmaze.com/episodes/2722969/the-forensic-examiner-song-ci-1x15-episode-15",
+    "name": "Episode 15",
+    "season": 1,
+    "number": 15,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "18:00",
+    "airstamp": "2024-01-01T10:00:00+00:00",
+    "runtime": 45,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2722969"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/73640",
+            "name": "The Forensic Examiner Song Ci"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 73640,
+            "url": "https://www.tvmaze.com/shows/73640/the-forensic-examiner-song-ci",
+            "name": "The Forensic Examiner Song Ci",
+            "type": "Scripted",
+            "language": "Chinese",
+            "genres": [
+                "Drama",
+                "Comedy",
+                "Horror"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 44,
+            "premiered": "2023-12-26",
+            "ended": "2024-01-11",
+            "officialSite": "https://v.youku.com/v_nextstage/id_fdfd9214663c4fc49ff6.html?spm=a2h0c.8166622.PhoneSokuProgram_1.dtitle",
+            "schedule": {
+                "time": "18:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 9,
+            "network": null,
+            "webChannel": {
+                "id": 118,
+                "name": "Youku",
+                "country": {
+                    "name": "China",
+                    "code": "CN",
+                    "timezone": "Asia/Shanghai"
+                },
+                "officialSite": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/496/1240403.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/496/1240403.jpg"
+            },
+            "summary": null,
+            "updated": 1704984885,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/73640"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2722979",
+                    "name": "Episode 25"
+                }
+            }
+        }
+    }
+}

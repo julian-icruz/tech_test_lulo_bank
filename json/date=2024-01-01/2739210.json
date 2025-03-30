@@ -1,0 +1,84 @@
+{
+    "id": 2739210,
+    "url": "https://www.tvmaze.com/episodes/2739210/river-city-23x22-03012024",
+    "name": "03/01/2024",
+    "season": 23,
+    "number": 22,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "06:00",
+    "airstamp": "2024-01-01T06:00:00+00:00",
+    "runtime": 28,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": "<p>Andrew is finally forced to face the music, while Nicole's plans are thwarted. Meanwhile, Sonny receives the death benefits money from Lou's death.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2739210"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/16504",
+            "name": "River City"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 16504,
+            "url": "https://www.tvmaze.com/shows/16504/river-city",
+            "name": "River City",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 47,
+            "premiered": "2002-09-24",
+            "ended": null,
+            "officialSite": "http://www.bbc.co.uk/programmes/b006p2xl",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 67,
+            "network": null,
+            "webChannel": {
+                "id": 26,
+                "name": "BBC iPlayer",
+                "country": {
+                    "name": "United Kingdom",
+                    "code": "GB",
+                    "timezone": "Europe/London"
+                },
+                "officialSite": "https://www.bbc.co.uk/iplayer"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 712,
+                "thetvdb": 71178,
+                "imdb": "tt0338653"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/55/137529.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/55/137529.jpg"
+            },
+            "summary": "<p>Drama series set in a close-knit Glasgow community.</p>",
+            "updated": 1742160936,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/16504"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3176555",
+                    "name": "26/03/2025"
+                }
+            }
+        }
+    }
+}

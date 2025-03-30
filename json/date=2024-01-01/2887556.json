@@ -1,0 +1,83 @@
+{
+    "id": 2887556,
+    "url": "https://www.tvmaze.com/episodes/2887556/bagan-beginning-1x05-episode-5",
+    "name": "Episode 5",
+    "season": 1,
+    "number": 5,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": 28,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2887556"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/77371",
+            "name": "Bagan Beginning"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 77371,
+            "url": "https://www.tvmaze.com/shows/77371/bagan-beginning",
+            "name": "Bagan Beginning",
+            "type": "Scripted",
+            "language": "Burmese",
+            "genres": [
+                "Romance"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 28,
+            "premiered": "2023-12-18",
+            "ended": "2024-01-09",
+            "officialSite": "https://www.youtube.com/@trustentertainment3430",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday",
+                    "Tuesday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 9,
+            "network": null,
+            "webChannel": {
+                "id": 21,
+                "name": "YouTube",
+                "country": null,
+                "officialSite": "https://www.youtube.com"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 443887,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/521/1302840.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/521/1302840.jpg"
+            },
+            "summary": "<p>Mani and Lyan are two friends who have grown up together and forged a close bond. When their relationship starts to develop into something more they realise they will have to overcome the restrictions of their culture and the harsh judgement of others. Will the two young men be able to make the choice they want and give themselves a proper chance to forge their future together, or will they bow to their expected responsibilities and put family first?</p>",
+            "updated": 1716829340,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/77371"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2887561",
+                    "name": "Episode 8"
+                }
+            }
+        }
+    }
+}

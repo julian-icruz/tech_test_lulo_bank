@@ -1,0 +1,87 @@
+{
+    "id": 2756105,
+    "url": "https://www.tvmaze.com/episodes/2756105/kismetse-olur-askin-gucu-2x84-episode-84",
+    "name": "Episode 84",
+    "season": 2,
+    "number": 84,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": 159,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2756105"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/66819",
+            "name": "K\u0131smetse Olur: A\u015fk\u0131n G\u00fcc\u00fc"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 66819,
+            "url": "https://www.tvmaze.com/shows/66819/kismetse-olur-askin-gucu",
+            "name": "K\u0131smetse Olur: A\u015fk\u0131n G\u00fcc\u00fc",
+            "type": "Reality",
+            "language": "Turkish",
+            "genres": [
+                "Romance"
+            ],
+            "status": "Running",
+            "runtime": 159,
+            "averageRuntime": 163,
+            "premiered": "2022-12-12",
+            "ended": null,
+            "officialSite": "https://youtube.com/@kismetseoluraskingucu",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 54,
+            "network": null,
+            "webChannel": {
+                "id": 21,
+                "name": "YouTube",
+                "country": null,
+                "officialSite": "https://www.youtube.com"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": "tt24060116"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/445/1113559.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/445/1113559.jpg"
+            },
+            "summary": "<p>This is a reality show where 9 girls and 9 guys are trying to find their destiny.</p>",
+            "updated": 1709102458,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/66819"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2783801",
+                    "name": "Episode 140"
+                }
+            }
+        }
+    }
+}

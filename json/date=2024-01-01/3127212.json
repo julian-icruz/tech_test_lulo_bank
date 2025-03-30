@@ -1,0 +1,78 @@
+{
+    "id": 3127212,
+    "url": "https://www.tvmaze.com/episodes/3127212/rideau-de-fer-loccupation-sovietique-1x02-shaping-a-soviet-world-1948-1953",
+    "name": "Shaping a Soviet World 1948-1953",
+    "season": 1,
+    "number": 2,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": null,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/3127212"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/82316",
+            "name": "Rideau de fer - L'occupation sovi\u00e9tique"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 82316,
+            "url": "https://www.tvmaze.com/shows/82316/rideau-de-fer-loccupation-sovietique",
+            "name": "Rideau de fer - L'occupation sovi\u00e9tique",
+            "type": "Documentary",
+            "language": "French",
+            "genres": [],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": null,
+            "premiered": "2024-01-01",
+            "ended": null,
+            "officialSite": "https://www.arte.tv/fr/videos/RC-025612/rideau-de-fer-l-occupation-sovietique/",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 5,
+            "network": null,
+            "webChannel": {
+                "id": 332,
+                "name": "ARTE.tv",
+                "country": null,
+                "officialSite": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/553/1384594.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/553/1384594.jpg"
+            },
+            "summary": "<p>How did the Soviet Union impose its communist ideology on central and eastern Europe after the Second World War? From 1945 until the building of the Berlin Wall in 1961, citizens of central and eastern Europe tell their stories of how their countries were occupied and transformed into communist states.</p>",
+            "updated": 1738100199,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/82316"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3127213",
+                    "name": "Crushing the Revolts 1953-1961"
+                }
+            }
+        }
+    }
+}

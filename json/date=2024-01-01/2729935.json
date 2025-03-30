@@ -1,0 +1,102 @@
+{
+    "id": 2729935,
+    "url": "https://www.tvmaze.com/episodes/2729935/the-third-marriage-1x46-46hoe-geuleogo-bonikka-neomu-igsughan-ileum-iya",
+    "name": "46\ud68c: \uadf8\ub7ec\uace0 \ubcf4\ub2c8\uae4c, \ub108\ubb34 \uc775\uc219\ud55c \uc774\ub984\uc774\uc57c.",
+    "season": 1,
+    "number": 46,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "19:00",
+    "airstamp": "2024-01-01T10:00:00+00:00",
+    "runtime": null,
+    "rating": {
+        "average": null
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/498/1245082.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/498/1245082.jpg"
+    },
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2729935"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/71005",
+            "name": "The Third Marriage"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 71005,
+            "url": "https://www.tvmaze.com/shows/71005/the-third-marriage",
+            "name": "The Third Marriage",
+            "type": "Scripted",
+            "language": "Korean",
+            "genres": [
+                "Drama"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 30,
+            "premiered": "2023-10-23",
+            "ended": "2024-05-03",
+            "officialSite": "https://program.imbc.com/TheThirdMarriage",
+            "schedule": {
+                "time": "19:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 32,
+            "network": {
+                "id": 166,
+                "name": "MBC",
+                "country": {
+                    "name": "Korea, Republic of",
+                    "code": "KR",
+                    "timezone": "Asia/Seoul"
+                },
+                "officialSite": null
+            },
+            "webChannel": {
+                "id": 114,
+                "name": "wavve",
+                "country": {
+                    "name": "Korea, Republic of",
+                    "code": "KR",
+                    "timezone": "Asia/Seoul"
+                },
+                "officialSite": "https://www.wavve.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 438613,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/482/1205384.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/482/1205384.jpg"
+            },
+            "summary": "<p>The drama tells the story of a woman who sacrificed her life for her younger sister, but after losing her sister in a shocking accident, she enters a chaebol family with a desire for blood-red revenge.</p>",
+            "updated": 1736167358,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/71005"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2832272",
+                    "name": "132\ud68c: \ub09c \uc655\ud68c\uc7a5 \ub2f9\uc2e0 \ub54c\ubb38\uc5d0 \ub0b4 \uc778\uc0dd \ub2e4 \ub9dd\ucce4\uc5b4!"
+                }
+            }
+        }
+    }
+}

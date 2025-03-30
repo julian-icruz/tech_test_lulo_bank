@@ -1,0 +1,92 @@
+{
+    "id": 2783434,
+    "url": "https://www.tvmaze.com/episodes/2783434/senior-high-2x41-episode-41",
+    "name": "Episode 41",
+    "season": 2,
+    "number": 41,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T04:00:00+00:00",
+    "runtime": 23,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2783434"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/74984",
+            "name": "Senior High"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 74984,
+            "url": "https://www.tvmaze.com/shows/74984/senior-high",
+            "name": "Senior High",
+            "type": "Scripted",
+            "language": null,
+            "genres": [
+                "Drama",
+                "Thriller",
+                "Mystery"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 24,
+            "premiered": "2023-08-28",
+            "ended": "2024-01-19",
+            "officialSite": null,
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 4,
+            "network": null,
+            "webChannel": {
+                "id": 384,
+                "name": "iWantTFC",
+                "country": {
+                    "name": "Philippines",
+                    "code": "PH",
+                    "timezone": "Asia/Manila"
+                },
+                "officialSite": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 438418,
+                "imdb": "tt27801903"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/506/1265577.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/506/1265577.jpg"
+            },
+            "summary": null,
+            "updated": 1709020222,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/74984"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2783448",
+                    "name": "Episode 55"
+                }
+            }
+        }
+    }
+}

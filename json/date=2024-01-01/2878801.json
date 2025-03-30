@@ -1,0 +1,82 @@
+{
+    "id": 2878801,
+    "url": "https://www.tvmaze.com/episodes/2878801/history-hunter-1x07-golconda-fort",
+    "name": "Golconda Fort",
+    "season": 1,
+    "number": 7,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": 21,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": "<p>The Golconda fort stored some of the world's largest diamonds and is an example of one of India's finest engineering marvels. Uncover how advanced knowledge and technology was used 600 years ago to build this defense system.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2878801"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/77214",
+            "name": "History Hunter"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 77214,
+            "url": "https://www.tvmaze.com/shows/77214/history-hunter",
+            "name": "History Hunter",
+            "type": "Documentary",
+            "language": "Hindi",
+            "genres": [
+                "History"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 23,
+            "premiered": "2023-11-20",
+            "ended": "2024-01-08",
+            "officialSite": "https://discoveryplus.in/show/history-hunter-in",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 1,
+            "network": null,
+            "webChannel": {
+                "id": 173,
+                "name": "discovery+",
+                "country": null,
+                "officialSite": "https://www.discoveryplus.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": "tt29802022"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/520/1300269.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/520/1300269.jpg"
+            },
+            "summary": "<p>Discover the quest to unearth fascinating stories and unexplained mysteries from India's history. Manish Paul is on the hunt to explore the unexplained from hundreds of years ago, which continues to elude us to this day.</p>",
+            "updated": 1716261547,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/77214"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2878802",
+                    "name": "Nana Saheb"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+{
+    "id": 2694272,
+    "url": "https://www.tvmaze.com/episodes/2694272/marry-my-husband-1x01-episode-1",
+    "name": "Episode 1",
+    "season": 1,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "20:50",
+    "airstamp": "2024-01-01T11:50:00+00:00",
+    "runtime": 80,
+    "rating": {
+        "average": 9
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/499/1249884.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/499/1249884.jpg"
+    },
+    "summary": "<p>Ji-won believed that Su-min would always have her back until she discovered that Su-min was having an affair with her husband. Ji-won, a terminally ill cancer patient, witnesses the two in bed discussing her insurance payout. She ends up not being able to live out the remaining days of her numbered life before she's killed... But then she suddenly wakes up, and it's 2013?!</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2694272"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/72935",
+            "name": "Marry My Husband"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 72935,
+            "url": "https://www.tvmaze.com/shows/72935/marry-my-husband",
+            "name": "Marry My Husband",
+            "type": "Scripted",
+            "language": "Korean",
+            "genres": [
+                "Drama",
+                "Fantasy",
+                "Romance"
+            ],
+            "status": "Ended",
+            "runtime": 70,
+            "averageRuntime": 71,
+            "premiered": "2024-01-01",
+            "ended": "2024-02-20",
+            "officialSite": "https://tvn.cjenm.com/ko/Marrymyhusband/",
+            "schedule": {
+                "time": "20:50",
+                "days": [
+                    "Monday",
+                    "Tuesday"
+                ]
+            },
+            "rating": {
+                "average": 7.9
+            },
+            "weight": 73,
+            "network": {
+                "id": 280,
+                "name": "tvN",
+                "country": {
+                    "name": "Korea, Republic of",
+                    "code": "KR",
+                    "timezone": "Asia/Seoul"
+                },
+                "officialSite": null
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 430595,
+                "imdb": "tt26628595"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/497/1244781.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/497/1244781.jpg"
+            },
+            "summary": "<p>Kang Ji-won, a terminally ill cancer patient, is killed by her husband and best friend after she witnesses them having an affair. She wakes up 10 years before the incident and decides to seek revenge with the help of Yu Ji-hyuk, a director at the company where she works. Now, she must reclaim her fate and eliminate the trash from her life.</p>",
+            "updated": 1714576441,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/72935"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2733348",
+                    "name": "Episode 16"
+                }
+            }
+        }
+    }
+}

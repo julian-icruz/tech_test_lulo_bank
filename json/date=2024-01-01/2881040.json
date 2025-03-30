@@ -1,0 +1,92 @@
+{
+    "id": 2881040,
+    "url": "https://www.tvmaze.com/episodes/2881040/my-ex-wife-conquered-the-world-1x27-episode-27",
+    "name": "Episode 27",
+    "season": 1,
+    "number": 27,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T04:00:00+00:00",
+    "runtime": 2,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2881040"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/77232",
+            "name": "My Ex-Wife Conquered the World"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 77232,
+            "url": "https://www.tvmaze.com/shows/77232/my-ex-wife-conquered-the-world",
+            "name": "My Ex-Wife Conquered the World",
+            "type": "Scripted",
+            "language": "Chinese",
+            "genres": [
+                "Drama",
+                "Romance"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 2,
+            "premiered": "2023-12-01",
+            "ended": "2024-03-30",
+            "officialSite": "https://asiapoisk.com/doramas/moja_byvshaja_pokorila_mir",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 1,
+            "network": null,
+            "webChannel": {
+                "id": 86,
+                "name": "Weibo",
+                "country": {
+                    "name": "China",
+                    "code": "CN",
+                    "timezone": "Asia/Shanghai"
+                },
+                "officialSite": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/520/1300626.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/520/1300626.jpg"
+            },
+            "summary": null,
+            "updated": 1717185432,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/77232"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2881118",
+                    "name": "Episode 104"
+                }
+            }
+        }
+    }
+}

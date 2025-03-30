@@ -1,0 +1,84 @@
+{
+    "id": 2893551,
+    "url": "https://www.tvmaze.com/episodes/2893551/one-world-with-zain-asher-and-bianna-golodryga-2024-01-01-episode-1",
+    "name": "Episode 1",
+    "season": 2024,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": 60,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2893551"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/72499",
+            "name": "One World with Zain Asher and Bianna Golodryga"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 72499,
+            "url": "https://www.tvmaze.com/shows/72499/one-world-with-zain-asher-and-bianna-golodryga",
+            "name": "One World with Zain Asher and Bianna Golodryga",
+            "type": "News",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 60,
+            "averageRuntime": 60,
+            "premiered": "2021-04-20",
+            "ended": null,
+            "officialSite": null,
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 9,
+            "network": null,
+            "webChannel": {
+                "id": 619,
+                "name": "CNN International",
+                "country": null,
+                "officialSite": "https://edition.cnn.com/?hpt=header_edition-picker"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": "tt15268270"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/521/1303638.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/521/1303638.jpg"
+            },
+            "summary": "<p>Offering a fresh and inclusive take on the top stories from Africa, Europe and beyond, giving every continent an equal voice.</p>",
+            "updated": 1728419125,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/72499"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3024668",
+                    "name": "Episode 221"
+                }
+            }
+        }
+    }
+}

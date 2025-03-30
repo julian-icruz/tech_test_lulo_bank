@@ -1,0 +1,92 @@
+{
+    "id": 2726360,
+    "url": "https://www.tvmaze.com/episodes/2726360/passionate-love-1x09-episode-9",
+    "name": "Episode 9",
+    "season": 1,
+    "number": 9,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "12:00",
+    "airstamp": "2024-01-01T04:00:00+00:00",
+    "runtime": 15,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2726360"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/73684",
+            "name": "Passionate Love"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 73684,
+            "url": "https://www.tvmaze.com/shows/73684/passionate-love",
+            "name": "Passionate Love",
+            "type": "Scripted",
+            "language": "Chinese",
+            "genres": [
+                "Romance"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 15,
+            "premiered": "2023-12-30",
+            "ended": "2024-01-15",
+            "officialSite": "https://v.qq.com/x/cover/mzc00200rg7mu49.html",
+            "schedule": {
+                "time": "12:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 7,
+            "network": null,
+            "webChannel": {
+                "id": 104,
+                "name": "Tencent QQ",
+                "country": {
+                    "name": "China",
+                    "code": "CN",
+                    "timezone": "Asia/Shanghai"
+                },
+                "officialSite": "https://v.qq.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 443575,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/497/1242527.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/497/1242527.jpg"
+            },
+            "summary": null,
+            "updated": 1705299728,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/73684"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2726375",
+                    "name": "Episode 24"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+{
+    "id": 2703751,
+    "url": "https://www.tvmaze.com/episodes/2703751/the-tourist-2x02-episode-2",
+    "name": "Episode 2",
+    "season": 2,
+    "number": 2,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "06:00",
+    "airstamp": "2024-01-01T06:00:00+00:00",
+    "runtime": 57,
+    "rating": {
+        "average": 7.4
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/497/1244939.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/497/1244939.jpg"
+    },
+    "summary": "<p>Elliot seeks help from an unlikely ally to secure his escape from the island. Meanwhile, Helen gets acquainted with some threatening figures as she continues to track Elliot down.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2703751"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/46238",
+            "name": "The Tourist"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 46238,
+            "url": "https://www.tvmaze.com/shows/46238/the-tourist",
+            "name": "The Tourist",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Thriller",
+                "Mystery"
+            ],
+            "status": "To Be Determined",
+            "runtime": null,
+            "averageRuntime": 57,
+            "premiered": "2022-01-01",
+            "ended": null,
+            "officialSite": "https://www.bbc.co.uk/programmes/p0b6c8t6",
+            "schedule": {
+                "time": "21:00",
+                "days": []
+            },
+            "rating": {
+                "average": 7.1
+            },
+            "weight": 96,
+            "network": null,
+            "webChannel": {
+                "id": 26,
+                "name": "BBC iPlayer",
+                "country": {
+                    "name": "United Kingdom",
+                    "code": "GB",
+                    "timezone": "Europe/London"
+                },
+                "officialSite": "https://www.bbc.co.uk/iplayer"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 395919,
+                "imdb": "tt11847842"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/499/1248932.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/499/1248932.jpg"
+            },
+            "summary": "<p>In the glowing red heart of the Australian outback, a British man is pursued by a vast tank truck trying to drive him off the road. An epic cat and mouse chase unfolds and The Man later wakes in hospital, hurt, but somehow alive. Except he has no idea who he is. With merciless figures from his past pursuing him, The Man's search for answers propels him through the vast and unforgiving outback.</p>",
+            "updated": 1732926470,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/46238"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2703755",
+                    "name": "Episode 6"
+                }
+            }
+        }
+    }
+}

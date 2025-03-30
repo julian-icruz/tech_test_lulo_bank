@@ -1,0 +1,94 @@
+{
+    "id": 2718364,
+    "url": "https://www.tvmaze.com/episodes/2718364/the-last-immortal-1x29-episode-29",
+    "name": "Episode 29",
+    "season": 1,
+    "number": 29,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "18:00",
+    "airstamp": "2024-01-01T10:00:00+00:00",
+    "runtime": 45,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2718364"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/69197",
+            "name": "The Last Immortal"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 69197,
+            "url": "https://www.tvmaze.com/shows/69197/the-last-immortal",
+            "name": "The Last Immortal",
+            "type": "Scripted",
+            "language": "Chinese",
+            "genres": [
+                "Drama",
+                "Fantasy",
+                "Romance"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 45,
+            "premiered": "2023-12-11",
+            "ended": "2024-01-04",
+            "officialSite": "https://v.qq.com/x/cover/mzc002005yrabqm.html",
+            "schedule": {
+                "time": "18:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 29,
+            "network": null,
+            "webChannel": {
+                "id": 104,
+                "name": "Tencent QQ",
+                "country": {
+                    "name": "China",
+                    "code": "CN",
+                    "timezone": "Asia/Shanghai"
+                },
+                "officialSite": "https://v.qq.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 428357,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/490/1227204.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/490/1227204.jpg"
+            },
+            "summary": "<p>It tells an inspirational story that happens between Yin, a diligent Shuining Beast, and Gu Jin, son of the true God, whose magic power was sealed. They met each other by accident and have embarked on the journey to find Feng Yin's Immortal Essence since then. In company with their friends including Hong Yi, a fox from the Demon Clan, and Yan Shuang, the Princess from the Eagle Clan, they fight against the odds to collect Feng Yin's Immortal Essence along the way. To help Feng Yin come back after all the struggles, they have repeatedly the villain Qing Lin and his subordinate's obstruction. In the end, not only do they reap their love, friendship and family, but they have also fulfilled their promise to maintain peace in the world.</p><p><br />\u00a0</p>",
+            "updated": 1704361135,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/69197"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2718375",
+                    "name": "Episode 40"
+                }
+            }
+        }
+    }
+}

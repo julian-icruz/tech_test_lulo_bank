@@ -1,0 +1,81 @@
+{
+    "id": 2728817,
+    "url": "https://www.tvmaze.com/episodes/2728817/the-changemakers-1x05-the-changemakers-denmark",
+    "name": "The Changemakers Denmark",
+    "season": 1,
+    "number": 5,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": 57,
+    "rating": {
+        "average": null
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/498/1247102.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/498/1247102.jpg"
+    },
+    "summary": "<p>In Denmark, Syrian women are fighting back as they contend with some of the harshest immigration policies in the EU. Haya fled her old life for a new start in the west, but despite talk of a warm welcome, government policy has dictated otherwise.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2728817"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/73721",
+            "name": "The Changemakers"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 73721,
+            "url": "https://www.tvmaze.com/shows/73721/the-changemakers",
+            "name": "The Changemakers",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 52,
+            "premiered": "2024-01-01",
+            "ended": "2024-01-01",
+            "officialSite": "https://www.paramountplus.com/shows/the-changemakers/",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 23,
+            "network": null,
+            "webChannel": {
+                "id": 107,
+                "name": "Paramount+",
+                "country": null,
+                "officialSite": "https://www.paramountplus.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 444118,
+                "imdb": "tt22502628"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/497/1244642.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/497/1244642.jpg"
+            },
+            "summary": "<p>The Changemakers is a new 8-part series to illuminate amazing stories from across the globe, where communities are working together for a better future.</p>",
+            "updated": 1704633150,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/73721"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2728820",
+                    "name": "How to Change Your World"
+                }
+            }
+        }
+    }
+}

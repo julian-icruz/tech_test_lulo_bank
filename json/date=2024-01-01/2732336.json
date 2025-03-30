@@ -1,0 +1,82 @@
+{
+    "id": 2732336,
+    "url": "https://www.tvmaze.com/episodes/2732336/alle-elsker-david-5x01-stor-lykkelig-familie",
+    "name": "Stor, lykkelig familie",
+    "season": 5,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "03:00",
+    "airstamp": "2024-01-02T02:00:00+00:00",
+    "runtime": 20,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": "<p>David and Andrea will organize Norway's biggest celebrity party, and Lucas's future in London is uncertain.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2732336"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/54476",
+            "name": "Alle Elsker David"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 54476,
+            "url": "https://www.tvmaze.com/shows/54476/alle-elsker-david",
+            "name": "Alle Elsker David",
+            "type": "Reality",
+            "language": "Norwegian",
+            "genres": [],
+            "status": "To Be Determined",
+            "runtime": null,
+            "averageRuntime": 21,
+            "premiered": "2021-03-08",
+            "ended": null,
+            "officialSite": "https://play.tv2.no/programmer/underholdning/alle-elsker-david",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 12,
+            "network": null,
+            "webChannel": {
+                "id": 327,
+                "name": "TV 2 Play",
+                "country": {
+                    "name": "Norway",
+                    "code": "NO",
+                    "timezone": "Europe/Oslo"
+                },
+                "officialSite": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 399541,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/517/1293690.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/517/1293690.jpg"
+            },
+            "summary": "<p>We follow manager David Eriksen and his charming but untraditional family. In David's new company, the pace is high and the drop is great.</p>",
+            "updated": 1739018236,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/54476"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3094160",
+                    "name": "The Last Song"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "id": 2712921,
+    "url": "https://www.tvmaze.com/episodes/2712921/uspesnyj-1x08-seria-8",
+    "name": "\u0421\u0435\u0440\u0438\u044f 8",
+    "season": 1,
+    "number": 8,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T00:00:00+00:00",
+    "runtime": null,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2712921"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/73221",
+            "name": "\u0423\u0441\u043f\u0435\u0448\u043d\u044b\u0439"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 73221,
+            "url": "https://www.tvmaze.com/shows/73221/uspesnyj",
+            "name": "\u0423\u0441\u043f\u0435\u0448\u043d\u044b\u0439",
+            "type": "Scripted",
+            "language": "Russian",
+            "genres": [
+                "Comedy"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": null,
+            "premiered": "2024-01-01",
+            "ended": null,
+            "officialSite": "https://kion.ru/video/serial/822094895/season/822095042/episode/822094715",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 7,
+            "network": null,
+            "webChannel": {
+                "id": 423,
+                "name": "KION",
+                "country": {
+                    "name": "Russian Federation",
+                    "code": "RU",
+                    "timezone": "Asia/Kamchatka"
+                },
+                "officialSite": "https://kion.ru/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/496/1241006.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/496/1241006.jpg"
+            },
+            "summary": "<p>30-year-old Sasha is a serial loser trying with all his might to become a successful business coach. Fate leads him to billionaire Oleg Kalugin, who decides to hire the resilient dreamer as a coach. However, Kalugin does not need advice on business, which the guy knows nothing about, but the secret of his ability to sincerely enjoy life despite poverty and other problems. From this moment, drastic changes begin in Sasha's life, which show the real price of success. Step by step, he moves further and further away from happiness, plunging into the world of deception, betrayal, hatred and really big, but dirty money.</p>",
+            "updated": 1735808422,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/73221"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3098220",
+                    "name": "\u0421\u0435\u0440\u0438\u044f 10"
+                }
+            }
+        }
+    }
+}

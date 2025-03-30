@@ -1,0 +1,88 @@
+{
+    "id": 2890339,
+    "url": "https://www.tvmaze.com/episodes/2890339/hope-street-3x09-episode-9",
+    "name": "Episode 9",
+    "season": 3,
+    "number": 9,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "17:55",
+    "airstamp": "2024-01-01T17:55:00+00:00",
+    "runtime": 44,
+    "rating": {
+        "average": 6.5
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/521/1303552.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/521/1303552.jpg"
+    },
+    "summary": "<p>When a new landowner threatens to cut down Port Devine's much-loved \u2018Raggedy Tree', her plans are met with vandalism, burglary and a protest \u2013 in the form of Niamh and Ash chaining themselves to the tree.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2890339"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/57165",
+            "name": "Hope Street"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 57165,
+            "url": "https://www.tvmaze.com/shows/57165/hope-street",
+            "name": "Hope Street",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Crime"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 44,
+            "premiered": "2021-11-24",
+            "ended": null,
+            "officialSite": "https://www.bbc.co.uk/programmes/m0011yc0",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": 5.7
+            },
+            "weight": 94,
+            "network": null,
+            "webChannel": {
+                "id": 26,
+                "name": "BBC iPlayer",
+                "country": {
+                    "name": "United Kingdom",
+                    "code": "GB",
+                    "timezone": "Europe/London"
+                },
+                "officialSite": "https://www.bbc.co.uk/iplayer"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": "tt14354984"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/469/1172946.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/469/1172946.jpg"
+            },
+            "summary": "<p>The series is set in the fictional town of Port Devine on the Northern Ireland coast and will focus on Port Devine's police department \u2013 and the mysterious arrival of English Detective Constable Alimah Kahn, the first Muslim police officer in the town's history.\u00a0The character-led series combines a long-running serial narrative with self-contained crime stories in each episode.</p>",
+            "updated": 1730216403,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/57165"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3037887",
+                    "name": "Episode 8"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+{
+    "id": 2726445,
+    "url": "https://www.tvmaze.com/episodes/2726445/mesternes-mester-15x01-mesterkamp",
+    "name": "Mesterkamp",
+    "season": 15,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "20:05",
+    "airstamp": "2024-01-01T19:05:00+00:00",
+    "runtime": 54,
+    "rating": {
+        "average": null
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/501/1254540.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/501/1254540.jpg"
+    },
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2726445"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/11476",
+            "name": "Mesternes Mester"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 11476,
+            "url": "https://www.tvmaze.com/shows/11476/mesternes-mester",
+            "name": "Mesternes Mester",
+            "type": "Reality",
+            "language": "Norwegian",
+            "genres": [
+                "Sports"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 60,
+            "premiered": "2009-01-09",
+            "ended": null,
+            "officialSite": "https://tv.nrk.no/serie/mesternes-mester",
+            "schedule": {
+                "time": "06:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 7.8
+            },
+            "weight": 63,
+            "network": null,
+            "webChannel": {
+                "id": 238,
+                "name": "NRK TV",
+                "country": {
+                    "name": "Norway",
+                    "code": "NO",
+                    "timezone": "Europe/Oslo"
+                },
+                "officialSite": "https://tv.nrk.no"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 30951,
+                "thetvdb": 252932,
+                "imdb": "tt5920174"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/387/968668.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/387/968668.jpg"
+            },
+            "summary": "<p>Eleven former top athletes are gathered and live together while they compete against each other for the title <b>Mesternes Mester</b> (Best of the Best). In each program they must complete challenging competitions that put all their abilities to the test.</p>",
+            "updated": 1740846453,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/11476"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3140370",
+                    "name": "Finalen"
+                }
+            }
+        }
+    }
+}

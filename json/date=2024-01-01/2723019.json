@@ -1,0 +1,88 @@
+{
+    "id": 2723019,
+    "url": "https://www.tvmaze.com/episodes/2723019/to-do-x-txt-2024-01-01-ep124-when-we-go-to-jjimjilbang-part-1",
+    "name": "EP.124 When We Go To Jjimjilbang, Part 1",
+    "season": 2024,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "21:00",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": null,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2723019"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/64132",
+            "name": "TO DO X TXT"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 64132,
+            "url": "https://www.tvmaze.com/shows/64132/to-do-x-txt",
+            "name": "TO DO X TXT",
+            "type": "Variety",
+            "language": "Korean",
+            "genres": [],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 30,
+            "premiered": "2020-01-13",
+            "ended": null,
+            "officialSite": null,
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 68,
+            "network": null,
+            "webChannel": {
+                "id": 122,
+                "name": "V LIVE",
+                "country": {
+                    "name": "Korea, Republic of",
+                    "code": "KR",
+                    "timezone": "Asia/Seoul"
+                },
+                "officialSite": "https://www.vlive.tv/home"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 375916,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/422/1055438.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/422/1055438.jpg"
+            },
+            "summary": "<p>The first-ever, original variety show featuring TOMORROW X TOGETHER and their bubbly personalities off the stage!</p>",
+            "updated": 1742826213,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/64132"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3177373",
+                    "name": "EP.147 MBTI x TXT, Part 1"
+                },
+                "nextepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3180406",
+                    "name": "EP.148 MBTI x TXT, Part 2"
+                }
+            }
+        }
+    }
+}

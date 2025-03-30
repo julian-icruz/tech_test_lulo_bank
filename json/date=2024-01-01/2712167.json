@@ -1,0 +1,84 @@
+{
+    "id": 2712167,
+    "url": "https://www.tvmaze.com/episodes/2712167/robson-greens-weekend-escapes-2x14-sarah-hunter",
+    "name": "Sarah Hunter",
+    "season": 2,
+    "number": 14,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "18:30",
+    "airstamp": "2024-01-01T18:30:00+00:00",
+    "runtime": 29,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": "<p>Robson invites rugby union legend Sarah Hunter back to her roots in the north east of England.</p><p>The pair take a lesson in catching a wave at Warkworth and decorate a plate at an outdoor art lesson. As Sarah heads back to her family, Robson checks into his digs - a tree house surrounded by birds singing in its branches. The next morning, he visits the Hauxley Nature Reserve, located on the site of a former opencast mine, to take a look at some Northumberland bird life.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2712167"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/66609",
+            "name": "Robson Green's Weekend Escapes"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 66609,
+            "url": "https://www.tvmaze.com/shows/66609/robson-greens-weekend-escapes",
+            "name": "Robson Green's Weekend Escapes",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [
+                "Travel"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 29,
+            "premiered": "2023-01-23",
+            "ended": null,
+            "officialSite": "https://www.bbc.co.uk/programmes/p0dp32m9",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": 6.6
+            },
+            "weight": 38,
+            "network": null,
+            "webChannel": {
+                "id": 26,
+                "name": "BBC iPlayer",
+                "country": {
+                    "name": "United Kingdom",
+                    "code": "GB",
+                    "timezone": "Europe/London"
+                },
+                "officialSite": "https://www.bbc.co.uk/iplayer"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/443/1108694.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/443/1108694.jpg"
+            },
+            "summary": "<p>Relax, reset and recharge. Robson takes the roads less travelled across his beloved North East England. With famous friends, he finds wellbeing and adventure in wonderful places.</p>",
+            "updated": 1739488651,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/66609"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3143787",
+                    "name": "Matheson Green"
+                }
+            }
+        }
+    }
+}

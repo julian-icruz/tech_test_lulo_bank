@@ -1,0 +1,84 @@
+{
+    "id": 2730942,
+    "url": "https://www.tvmaze.com/episodes/2730942/kak-druza-zahara-zenili-1x02-seria-2",
+    "name": "\u0421\u0435\u0440\u0438\u044f 2",
+    "season": 1,
+    "number": 2,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T00:00:00+00:00",
+    "runtime": 28,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": "<p>Friends are looking for the missing Zakhar, who was abandoned by Alyona. Zakhar wakes up in a hotel room with Alphonse Zhenya.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2730942"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/73590",
+            "name": "\u041a\u0430\u043a \u0434\u0440\u0443\u0437\u044c\u044f \u0417\u0430\u0445\u0430\u0440\u0430 \u0436\u0435\u043d\u0438\u043b\u0438"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 73590,
+            "url": "https://www.tvmaze.com/shows/73590/kak-druza-zahara-zenili",
+            "name": "\u041a\u0430\u043a \u0434\u0440\u0443\u0437\u044c\u044f \u0417\u0430\u0445\u0430\u0440\u0430 \u0436\u0435\u043d\u0438\u043b\u0438",
+            "type": "Scripted",
+            "language": null,
+            "genres": [
+                "Comedy"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 26,
+            "premiered": "2024-01-01",
+            "ended": "2024-02-06",
+            "officialSite": null,
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 19,
+            "network": null,
+            "webChannel": {
+                "id": 366,
+                "name": "Okko",
+                "country": {
+                    "name": "Russian Federation",
+                    "code": "RU",
+                    "timezone": "Asia/Kamchatka"
+                },
+                "officialSite": "https://okko.tv/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/495/1237905.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/495/1237905.jpg"
+            },
+            "summary": null,
+            "updated": 1707351592,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/73590"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2730985",
+                    "name": "\u0421\u0435\u0440\u0438\u044f 17"
+                }
+            }
+        }
+    }
+}

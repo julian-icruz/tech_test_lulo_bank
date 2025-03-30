@@ -1,0 +1,85 @@
+{
+    "id": 2973733,
+    "url": "https://www.tvmaze.com/episodes/2973733/riley-rocket-1x21-rolling-with-riley",
+    "name": "Rolling With Riley",
+    "season": 1,
+    "number": 21,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T16:00:00+00:00",
+    "runtime": 11,
+    "rating": {
+        "average": null
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/530/1326348.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/530/1326348.jpg"
+    },
+    "summary": "<p>When Riley films a segment for the local news, a jealous Metal Mike takes over the airways to steal all the fans in Greenville for himself. Megablast must come together to teach Metal Mike that winning fans isn't something you can force on people!\u00a0</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2973733"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/78818",
+            "name": "Riley Rocket"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 78818,
+            "url": "https://www.tvmaze.com/shows/78818/riley-rocket",
+            "name": "Riley Rocket",
+            "type": "Animation",
+            "language": "English",
+            "genres": [],
+            "status": "To Be Determined",
+            "runtime": 11,
+            "averageRuntime": 11,
+            "premiered": "2023-10-23",
+            "ended": null,
+            "officialSite": "https://www.knowledgekids.ca/videos/riley-rocket",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 4,
+            "network": null,
+            "webChannel": {
+                "id": 643,
+                "name": "Knowledge:kids",
+                "country": {
+                    "name": "Canada",
+                    "code": "CA",
+                    "timezone": "America/Toronto"
+                },
+                "officialSite": "https://www.knowledgekids.ca/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 448382,
+                "imdb": "tt28078098"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/530/1326360.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/530/1326360.jpg"
+            },
+            "summary": "<p>Crank up the volume with Megablast! These super sonic heroes save the day with the power of music.</p>",
+            "updated": 1723148949,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/78818"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2973742",
+                    "name": "There's No Place Like Home"
+                }
+            }
+        }
+    }
+}

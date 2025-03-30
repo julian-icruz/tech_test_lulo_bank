@@ -1,0 +1,87 @@
+{
+    "id": 2846397,
+    "url": "https://www.tvmaze.com/episodes/2846397/dance-pro-1x13-king-in-the-house",
+    "name": "King in the House",
+    "season": 1,
+    "number": 13,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T06:30:00+00:00",
+    "runtime": null,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2846397"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/76550",
+            "name": "Dance+ Pro"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 76550,
+            "url": "https://www.tvmaze.com/shows/76550/dance-pro",
+            "name": "Dance+ Pro",
+            "type": "Reality",
+            "language": "Hindi",
+            "genres": [],
+            "status": "To Be Determined",
+            "runtime": null,
+            "averageRuntime": null,
+            "premiered": "2023-12-11",
+            "ended": null,
+            "officialSite": "https://www.hotstar.com/in/shows/dance-pro/1260153937",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 0,
+            "network": null,
+            "webChannel": {
+                "id": 164,
+                "name": "JioHotstar",
+                "country": {
+                    "name": "India",
+                    "code": "IN",
+                    "timezone": "Asia/Kolkata"
+                },
+                "officialSite": "https://www.hotstar.com/in"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 445698,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/517/1292914.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/517/1292914.jpg"
+            },
+            "summary": "<p>The hunt for India's new dancing superstar is on! With high-end tech and innovative dance acts, emerging talents bring their A-game to bag the coveted title.</p>",
+            "updated": 1714629394,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/76550"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2846229",
+                    "name": "And India's \u2018Pro' Dance Icon Is\u2026"
+                }
+            }
+        }
+    }
+}

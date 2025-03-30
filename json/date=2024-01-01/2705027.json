@@ -1,0 +1,86 @@
+{
+    "id": 2705027,
+    "url": "https://www.tvmaze.com/episodes/2705027/tongue-thaid-with-pangina-heals-2x05-crispy-pork-gang-with-jared-goldstein",
+    "name": "Crispy Pork Gang with Jared Goldstein",
+    "season": 2,
+    "number": 5,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": 14,
+    "rating": {
+        "average": null
+    },
+    "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/500/1250310.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/500/1250310.jpg"
+    },
+    "summary": "<p>Comedian and actor Jared Goldstein joins Pangina this week on Tongue Thai'd. Things get spicy, funny, and - gay gasp! - flirty.</p>",
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2705027"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/63917",
+            "name": "Tongue Thai'd with Pangina Heals"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 63917,
+            "url": "https://www.tvmaze.com/shows/63917/tongue-thaid-with-pangina-heals",
+            "name": "Tongue Thai'd with Pangina Heals",
+            "type": "Reality",
+            "language": "English",
+            "genres": [
+                "Comedy",
+                "Food"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 16,
+            "premiered": "2022-12-06",
+            "ended": null,
+            "officialSite": "https://www.wowpresentsplus.com/tongue-thai-d-with-pangina-heals",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Tuesday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 8,
+            "network": null,
+            "webChannel": {
+                "id": 195,
+                "name": "WOW Presents Plus",
+                "country": null,
+                "officialSite": "http://www.wowpresentsplus.com"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 424170,
+                "imdb": "tt31520554"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/547/1368893.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/547/1368893.jpg"
+            },
+            "summary": "<p>Pangina Heals, star of Drag Race Thailand and RuPaul's Drag Race UK vs the World takes us on a food tour of Thai Town in Hollywood, CA. She challenges her guests to amp up the spice, from one dish to the next, as they spill secrets over a meal of Thai delicacies. Don't get burned! Sweat it out with Pangina Heals.</p>",
+            "updated": 1737573201,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/63917"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3113494",
+                    "name": "Marina Summers at Bulan"
+                }
+            }
+        }
+    }
+}

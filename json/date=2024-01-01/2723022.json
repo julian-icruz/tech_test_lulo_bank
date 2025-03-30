@@ -1,0 +1,94 @@
+{
+    "id": 2723022,
+    "url": "https://www.tvmaze.com/episodes/2723022/against-the-sky-supreme-1x263-episode-263",
+    "name": "Episode 263",
+    "season": 1,
+    "number": 263,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "10:00",
+    "airstamp": "2024-01-01T02:00:00+00:00",
+    "runtime": null,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2723022"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/62143",
+            "name": "Against the Sky Supreme"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 62143,
+            "url": "https://www.tvmaze.com/shows/62143/against-the-sky-supreme",
+            "name": "Against the Sky Supreme",
+            "type": "Animation",
+            "language": "Chinese",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Anime",
+                "Fantasy"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 7,
+            "premiered": "2021-07-09",
+            "ended": null,
+            "officialSite": "https://v.qq.com/x/cover/mzc00200azkttu2.html",
+            "schedule": {
+                "time": "10:00",
+                "days": [
+                    "Monday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 7.8
+            },
+            "weight": 37,
+            "network": null,
+            "webChannel": {
+                "id": 104,
+                "name": "Tencent QQ",
+                "country": {
+                    "name": "China",
+                    "code": "CN",
+                    "timezone": "Asia/Shanghai"
+                },
+                "officialSite": "https://v.qq.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 406729,
+                "imdb": "tt15816496"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/409/1023562.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/409/1023562.jpg"
+            },
+            "summary": "<p>The former mighty Gods of the heavens, after ten thousand lifetimes of reincarnation tragically destroyed! The cruel curse, the hatred of ten thousand lives, Tan Yun determined, no longer sink! The most important thing is that you have to be able to get to the top of the world, step by step, stepping on the corpses of your enemies! To kill against the sky, across all the worlds, only I am the supreme!</p>",
+            "updated": 1738619115,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/62143"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3135344",
+                    "name": "Episode 396"
+                },
+                "nextepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3135345",
+                    "name": "Episode 397"
+                }
+            }
+        }
+    }
+}

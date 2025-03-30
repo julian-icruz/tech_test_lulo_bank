@@ -1,0 +1,80 @@
+{
+    "id": 3185055,
+    "url": "https://www.tvmaze.com/episodes/3185055/horror-candy-1x02-happy-birthday-nightingale",
+    "name": "Happy Birthday / Nightingale",
+    "season": 1,
+    "number": 2,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T12:00:00+00:00",
+    "runtime": 22,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/3185055"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/83588",
+            "name": "Horror Candy"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 83588,
+            "url": "https://www.tvmaze.com/shows/83588/horror-candy",
+            "name": "Horror Candy",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 25,
+            "premiered": "2024-01-01",
+            "ended": null,
+            "officialSite": "https://tv.apple.com/us/show/horror-candy/umc.cmc.626zgpxxa23x7egzrxllea79x",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 63,
+            "network": null,
+            "webChannel": {
+                "id": 310,
+                "name": "Apple TV+",
+                "country": null,
+                "officialSite": "https://tv.apple.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 457794,
+                "imdb": "tt33508042"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/561/1402746.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/561/1402746.jpg"
+            },
+            "summary": "<p>Presents nine eclectic tales of terror, each a unique nightmare ranging from dystopian futures to haunted space stations.\u00a0</p>",
+            "updated": 1742994046,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/83588"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/3185058",
+                    "name": "F for Freaks"
+                }
+            }
+        }
+    }
+}

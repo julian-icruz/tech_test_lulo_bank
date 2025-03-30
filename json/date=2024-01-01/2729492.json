@@ -1,0 +1,89 @@
+{
+    "id": 2729492,
+    "url": "https://www.tvmaze.com/episodes/2729492/jiu-tian-xuan-di-jue-5x13-episode-209",
+    "name": "Episode 209",
+    "season": 5,
+    "number": 13,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "10:00",
+    "airstamp": "2024-01-01T02:00:00+00:00",
+    "runtime": 10,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2729492"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/63068",
+            "name": "Jiu Tian Xuan Di Jue"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 63068,
+            "url": "https://www.tvmaze.com/shows/63068/jiu-tian-xuan-di-jue",
+            "name": "Jiu Tian Xuan Di Jue",
+            "type": "Animation",
+            "language": "Chinese",
+            "genres": [
+                "Action",
+                "Anime",
+                "Fantasy"
+            ],
+            "status": "Running",
+            "runtime": 10,
+            "averageRuntime": 10,
+            "premiered": "2021-08-20",
+            "ended": null,
+            "officialSite": "https://v.youku.com/v_nextstage/id_efcf7daa538f412e803d.html?spm=a2h0c.8166622.PhoneSokuProgram_1.dtitle",
+            "schedule": {
+                "time": "10:00",
+                "days": [
+                    "Monday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 23,
+            "network": null,
+            "webChannel": {
+                "id": 118,
+                "name": "Youku",
+                "country": {
+                    "name": "China",
+                    "code": "CN",
+                    "timezone": "Asia/Shanghai"
+                },
+                "officialSite": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 409158,
+                "imdb": "tt19756810"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/454/1135081.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/454/1135081.jpg"
+            },
+            "summary": "<p>Of all the races in the world only 3 stand at the top. Each race possesses a master of the martial arts, a Golden Martial God. The balance of power appears to be shifting after Wang Fan's brother is killed triggering a chain of events that will begin to turn the world upside down. Disguising himself as the Silver Tiger King, Wang Fan becomes a symbol of power and the hope of the human race.<br />Some days Wang Fan is a boy genius that tries to blend in as a smart but helpless student. Other days he becomes a powerful tiger. Every race has their eyes on the Silver Tiger King as he continues to surpass every precedent and excel far beyond his peers all while under the guise of an unassuming student.</p>",
+            "updated": 1712485118,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/63068"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2821358",
+                    "name": "Episode 259"
+                }
+            }
+        }
+    }
+}

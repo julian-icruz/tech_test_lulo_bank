@@ -1,0 +1,85 @@
+{
+    "id": 2692649,
+    "url": "https://www.tvmaze.com/episodes/2692649/nedetskoe-kino-1x04-seria-4",
+    "name": "\u0421\u0435\u0440\u0438\u044f 4",
+    "season": 1,
+    "number": 4,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "",
+    "airstamp": "2024-01-01T00:00:00+00:00",
+    "runtime": null,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2692649"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/72871",
+            "name": "\u041d\u0435\u0434\u0435\u0442\u0441\u043a\u043e\u0435 \u043a\u0438\u043d\u043e"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 72871,
+            "url": "https://www.tvmaze.com/shows/72871/nedetskoe-kino",
+            "name": "\u041d\u0435\u0434\u0435\u0442\u0441\u043a\u043e\u0435 \u043a\u0438\u043d\u043e",
+            "type": "Scripted",
+            "language": null,
+            "genres": [
+                "Comedy",
+                "Fantasy"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": null,
+            "premiered": "2024-01-01",
+            "ended": null,
+            "officialSite": "https://wink.ru/series/ne-detskoe-kino-year-2023?ysclid=lpbaiai0cw654763598",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 3,
+            "network": null,
+            "webChannel": {
+                "id": 541,
+                "name": "Wink",
+                "country": {
+                    "name": "Russian Federation",
+                    "code": "RU",
+                    "timezone": "Asia/Kamchatka"
+                },
+                "officialSite": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/488/1221089.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/488/1221089.jpg"
+            },
+            "summary": null,
+            "updated": 1704019326,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/72871"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2692657",
+                    "name": "\u0421\u0435\u0440\u0438\u044f 12"
+                }
+            }
+        }
+    }
+}

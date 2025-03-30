@@ -1,0 +1,94 @@
+{
+    "id": 2720259,
+    "url": "https://www.tvmaze.com/episodes/2720259/the-heirloom-recipe-1x21-episode-21",
+    "name": "Episode 21",
+    "season": 1,
+    "number": 21,
+    "type": "regular",
+    "airdate": "2024-01-01",
+    "airtime": "12:00",
+    "airstamp": "2024-01-01T04:00:00+00:00",
+    "runtime": 10,
+    "rating": {
+        "average": null
+    },
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "https://api.tvmaze.com/episodes/2720259"
+        },
+        "show": {
+            "href": "https://api.tvmaze.com/shows/73584",
+            "name": "The Heirloom Recipe"
+        }
+    },
+    "_embedded": {
+        "show": {
+            "id": 73584,
+            "url": "https://www.tvmaze.com/shows/73584/the-heirloom-recipe",
+            "name": "The Heirloom Recipe",
+            "type": "Scripted",
+            "language": "Chinese",
+            "genres": [
+                "Comedy",
+                "Food",
+                "Romance"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 10,
+            "premiered": "2023-12-23",
+            "ended": "2024-01-04",
+            "officialSite": "https://v.qq.com/x/cover/mzc00200n25mmp3/r35182aj565.html",
+            "schedule": {
+                "time": "12:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 34,
+            "network": null,
+            "webChannel": {
+                "id": 104,
+                "name": "Tencent QQ",
+                "country": {
+                    "name": "China",
+                    "code": "CN",
+                    "timezone": "Asia/Shanghai"
+                },
+                "officialSite": "https://v.qq.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 441935,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/494/1237488.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/494/1237488.jpg"
+            },
+            "summary": "<p>The story tells the story of Zhao Fengpan, a dandy prince who suffers from agesia, and Cheng Biyuan, a tricky cook who runs a stinky tofu stall. The two went from quarreling enemies to sweet lovers who know each other well. In the game, the conspiracy of the court was eliminated, and a lively and delicious relationship was created.</p>",
+            "updated": 1706644788,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/73584"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2720262",
+                    "name": "Episode 24"
+                }
+            }
+        }
+    }
+}
