@@ -1,32 +1,4 @@
 import pytest
-from unittest.mock import MagicMock
-
-from app.db_connections.application.services import DatabaseConnectionService
-
-
-@pytest.fixture
-def dummy_connector():
-    """
-    Returns a dummy connector mock with preset return values for its methods.
-    """
-    connector = MagicMock()
-    connector.connect.return_value = "dummy_session"
-    connector.disconnect.return_value = None
-    connector.save.return_value = None
-    connector.update.return_value = None
-    connector.delete.return_value = None
-    connector.get.return_value = "dummy_instance"
-    connector.get_all.return_value = ["dummy_instance1", "dummy_instance2"]
-    return connector
-
-
-@pytest.fixture
-def service(dummy_connector):
-    """
-    Creates a DatabaseConnectionService instance using a dictionary of connectors.
-    """
-    connectors = {"postgres": dummy_connector, "mysql": dummy_connector}
-    return DatabaseConnectionService(connectors=connectors)
 
 
 def test_get_connector_valid(service, dummy_connector):
