@@ -7,6 +7,7 @@ import pyarrow.parquet as pq
 from unittest.mock import MagicMock
 
 
+# ------------------------------- READERS --------------------------------
 def _create_temp_file(content: str, suffix: str, binary: bool = False):
     """Helper function to create a temporary file with given content and suffix."""
     mode = "wb+" if binary else "w+"
@@ -71,3 +72,10 @@ def s3_mock_client():
     to simulate interaction with AWS S3.
     """
     return MagicMock()
+
+
+# ------------------------------- WRITERS --------------------------------
+@pytest.fixture
+def sample_dataframe():
+    """Returns a simple sample DataFrame for CSV writing tests."""
+    return pd.DataFrame({"col1": [1, 2], "col2": ["a", "b"]})
