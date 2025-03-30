@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from app.file_io.domain.value_objects import StorageSource, FileFormat, WriterEngine
 
 
-class WriterConfig(BaseModel):
+class WriterConfigDTO(BaseModel):
     """
     DTO that encapsulates the configuration for a file writer.
 
