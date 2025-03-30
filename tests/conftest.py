@@ -4,6 +4,8 @@ import pandas as pd
 import pyarrow as pa
 import pyarrow.parquet as pq
 
+from unittest.mock import MagicMock
+
 
 @pytest.fixture
 def temp_csv_path():
@@ -53,3 +55,13 @@ def temp_parquet_path_snappy():
             return f.name
 
     return _create
+
+
+@pytest.fixture
+def s3_mock_client():
+    """
+    Provides a mock S3 client with download_string and download_bytes methods
+    to simulate interaction with AWS S3.
+    """
+    client = MagicMock()
+    return client
