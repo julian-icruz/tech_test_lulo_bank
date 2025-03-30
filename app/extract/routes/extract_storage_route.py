@@ -35,5 +35,6 @@ async def store_schedule(
             "details": writer_config,
             "files_stored": count,
         }
-    except Exception:
+    except Exception as e:
+        print(f"Error extracting and storing schedule: {e}")
         raise HTTPException(status_code=500)
