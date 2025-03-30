@@ -79,3 +79,17 @@ def s3_mock_client():
 def sample_dataframe():
     """Returns a simple sample DataFrame for CSV writing tests."""
     return pd.DataFrame({"col1": [1, 2], "col2": ["a", "b"]})
+
+
+@pytest.fixture
+def temp_html_path():
+    """
+    Fixture that creates a temporary HTML file path.
+    """
+
+    def _create(content: str = "<h1>Hello</h1>") -> str:
+        with tempfile.NamedTemporaryFile(mode="w+", suffix=".html", delete=False) as f:
+            f.write(content)
+            return f.name
+
+    return _create
