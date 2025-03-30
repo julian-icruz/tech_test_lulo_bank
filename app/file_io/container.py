@@ -43,6 +43,9 @@ from app.file_io.infrastructure.adapters.writers import (
     PolarsParquetWriter,
     PolarsCSVWriterToS3,
     PolarsParquetWriterToS3,
+    # -------------- DASK ---------------- #
+    DaskParquetWriter,
+    DaskParquetWriterToS3,
     # -------------- JSON ---------------- #
     JSONWriter,
     JSONWriterToS3,
@@ -97,8 +100,10 @@ class FileIOContainer(DeclarativeContainer):
     Notes:
         - All AWS readers and writers require a 'bucket' keyword argument.
         - `s3_adapter` is injected once via Singleton for all AWS dependencies.
-        - This structure allows flexible selection and extension of adapters.
-        - Supports vertical slicing and hexagonal architecture principles.
+        - This structure allows flexible selection and extension of adapters, enabling
+          vertical slicing and hexagonal architecture principles.
+        - Supports a variety of engines (pandas, polars, dask) for various file formats (CSV,
+          JSON, Parquet), as well as libraries such as `json`, `yaml`, `html`, and `pdfkit`.
     """
 
     s3_adapter = Singleton(S3Adapter)
@@ -156,6 +161,9 @@ class FileIOContainer(DeclarativeContainer):
         parquet=Dict(
             pandas=Factory(PandasParquetWriter),
             polars=Factory(PolarsParquetWriter),
+            dask=Factory(
+                DaskParquetWriter
+            ),  # Note: Dask only supports Parquet format for local writes
         ),
         yaml=Dict(
             yaml=Factory(YAMLWriter),
@@ -180,6 +188,9 @@ class FileIOContainer(DeclarativeContainer):
         parquet=Dict(
             pandas=Factory(PandasParquetWriterToS3, s3=s3_adapter),
             polars=Factory(PolarsParquetWriterToS3, s3=s3_adapter),
+            dask=Factory(
+                DaskParquetWriterToS3, s3=s3_adapter
+            ),  # Note: Dask only supports Parquet format for S3 writes
         ),
         yaml=Dict(
             yaml=Factory(YAMLWriterToS3, s3=s3_adapter),

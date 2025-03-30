@@ -1,8 +1,12 @@
 from app.file_io.infrastructure.adapters.writers.base.s3_writer import BaseS3Writer
 
 # ------------------------------- PANDAS ------------------------------- #
-from app.file_io.infrastructure.adapters.writers.pandas.csv_writer import PandasCSVWriter
-from app.file_io.infrastructure.adapters.writers.pandas.json_writer import PandasJSONWriter
+from app.file_io.infrastructure.adapters.writers.pandas.csv_writer import (
+    PandasCSVWriter,
+)
+from app.file_io.infrastructure.adapters.writers.pandas.json_writer import (
+    PandasJSONWriter,
+)
 from app.file_io.infrastructure.adapters.writers.pandas.parquet_writer import (
     PandasParquetWriter,
 )
@@ -13,13 +17,23 @@ from app.file_io.infrastructure.adapters.writers.pandas.aws_writer import (
 )
 
 # ------------------------------- POLARS ------------------------------- #
-from app.file_io.infrastructure.adapters.writers.polars.csv_writer import PolarsCSVWriter
+from app.file_io.infrastructure.adapters.writers.polars.csv_writer import (
+    PolarsCSVWriter,
+)
 from app.file_io.infrastructure.adapters.writers.polars.parquet_writer import (
     PolarsParquetWriter,
 )
 from app.file_io.infrastructure.adapters.writers.polars.aws_writer import (
     PolarsCSVWriterToS3,
     PolarsParquetWriterToS3,
+)
+
+# ------------------------------- DASK ------------------------------- #
+from app.file_io.infrastructure.adapters.writers.dask.parquet_writer import (
+    DaskParquetWriter,
+)
+from app.file_io.infrastructure.adapters.writers.dask.aws_writer import (
+    DaskParquetWriterToS3,
 )
 
 # -------------------------------- JSON ------------------------------- #
@@ -63,6 +77,11 @@ POLARS_WRITERS = [
     PolarsParquetWriterToS3,
 ]
 
+DASK_WRITERS = [
+    DaskParquetWriter,
+    DaskParquetWriterToS3,
+]
+
 JSON_WRITERS = [
     JSONWriter,
     JSONWriterToS3,
@@ -87,6 +106,7 @@ __ALL__ = [
     BASE_WRITERS,
     PANDAS_WRITERS,
     POLARS_WRITERS,
+    DASK_WRITERS,
     JSON_WRITERS,
     YAML_WRITERS,
     HTML_WRITERS,
