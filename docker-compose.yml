@@ -19,7 +19,7 @@ services:
   #   image: tech-test-lulo:debug
   #   container_name: tech-test-lulo-debug
   #   volumes:
-  #     - ./app:/app
+  #     - ./app:/src/app
   #   env_file:
   #     - .env
   #   ports:

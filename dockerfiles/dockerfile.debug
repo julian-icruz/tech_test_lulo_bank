@@ -1,6 +1,6 @@
 FROM python:3.12-slim
 
-WORKDIR /app
+WORKDIR /src
 
 COPY pyproject.toml poetry.lock* ./
 
@@ -11,6 +11,6 @@ RUN pip install --upgrade pip && \
 RUN poetry config virtualenvs.create false
 RUN poetry install --without dev --no-interaction --no-ansi --no-root
 
-COPY app/ .
+COPY app/ /src/app/
 
-CMD ["sh", "-c", "python -m debugpy --wait-for-client --listen 0.0.0.0:5678 -m uvicorn main:app --host 0.0.0.0 --port 8080 --reload"]
+CMD ["sh", "-c", "python -m debugpy --wait-for-client --listen 0.0.0.0:5678 -m uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload"]
