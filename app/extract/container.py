@@ -1,10 +1,11 @@
-from dependency_injector import containers, providers
+from dependency_injector.containers import DeclarativeContainer, WiringConfiguration
+from dependency_injector.providers import Singleton
 
 from app.extract.domain.services import ExtractService
-from app.extract.infrastructure.adapters.http import TVMazeAPI
+from app.extract.infrastructure.adapters.http import TVMazeAPIAdapter
 
 
-class ExtractContainer(containers.DeclarativeContainer):
+class ExtractContainer(DeclarativeContainer):
     """
     Dependency Injection Container for the Extract context.
 
@@ -12,9 +13,15 @@ class ExtractContainer(containers.DeclarativeContainer):
     the TvMazeAPI and ExtractService.
     """
 
-    tvmaze_api_adapter = providers.Singleton(TVMazeAPI)
+    wiring_config = WiringConfiguration(
+        packages=[
+            "app.extract.routes",
+        ]
+    )
 
-    extract_service = providers.Singleton(
+    tvmaze_api_adapter = Singleton(TVMazeAPIAdapter)
+
+    extract_service = Singleton(
         ExtractService,
         extractor_adapter=tvmaze_api_adapter,
     )
