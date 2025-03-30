@@ -31,6 +31,7 @@ class DBConnectionsContainer(DeclarativeContainer):
         username=settings.POSTGRES_USER,
         password=settings.POSTGRES_PASSWORD,
         database=settings.POSTGRES_DB,
+        options={"ssl": "true"},  # Example option, adjust as needed
     )
 
     config_mysql = Factory(
@@ -41,6 +42,7 @@ class DBConnectionsContainer(DeclarativeContainer):
         username=settings.MYSQL_USER,
         password=settings.MYSQL_PASSWORD,
         database=settings.MYSQL_DB,
+        options={"ssl": "true"},
     )
 
     postgres_connector = Singleton(
