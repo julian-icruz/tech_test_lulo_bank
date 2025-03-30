@@ -58,6 +58,18 @@ def temp_parquet_path_snappy():
 
 
 @pytest.fixture
+def temp_yaml_path():
+    """Creates a temporary YAML file with given content and returns its file path."""
+
+    def _create(content: str):
+        with tempfile.NamedTemporaryFile(mode="w+", suffix=".yaml", delete=False) as f:
+            f.write(content)
+            return f.name
+
+    return _create
+
+
+@pytest.fixture
 def s3_mock_client():
     """
     Provides a mock S3 client with download_string and download_bytes methods
