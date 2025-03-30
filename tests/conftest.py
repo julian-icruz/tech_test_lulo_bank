@@ -82,6 +82,14 @@ def sample_dataframe():
 
 
 @pytest.fixture
+def sample_html():
+    """
+    Fixture that returns simple HTML content to render as PDF.
+    """
+    return "<html><body><h1>PDF Title</h1><p>This is a test.</p></body></html>"
+
+
+@pytest.fixture
 def temp_html_path():
     """
     Fixture that creates a temporary HTML file path.
