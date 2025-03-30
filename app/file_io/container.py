@@ -1,9 +1,9 @@
 from dependency_injector.containers import DeclarativeContainer
 from dependency_injector.providers import Dict, Factory, Singleton
 
-from file_io.infrastructure.clients import S3Adapter
+from app.file_io.infrastructure.clients import S3Adapter
 
-from file_io.infrastructure.adapters.readers import (
+from app.file_io.infrastructure.adapters.readers import (
     # -------------- PANDAS ---------------- #
     PandasCSVReader,
     PandasJSONReader,
@@ -29,7 +29,7 @@ from file_io.infrastructure.adapters.readers import (
     YAMLReaderFromS3,
 )
 
-from file_io.infrastructure.adapters.writers import (
+from app.file_io.infrastructure.adapters.writers import (
     # -------------- PANDAS ---------------- #
     PandasCSVWriter,
     PandasJSONWriter,

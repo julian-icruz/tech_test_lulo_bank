@@ -1,7 +1,7 @@
 from abc import ABC
 from dataclasses import dataclass
 
-from file_io.infrastructure.clients import S3Adapter
+from app.file_io.infrastructure.clients import S3Adapter
 
 
 @dataclass

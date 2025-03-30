@@ -1,4 +1,4 @@
-import setup
+from app import setup
 
 app = setup._create_app()
 

@@ -1,5 +1,5 @@
 import polars as pl
-from file_io.domain.ports import FileWriter
+from app.file_io.domain.ports import FileWriter
 
 
 class PolarsCSVWriter(FileWriter):

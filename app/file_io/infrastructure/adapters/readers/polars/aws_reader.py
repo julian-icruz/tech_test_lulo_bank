@@ -2,8 +2,8 @@ import polars as pl
 from io import BytesIO, StringIO
 from dataclasses import dataclass
 
-from file_io.domain.ports import FileReader
-from file_io.infrastructure.adapters.readers import BaseS3Reader
+from app.file_io.domain.ports import FileReader
+from app.file_io.infrastructure.adapters.readers import BaseS3Reader
 
 
 @dataclass

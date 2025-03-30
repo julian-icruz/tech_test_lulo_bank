@@ -1,6 +1,6 @@
 import pandas as pd
 
-from file_io.domain.ports import FileWriter
+from app.file_io.domain.ports import FileWriter
 
 
 class PandasCSVWriter(FileWriter):

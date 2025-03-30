@@ -1,7 +1,10 @@
+import tempfile
+
 from abc import ABC
+from typing import Callable
 from dataclasses import dataclass
 
-from file_io.infrastructure.clients import S3Adapter
+from app.file_io.infrastructure.clients import S3Adapter
 
 
 @dataclass
@@ -32,3 +35,17 @@ class BaseS3Reader(ABC):
         if not bucket:
             raise ValueError("Missing required 'bucket' in kwargs.")
         return bucket
+
+    def _read_with_tempfile(
+        self,
+        content: str | bytes,
+        suffix: str,
+        binary: bool,
+        reader_fn: Callable[[str], any],
+        **kwargs,
+    ):
+        mode = "wb+" if binary else "w+"
+        with tempfile.NamedTemporaryFile(mode=mode, suffix=suffix, delete=False) as f:
+            f.write(content)
+            f.flush()
+            return reader_fn(f.name, **kwargs)
