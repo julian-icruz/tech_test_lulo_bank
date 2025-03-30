@@ -161,9 +161,7 @@ class FileIOContainer(DeclarativeContainer):
         parquet=Dict(
             pandas=Factory(PandasParquetWriter),
             polars=Factory(PolarsParquetWriter),
-            dask=Factory(
-                DaskParquetWriter
-            ),  # Note: Dask only supports Parquet format for local writes
+            dask=Factory(DaskParquetWriter),
         ),
         yaml=Dict(
             yaml=Factory(YAMLWriter),
@@ -188,9 +186,7 @@ class FileIOContainer(DeclarativeContainer):
         parquet=Dict(
             pandas=Factory(PandasParquetWriterToS3, s3=s3_adapter),
             polars=Factory(PolarsParquetWriterToS3, s3=s3_adapter),
-            dask=Factory(
-                DaskParquetWriterToS3, s3=s3_adapter
-            ),  # Note: Dask only supports Parquet format for S3 writes
+            dask=Factory(DaskParquetWriterToS3, s3=s3_adapter),
         ),
         yaml=Dict(
             yaml=Factory(YAMLWriterToS3, s3=s3_adapter),
