@@ -1,7 +1,9 @@
 from typing import Any, List
-from app.db_connections.domain.ports.db_connector import DBConnector
+from dataclasses import dataclass
+from app.db_connections.domain.ports import DBConnector
 
 
+@dataclass
 class DatabaseConnectionService:
     """
     Service layer that orchestrates database operations using a provided DBConnector.
@@ -10,14 +12,7 @@ class DatabaseConnectionService:
     database connections, abstracting the details of the underlying connector implementation.
     """
 
-    def __init__(self, connector: DBConnector) -> None:
-        """
-        Initializes the DatabaseConnectionService with a DBConnector instance.
-
-        Args:
-            connector (DBConnector): An implementation of the DBConnector interface.
-        """
-        self.connector = connector
+    connector: DBConnector
 
     def open_connection(self) -> Any:
         """
