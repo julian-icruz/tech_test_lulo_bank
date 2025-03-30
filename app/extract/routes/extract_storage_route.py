@@ -29,7 +29,11 @@ async def store_schedule(
         A message indicating that the schedule was stored successfully.
     """
     try:
-        await storage_service.extract_and_store(date, writer_config)
-        return {"message": f"Schedule {date} stored successfully."}
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        count = await storage_service.extract_and_store(date, writer_config)
+        return {
+            "message": f"Schedule {date} stored successfully.",
+            "details": writer_config,
+            "files_stored": count,
+        }
+    except Exception:
+        raise HTTPException(status_code=500)

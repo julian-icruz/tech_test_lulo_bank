@@ -62,4 +62,5 @@ class ExtractStorageService:
             file_path = (
                 f"{partition_folder}/{file_id}.{writer_config.file_format.value}"
             )
-            writer_provider.write(item, file_path)
+            writer_provider.write(item, file_path, indent=4)
+        return len(schedule)
