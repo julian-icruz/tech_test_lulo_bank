@@ -50,14 +50,16 @@ class ExtractStorageService:
         source = writer_config.source
         file_format = writer_config.file_format
         engine = writer_config.engine
+
         try:
-            writer_provider = self.writers[source][file_format][engine]
-            writer: FileWriter = writer_provider()
+            writer_provider = self.writers()[source][file_format][engine]
         except KeyError as e:
             raise ValueError(f"Invalid writer configuration: {e}")
         for item in schedule:
             file_id = item.get("id")
             if not file_id:
                 continue
-            file_path = f"{partition_folder}/{file_id}.{writer_config.file_format}"
-            writer.write(item, file_path)
+            file_path = (
+                f"{partition_folder}/{file_id}.{writer_config.file_format.value}"
+            )
+            writer_provider.write(item, file_path)
