@@ -12,11 +12,11 @@ class DatabaseConnectionService:
     database connections, abstracting the details of the underlying connector implementation.
     """
 
-    connector: DBConnector
+    connectors: dict[str, DBConnector]
 
     def open_connection(self) -> Any:
         """
-        Opens a connection to the database using the connector.
+        Opens a connection to the database using the connector.a
 
         Returns:
             Any: A database session object.
