@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 from typing import Any, Dict
-from transform.domain.ports.data_profiling_port import DataProfilingPort
+from transform.domain.ports import DataProfilingPort
 
 
 @dataclass
