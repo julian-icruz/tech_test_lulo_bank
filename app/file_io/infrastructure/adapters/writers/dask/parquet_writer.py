@@ -17,4 +17,7 @@ class DaskParquetWriter(FileWriter):
     """
 
     def write(self, data: dd.DataFrame, path: str, **kwargs) -> None:
+        if data.compute().shape[0] == 0:
+            raise ValueError("Cannot write an empty DataFrame to a Parquet file.")
+
         data.to_parquet(path, **kwargs)

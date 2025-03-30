@@ -21,6 +21,9 @@ class DaskParquetWriterToS3(BaseS3Writer, FileWriter):
     """
 
     def write(self, data: dd.DataFrame, path: str, **kwargs) -> None:
+        if data.compute().shape[0] == 0:
+            raise ValueError("Cannot write an empty DataFrame to a Parquet file.")
+
         bucket = self._get_bucket(kwargs)
         df_pandas = data.compute()
 
