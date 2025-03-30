@@ -1,3 +1,4 @@
+from cmath import polar
 from dependency_injector.containers import DeclarativeContainer
 from dependency_injector.providers import Dict, Factory, Singleton
 
@@ -13,6 +14,7 @@ from app.file_io.infrastructure.adapters.readers import (
     PandasParquetReaderFromS3,
     # -------------- POLARS -----Q----------- #
     PolarsCSVReader,
+    PolarsJSONReader,
     PolarsParquetReader,
     PolarsCSVReaderFromS3,
     PolarsParquetReaderFromS3,
@@ -110,6 +112,7 @@ class FileIOContainer(DeclarativeContainer):
         ),
         json=Dict(
             pandas=Factory(PandasJSONReader),
+            polars=Factory(PolarsJSONReader),
             json=Factory(JSONReader),
         ),
         parquet=Dict(

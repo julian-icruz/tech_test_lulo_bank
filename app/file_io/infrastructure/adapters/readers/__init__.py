@@ -1,8 +1,12 @@
 from app.file_io.infrastructure.adapters.readers.base.s3_reader import BaseS3Reader
 
 # ------------------------------- PANDAS ------------------------------- #
-from app.file_io.infrastructure.adapters.readers.pandas.csv_reader import PandasCSVReader
-from app.file_io.infrastructure.adapters.readers.pandas.json_reader import PandasJSONReader
+from app.file_io.infrastructure.adapters.readers.pandas.csv_reader import (
+    PandasCSVReader,
+)
+from app.file_io.infrastructure.adapters.readers.pandas.json_reader import (
+    PandasJSONReader,
+)
 from app.file_io.infrastructure.adapters.readers.pandas.parquet_reader import (
     PandasParquetReader,
 )
@@ -13,7 +17,12 @@ from app.file_io.infrastructure.adapters.readers.pandas.aws_reader import (
 )
 
 # ------------------------------- POLARS ------------------------------- #
-from app.file_io.infrastructure.adapters.readers.polars.csv_reader import PolarsCSVReader
+from app.file_io.infrastructure.adapters.readers.polars.csv_reader import (
+    PolarsCSVReader,
+)
+from app.file_io.infrastructure.adapters.readers.polars.json_reader import (
+    PolarsJSONReader,
+)
 from app.file_io.infrastructure.adapters.readers.polars.parquet_reader import (
     PolarsParquetReader,
 )
@@ -55,6 +64,7 @@ PANDAS_READERS = [
 
 POLARS_RESDERS = [
     PolarsCSVReader,
+    PolarsJSONReader,
     PolarsParquetReader,
     PolarsCSVReaderFromS3,
     PolarsParquetReaderFromS3,
