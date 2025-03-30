@@ -7,6 +7,7 @@ import pyarrow.parquet as pq
 from unittest.mock import MagicMock
 
 
+# ------------------------------- READERS --------------------------------
 def _create_temp_file(content: str, suffix: str, binary: bool = False):
     """Helper function to create a temporary file with given content and suffix."""
     mode = "wb+" if binary else "w+"
@@ -71,3 +72,32 @@ def s3_mock_client():
     to simulate interaction with AWS S3.
     """
     return MagicMock()
+
+
+# ------------------------------- WRITERS --------------------------------
+@pytest.fixture
+def sample_dataframe():
+    """Returns a simple sample DataFrame for CSV writing tests."""
+    return pd.DataFrame({"col1": [1, 2], "col2": ["a", "b"]})
+
+
+@pytest.fixture
+def sample_html():
+    """
+    Fixture that returns simple HTML content to render as PDF.
+    """
+    return "<html><body><h1>PDF Title</h1><p>This is a test.</p></body></html>"
+
+
+@pytest.fixture
+def temp_html_path():
+    """
+    Fixture that creates a temporary HTML file path.
+    """
+
+    def _create(content: str = "<h1>Hello</h1>") -> str:
+        with tempfile.NamedTemporaryFile(mode="w+", suffix=".html", delete=False) as f:
+            f.write(content)
+            return f.name
+
+    return _create

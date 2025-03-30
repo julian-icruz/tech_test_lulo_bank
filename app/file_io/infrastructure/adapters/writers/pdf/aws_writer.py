@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+
 from app.file_io.domain.ports import FileWriter
 from app.file_io.infrastructure.adapters.writers import BaseS3Writer
 
@@ -15,5 +16,7 @@ class PDFWriterToS3(BaseS3Writer, FileWriter):
     """
 
     def write(self, data: bytes, path: str, **kwargs) -> None:
+        if not isinstance(data, bytes):
+            raise TypeError("PDFWriterToS3 only accepts bytes as input.")
         bucket = self._get_bucket(kwargs)
         self.s3.upload_bytes(bucket, path, data)
