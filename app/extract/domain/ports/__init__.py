@@ -1,5 +1,5 @@
-from app.extract.domain.ports.tvmaze_extractor import TVMazeExtractor
+from app.extract.domain.ports.tvmaze_extractor import TVMazeExtractorPort
 
 __ALL__ = [
-    TVMazeExtractor,
+    TVMazeExtractorPort,
 ]

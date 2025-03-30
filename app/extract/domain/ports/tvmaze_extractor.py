@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class TVMazeExtractor(ABC):
+class TVMazeExtractorPort(ABC):
     """
     Abstract base class for extracting data from the TVMaze API.
 

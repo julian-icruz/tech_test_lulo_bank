@@ -1,9 +1,9 @@
 import httpx
 
-from app.extract.domain.ports import TVMazeExtractor
+from app.extract.domain.ports import TVMazeExtractorPort
 
 
-class TVMazeAPI(TVMazeExtractor):
+class TVMazeAPIAdapter(TVMazeExtractorPort):
     """
     Adapter for interacting with the TVMaze API to fetch TV schedule data.
 
@@ -28,7 +28,7 @@ class TVMazeAPI(TVMazeExtractor):
         self.base_url = base_url
         self.client = client or httpx.AsyncClient()
 
-    async def fetch_schedule(self, date: str) -> list[dict]:
+    async def extract_schedule(self, date: str) -> list[dict]:
         """
         Fetches the TV schedule for the specified date from the TVMaze API.
 

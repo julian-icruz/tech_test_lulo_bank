@@ -1,5 +1,5 @@
-from app.extract.infrastructure.adapters.http.tvmaze_api import TVMazeAPI
+from app.extract.infrastructure.adapters.http.tvmaze_api import TVMazeAPIAdapter
 
 __ALL__ = [
-    TVMazeAPI,
+    TVMazeAPIAdapter,
 ]
