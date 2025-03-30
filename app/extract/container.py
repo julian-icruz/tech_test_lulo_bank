@@ -1,5 +1,5 @@
+from dependency_injector.providers import Singleton, Dependency
 from dependency_injector.containers import DeclarativeContainer, WiringConfiguration
-from dependency_injector.providers import Singleton
 
 from app.extract.domain.services import ExtractService
 from app.extract.infrastructure.adapters.http import TVMazeAPIAdapter
@@ -18,6 +18,8 @@ class ExtractContainer(DeclarativeContainer):
             "app.extract.routes",
         ]
     )
+
+    file_io = Dependency()
 
     tvmaze_api_adapter = Singleton(TVMazeAPIAdapter)
 
