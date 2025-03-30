@@ -1,7 +1,7 @@
 import pytest
 import yaml
 import tempfile
-from pathlib import Path
+
 
 from app.file_io.infrastructure.adapters.readers import YAMLReader
 
