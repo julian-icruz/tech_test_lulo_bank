@@ -1,18 +1,27 @@
+from dataclasses import dataclass
+
 from app.load.domain.ports import DataLoaderPort
 from app.db_connections.application.services import DatabaseConnectionService
 
 
+@dataclass
 class PostgresLoaderAdapter(DataLoaderPort):
-    def __init__(self, db_connection_service: DatabaseConnectionService):
-        self.db_service = db_connection_service
+    """
+    Adapter for loading data into PostgreSQL using the database connection service.
+
+    Attributes:
+        db_service (DatabaseConnectionService): Service to manage database connections.
+    """
+
+    db_service: DatabaseConnectionService
 
     def load_data(self, data: list[dict], model_class) -> None:
         """
-        Inserta en la base de datos los registros recibidos.
+        Inserts the received records into the database.
 
         Args:
-            data (list[dict]): Lista de diccionarios con los datos a insertar.
-            model_class: Clase del modelo ORM que representa la tabla destino.
+            data (list[dict]): List of dictionaries containing the data to be inserted.
+            model_class: ORM model class representing the target table.
         """
         session = self.db_service.open_connection()
         try:

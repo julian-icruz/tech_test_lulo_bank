@@ -5,9 +5,9 @@ class DataLoaderPort(ABC):
     @abstractmethod
     def load_data(self, data: list[dict]) -> None:
         """
-        Carga los datos en la base de datos.
+        Loads data into the database.
 
         Args:
-            data (list[dict]): Lista de registros (diccionarios) a insertar.
+            data (list[dict]): List of records (dictionaries) to insert.
         """
         pass
