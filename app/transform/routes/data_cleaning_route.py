@@ -33,5 +33,5 @@ def data_cleaning(
             "path_io": path_io,
         }
     except Exception as e:
-        print(f"Failed to generate profiling report: {str(e)}")
+        print(f"Failed to generate cleaning: {str(e)}")
         raise HTTPException(status_code=500)
