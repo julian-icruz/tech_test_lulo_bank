@@ -20,7 +20,7 @@ class PandasProfiling(DataProfilingPort):
         """
         if not isinstance(data, pd.DataFrame):
             raise TypeError("Input data must be a pandas DataFrame")
-        stats = data.describe().to_dict()
+        stats = data.describe(include="all").to_dict()
         return stats
 
     def detect_missing_values(self, data: Any) -> Dict[str, Any]:
