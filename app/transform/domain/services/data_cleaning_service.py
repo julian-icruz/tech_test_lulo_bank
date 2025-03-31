@@ -22,4 +22,4 @@ class DataCleaningService(BaseTransformService):
                 self.transformation_adapter.flatten_nested_structures(df)
             )
 
-        return data_flattened.shape
+        return data_flattened
