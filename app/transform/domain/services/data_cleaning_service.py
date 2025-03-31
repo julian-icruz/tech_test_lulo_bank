@@ -48,11 +48,12 @@ class DataCleaningService(BaseTransformService):
             data_episodes_merged
         )
 
-        df_shows, df_web_channel = self.transformation_adapter.get_df_web_channel(
-            df_shows
+        df_shows, df_web_channel, df_networks = (
+            self.transformation_adapter.get_df_web_channel(df_shows)
         )
 
         df_shows = self.transformation_adapter.rename_columns(df_shows)
         df_web_channel = self.transformation_adapter.rename_columns(df_web_channel)
+        df_networks = self.transformation_adapter.rename_columns(df_web_channel)
 
-        return df_shows, df_episodes, df_web_channel
+        return df_shows, df_episodes, df_web_channel, df_networks

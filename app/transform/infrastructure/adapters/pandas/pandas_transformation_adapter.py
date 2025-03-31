@@ -112,12 +112,19 @@ class PandasTransformation(DataTransformationPort):
         """
 
         webchannel_columns = [col for col in data.columns if "webChannel" in col]
+        network_columns = [col for col in data.columns if "network" in col]
         webchannel_columns_to_drop = [
             col for col in webchannel_columns if col != "webChannel_id"
         ]
+        network_columns_to_drop = [
+            col for col in network_columns if col != "network_id"
+        ]
         df_webchannel = data[webchannel_columns].drop_duplicates().dropna(how="all")
-        df_without_webchannel = data.drop(columns=webchannel_columns_to_drop)
-        return df_without_webchannel, df_webchannel
+        df_network = data[network_columns].drop_duplicates().dropna(how="all")
+        df_without = data.drop(
+            columns=webchannel_columns_to_drop + network_columns_to_drop
+        )
+        return df_without, df_webchannel, df_network
 
     def rename_columns(self, data: Any) -> Any:
         """
@@ -129,16 +136,25 @@ class PandasTransformation(DataTransformationPort):
         Returns:
             Any: The DataFrame with renamed columns.
         """
+        data.columns = data.columns.str.lower()
         new_columns = {}
         seen = {}
+
         for col in data.columns:
+            if col in ["network_id", "webchannel_id"]:
+                new_columns[col] = col
+                continue
+
             new_name = col.split("_", 1)[-1] if "_" in col else col
+
             if new_name in seen:
                 seen[new_name] += 1
                 new_name = f"{new_name}_{seen[new_name]}"
             else:
                 seen[new_name] = 0
+
             new_columns[col] = new_name
+
         return data.rename(columns=new_columns)
 
     def convert_date_time_columns(self, data: Any) -> Any:
