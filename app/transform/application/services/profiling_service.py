@@ -1,29 +1,33 @@
 from dataclasses import dataclass
 
 from typing import Any, Dict
-from app.transform.domain.ports import DataProfilingPort
+from app.transform.domain.ports import DataProfilingPort, DataTransformationPort
 
 
 @dataclass
 class ProfilingService:
     profiling_adapters: dict[str, DataProfilingPort]
+    transformation_adapters: dict[str, DataTransformationPort]
     profiling_adapter: DataProfilingPort = None
+    transformation_adapter: DataTransformationPort = None
 
     def _select_adapter(self, key: str) -> None:
         """
-        Selects the appropriate profiling adapter from the available adapters using the provided key.
+        Selects the appropriate profiling and transformation adapters based on the provided key.
 
         Args:
-            key (str): The key identifying the profiling adapter to use.
+            key (str): The key identifying the adapter to use.
 
         Raises:
-            ValueError: If the key is not found in the profiling_adapters dictionary.
+            ValueError: If the key is not found in either the profiling_adapters or transformation_adapters dictionaries.
         """
-        if key not in self.profiling_adapters:
+        try:
+            self.profiling_adapter = self.profiling_adapters[key]
+            self.transformation_adapter = self.transformation_adapters[key]
+        except KeyError as e:
             raise ValueError(
-                f"Adapter key '{key}' not found in available profiling adapters."
-            )
-        self.profiling_adapter = self.profiling_adapters[key]
+                f"Adapter key '{key}' not found in the adapter dictionaries."
+            ) from e
 
     def __call__(self, data: Any) -> Dict[str, Any]:
         """
@@ -37,6 +41,7 @@ class ProfilingService:
                             missing values, duplicates, correlations, and column type profiles.
         """
         results = {}
+        data = self.transformation_adapter.merge_dataframes(data)
         results["descriptive_statistics"] = (
             self.profiling_adapter.generate_descriptive_statistics(data)
         )

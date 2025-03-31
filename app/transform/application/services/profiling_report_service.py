@@ -37,19 +37,26 @@ class ProfilingReportService:
         Returns:
             Dict[str, Any]: A dictionary containing a status message and details about the input and output paths.
         """
-        file_reader = self.reader_writer_selector("reader", reader_config)
-        data = file_reader.read(path_io.input_path, bucket=path_io.bucket)
+        try:
+            files = os.listdir(path_io.input_path)
+        except Exception as e:
+            raise Exception(f"Error listing files in {path_io.input_path}: {str(e)}")
 
-        self.profiling_service._select_adapter(writer_config.engine)
-        profiling_results = self.profiling_service(data)
+        data_list = []
+        file_reader = self.reader_writer_selector("reader", reader_config)
+        for file in files:
+            file_path = os.path.join(path_io.input_path, file)
+            if file.endswith(reader_config.file_format):
+                data_list.append(file_reader.read(file_path))
+
+        self.profiling_service._select_adapter(reader_config.engine)
+        profiling_results = self.profiling_service(data_list)
         report_content = self.report_generator.generate_report(profiling_results)
 
-        output_dir = os.path.dirname(path_io.output_path)
-        if output_dir and not os.path.exists(output_dir):
-            os.makedirs(output_dir, exist_ok=True)
+        os.makedirs(path_io.output_path, exist_ok=True)
 
         file_writer = self.reader_writer_selector("writer", writer_config)
-        file_writer.write(report_content, path_io.output_path, bucket=path_io.bucket)
+        file_writer.write(report_content, path_io.output_path + "/report.html")
 
         return {
             "message": "Profiling report generated and written successfully.",

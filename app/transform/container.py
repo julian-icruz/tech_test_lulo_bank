@@ -4,8 +4,11 @@ from dependency_injector.containers import DeclarativeContainer, WiringConfigura
 from app.transform.infrastructure.adapters import (
     ReportGeneratorAdapter,
     PandasProfiling,
+    PandasTransformation,
     PolarsProfiling,
+    PolarsTransformation,
     DaskProfiling,
+    DaskTransformation,
 )
 from app.transform.application.services import (
     ProfilingService,
@@ -28,15 +31,26 @@ class TransformContainer(DeclarativeContainer):
     polars_profiling_adapter = Singleton(PolarsProfiling)
     dask_profiling_adapter = Singleton(DaskProfiling)
 
+    pandas_transformation_adapter = Singleton(PandasTransformation)
+    polars_transformation_adapter = Singleton(PolarsTransformation)
+    dask_transformation_adapter = Singleton(DaskTransformation)
+
     profiling_adapters = Dict(
         pandas=pandas_profiling_adapter,
         polars=polars_profiling_adapter,
         dask=dask_profiling_adapter,
     )
 
+    transformation_adapters = Dict(
+        pandas=pandas_transformation_adapter,
+        polars=polars_transformation_adapter,
+        dask=dask_transformation_adapter,
+    )
+
     profiling_service = Singleton(
         ProfilingService,
         profiling_adapters=profiling_adapters,
+        transformation_adapters=transformation_adapters,
     )
 
     reader_writer_selector = Dependency(instance_of=ReaderWriterSelectorService)
