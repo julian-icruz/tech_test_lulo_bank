@@ -9,9 +9,8 @@ from sqlalchemy import (
     Time,
     DateTime,
 )
-from sqlalchemy.ext.declarative import declarative_base
 
-Base = declarative_base()
+from app.load.domain.models import Base
 
 
 class Episode(Base):

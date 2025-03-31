@@ -1,8 +1,7 @@
 from sqlalchemy.dialects.postgresql import ARRAY
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, String, Integer, Float, Text, ForeignKey, Date, DateTime
 
-Base = declarative_base()
+from app.load.domain.models import Base
 
 
 class Show(Base):
@@ -23,7 +22,7 @@ class Show(Base):
     updated = Column(DateTime, nullable=True)
     time = Column(String(50), nullable=True)
     days = Column(String(100), nullable=True)
-    web_channel_id = Column(Float, ForeignKey("web_channels.id"), nullable=True)
+    web_channel_id = Column(Integer, ForeignKey("web_channels.id"), nullable=True)
     medium = Column(String(255), nullable=True)
     original = Column(String(255), nullable=True)
     links_self_href = Column(String(255), nullable=True)
