@@ -9,6 +9,7 @@ services:
       - ./app:/src/app
       - ./json:/src/json
       - ./profiling:/src/profiling
+      - ./data:/src/data
     env_file:
       - .env
     ports:
@@ -24,6 +25,7 @@ services:
   #     - ./app:/src/app
   #     - ./json:/src/json
   #     - ./profiling:/src/profiling
+  #     - ./data:/src/data
   #   env_file:
   #     - .env
   #   ports:
