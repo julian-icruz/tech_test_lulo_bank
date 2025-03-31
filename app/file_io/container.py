@@ -213,6 +213,6 @@ class FileIOContainer(DeclarativeContainer):
 
     reader_writer_selector_service = Factory(
         ReaderWriterSelectorService,
-        reader_factory=readers,
-        writer_factory=writers,
+        reader=readers,
+        writers=writers,
     )

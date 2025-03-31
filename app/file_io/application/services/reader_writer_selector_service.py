@@ -6,8 +6,8 @@ from app.file_io.application.dtos import WriterConfigDTO, ReaderConfigDTO
 
 @dataclass
 class ReaderWriterSelectorService:
-    reader: dict[str, dict[str, FileReader]]
-    writer: dict[str, dict[str, FileWriter]]
+    readers: dict[str, dict[str, FileReader]]
+    writers: dict[str, dict[str, FileWriter]]
 
     def __call__(
         self, operation_type: str, config: WriterConfigDTO | ReaderConfigDTO
@@ -27,7 +27,7 @@ class ReaderWriterSelectorService:
         engine = config.engine.value
 
         reader_writer = {
-            "reader": self.reader[source][file_format][engine],
-            "writer": self.writer[source][file_format][engine],
+            "reader": self.readers,
+            "writer": self.writers,
         }
-        return reader_writer[operation_type]
+        return reader_writer[operation_type][source][file_format][engine]
