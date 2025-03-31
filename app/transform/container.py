@@ -10,8 +10,10 @@ from app.transform.infrastructure.adapters import (
     DaskProfiling,
     DaskTransformation,
 )
-from app.transform.application.services import (
+from app.transform.domain.services import (
     ProfilingService,
+)
+from app.transform.application.services import (
     ProfilingReportService,
 )
 

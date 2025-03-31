@@ -2,7 +2,7 @@ import os
 from typing import Any, Dict
 from dataclasses import dataclass
 
-from app.transform.application.services import ProfilingService
+from app.transform.domain.services import ProfilingService
 from app.transform.infrastructure.adapters import ReportGeneratorAdapter
 
 from app.file_io.application.services import ReaderWriterSelectorService
