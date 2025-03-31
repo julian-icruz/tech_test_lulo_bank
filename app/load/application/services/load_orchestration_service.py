@@ -20,7 +20,13 @@ class LoadOrchestrationService:
     reader_writer_selector: ReaderWriterSelectorService
     data_loader_adapter: PostgresLoaderAdapter
 
-    def __call__(self, path_io: Any, reader_config: Any, model_class: Any) -> int:
+    def __call__(
+        self,
+        path_io: Any,
+        reader_config: Any,
+        model_class: Any,
+        database: str = "postgres",
+    ) -> int:
         """
         Orchestrates the data loading process:
             1. Lists the Parquet files in the specified directory.
@@ -35,7 +41,7 @@ class LoadOrchestrationService:
         Returns:
             int: Total number of records inserted.
         """
-        self.data_loader_adapter.db_service.select_connector("postgres")
+        self.data_loader_adapter.db_service.select_connector(database)
 
         file_reader = self.reader_writer_selector("reader", reader_config)
         total_records = 0

@@ -6,6 +6,7 @@ from app.container import AppContainer
 
 from app.extract.routes import router as extract_router
 from app.transform.routes import router as transform_router
+from app.load.routes import router as load_router
 
 
 APP_TITLE = "Api technical test for Lulo Bank"
@@ -56,4 +57,5 @@ def _build_v1_router():
     router = APIRouter(prefix="/v1")
     router.include_router(extract_router)
     router.include_router(transform_router)
+    router.include_router(load_router)
     return router
