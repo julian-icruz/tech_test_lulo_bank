@@ -16,6 +16,7 @@ from app.transform.domain.services import (
 )
 from app.transform.application.services import (
     ProfilingReportService,
+    DataCleaninOrchestrationService,
 )
 
 from app.file_io.application.services import ReaderWriterSelectorService
@@ -68,5 +69,11 @@ class TransformContainer(DeclarativeContainer):
         ProfilingReportService,
         profiling_service=profiling_service,
         report_generator=report_generator_adapter,
+        reader_writer_selector=reader_writer_selector,
+    )
+
+    data_cleaning_orchestration_service = Singleton(
+        DataCleaninOrchestrationService,
+        data_cleaning_service=data_cleaning_service,
         reader_writer_selector=reader_writer_selector,
     )
