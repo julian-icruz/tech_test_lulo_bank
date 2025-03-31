@@ -26,8 +26,11 @@ class ReaderWriterSelectorService:
         file_format = config.file_format.value
         engine = config.engine.value
 
-        reader_writer = {
-            "reader": self.readers,
-            "writer": self.writers,
-        }
-        return reader_writer[operation_type][source][file_format][engine]
+        try:
+            reader_writer = {
+                "reader": self.readers,
+                "writer": self.writers,
+            }
+            return reader_writer[operation_type][source][file_format][engine]
+        except KeyError as e:
+            raise ValueError(f"Invalid configuration: {e}")
