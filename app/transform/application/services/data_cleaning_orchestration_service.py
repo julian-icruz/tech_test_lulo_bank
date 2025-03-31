@@ -49,7 +49,15 @@ class DataCleaninOrchestrationService:
 
         self.data_cleaning_service._select_adapter(reader_config.engine)
         cleaning_results = self.data_cleaning_service(data_list)
+
+        os.makedirs(path_io.output_path, exist_ok=True)
+
         file_writer = self.reader_writer_selector("writer", writer_config)
-        # file_writer.write(profiling_results, path_io.output_path + "/report.html")
+        file_writer.write(
+            cleaning_results,
+            path_io.output_path + "data.snappy.parquet",
+            compression="snappy",
+            engine="pyarrow",
+        )
 
         return

@@ -21,5 +21,5 @@ class DataCleaningService(BaseTransformService):
             data_flattened.append(
                 self.transformation_adapter.flatten_nested_structures(df)
             )
-        data = self.transformation_adapter.merge_dataframes(data_flattened)
-        return data_flattened
+        data_merge = self.transformation_adapter.merge_dataframes(data_flattened)
+        return data_merge

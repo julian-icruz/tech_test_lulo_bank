@@ -8,7 +8,10 @@ from app.transform.domain.ports.data_transformation_port import DataTransformati
 @dataclass
 class PandasTransformation(DataTransformationPort):
     def flatten_nested_structures(self, data: Any) -> Any:
-        return pd.json_normalize(data["_embedded"]["show"])
+        """
+        Flattens nested structures in a pandas DataFrame.
+        """
+        return pd.json_normalize(data.to_dict(orient="records"), sep="_")
 
     def convert_date_time_columns(self, data: Any) -> Any:
         pass
@@ -31,5 +34,4 @@ class PandasTransformation(DataTransformationPort):
         """
         if not data_list:
             raise ValueError("No data provided for merging.")
-        data_cleaned = [df.dropna(axis=1, how="all") for df in data_list]
-        return pd.concat(data_cleaned, ignore_index=True)
+        return pd.concat(data_list, ignore_index=True)

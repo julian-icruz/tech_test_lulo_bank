@@ -326,5 +326,6 @@ $RECYCLE.BIN/
 json/
 profiling/
 notebooks/
+data/
 
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,visualstudiocode,terraform,terragrunt,macos,linux,windows
