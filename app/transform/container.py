@@ -1,7 +1,12 @@
 from dependency_injector.providers import Dependency, Singleton, Dict, Callable
 from dependency_injector.containers import DeclarativeContainer, WiringConfiguration
 
-from app.transform.infrastructure.adapters import ReportGeneratorAdapter
+from app.transform.infrastructure.adapters import (
+    ReportGeneratorAdapter,
+    PandasProfiling,
+    PolarsProfiling,
+    DaskProfiling,
+)
 from app.transform.application.services import (
     ProfilingService,
     ProfilingReportService,
@@ -19,7 +24,15 @@ class TransformContainer(DeclarativeContainer):
 
     report_generator_adapter = Singleton(ReportGeneratorAdapter)
 
-    profiling_adapters = Dict()
+    pandas_profiling_adapter = Singleton(PandasProfiling)
+    polars_profiling_adapter = Singleton(PolarsProfiling)
+    dask_profiling_adapter = Singleton(DaskProfiling)
+
+    profiling_adapters = Dict(
+        pandas=PandasProfiling,
+        polars=PolarsProfiling,
+        dask=DaskProfiling,
+    )
 
     profiling_service = Singleton(
         ProfilingService,
