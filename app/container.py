@@ -3,6 +3,7 @@ from dependency_injector import containers
 from app.file_io import FileIOContainer
 from app.db_connections import DBConnectionsContainer
 from app.extract import ExtractContainer
+from app.transform import TransformContainer
 
 
 class AppContainer(containers.DeclarativeContainer):
@@ -10,4 +11,7 @@ class AppContainer(containers.DeclarativeContainer):
     db_connections = DBConnectionsContainer()
     extract = ExtractContainer(
         file_io=file_io,
+    )
+    transform = TransformContainer(
+        reader_writer_selector=file_io.reader_writer_selector_service,
     )

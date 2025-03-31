@@ -20,13 +20,6 @@ async def store_schedule(
 ):
     """
     Extracts TV schedule data for the specified date and stores each entry as a file.
-
-    Parameters:
-        - date (str): The schedule date in 'YYYY-MM-DD' format (as a query parameter).
-        - writer_config (WriterConfigDTO): JSON body with writer configuration details.
-
-    Returns:
-        A message indicating that the schedule was stored successfully.
     """
     try:
         count = await storage_service.extract_and_store(date, writer_config)
