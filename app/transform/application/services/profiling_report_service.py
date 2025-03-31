@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from app.transform.application.services import ProfilingService
 from app.transform.infrastructure.adapters import ReportGeneratorAdapter
 
-from app.file_io.domain.ports import FileWriter, FileReader
+from app.file_io.application.services import ReaderWriterSelectorService
 from app.file_io.application.dtos import WriterConfigDTO, ReaderConfigDTO, PathIODTO
 
 
@@ -13,8 +13,7 @@ from app.file_io.application.dtos import WriterConfigDTO, ReaderConfigDTO, PathI
 class ProfilingReportService:
     profiling_service: ProfilingService
     report_generator: ReportGeneratorAdapter
-    reader: dict[str, dict[str, FileReader]]
-    writer: dict[str, dict[str, FileWriter]]
+    reader_writer_selector: ReaderWriterSelectorService
 
     def __call__(
         self,
@@ -38,7 +37,7 @@ class ProfilingReportService:
         Returns:
             Dict[str, Any]: A dictionary containing a status message and details about the input and output paths.
         """
-        file_reader = self._get_reader_writer("reader", reader_config)
+        file_reader = self.reader_writer_selector("reader", reader_config)
         data = file_reader.read(path_io.input_path, bucket=path_io.bucket)
 
         profiling_results = self.profiling_service.profile(data)
@@ -48,7 +47,7 @@ class ProfilingReportService:
         if output_dir and not os.path.exists(output_dir):
             os.makedirs(output_dir, exist_ok=True)
 
-        file_writer = self._get_reader_writer("writer", writer_config)
+        file_writer = self.reader_writer_selector("writer", writer_config)
         file_writer.write(report_content, path_io.output_path, bucket=path_io.bucket)
 
         return {
@@ -56,26 +55,3 @@ class ProfilingReportService:
             "input": path_io.input_path,
             "output": path_io.output_path,
         }
-
-    def _get_reader_writer(
-        self, operation_type: str, config: WriterConfigDTO | ReaderConfigDTO
-    ) -> Any:
-        """
-        Retrieves the appropriate file reader or writer instance based on the provided operation type and configuration.
-
-        Args:
-            operation_type (str): The type of operation, either "reader" or "writer".
-            config (WriterConfigDTO | ReaderConfigDTO): The configuration object containing attributes such as source, file_format, and engine.
-
-        Returns:
-            Any: The selected file reader or writer instance.
-        """
-        source = config.source.value
-        file_format = config.file_format.value
-        engine = config.engine.value
-
-        reader_writer = {
-            "reader": self.reader[source][file_format][engine],
-            "writer": self.writer[source][file_format][engine],
-        }
-        return reader_writer[operation_type]
