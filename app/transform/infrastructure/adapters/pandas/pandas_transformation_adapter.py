@@ -2,7 +2,7 @@ import pandas as pd
 from typing import Any, List
 from dataclasses import dataclass
 
-from app.transform.domain.ports.data_transformation_port import DataTransformationPort
+from app.transform.domain.ports import DataTransformationPort
 
 
 @dataclass
