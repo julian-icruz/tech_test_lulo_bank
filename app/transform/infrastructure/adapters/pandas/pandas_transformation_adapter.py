@@ -69,7 +69,7 @@ class PandasTransformation(DataTransformationPort):
         Returns:
         - df_cleaned: DataFrame después de convertir las listas a cadenas y eliminar duplicados.
         """
-        df_cleaned = df.applymap(lambda x: str(x) if isinstance(x, list) else x)
+        df_cleaned = df.map(lambda x: str(x) if isinstance(x, list) else x)
         df_cleaned = df_cleaned.drop_duplicates()
 
         return df_cleaned
