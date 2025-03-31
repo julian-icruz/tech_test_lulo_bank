@@ -35,7 +35,13 @@ class PandasTransformation(DataTransformationPort):
         Returns:
             Any: The flattened DataFrame for episodes.
         """
-        return data.drop(columns=["_embedded", "_links", "image"]).drop_duplicates()
+        df_show = self.flatten_show(data)
+        show_id = df_show["id"].values[0]
+        df_episodes = data.drop(
+            columns=["_embedded", "_links", "image"]
+        ).drop_duplicates()
+        df_episodes["show_id"] = show_id
+        return df_episodes
 
     def filter_and_clean_empty_columns(self, list_df):
         """
@@ -63,10 +69,7 @@ class PandasTransformation(DataTransformationPort):
         Returns:
         - df_cleaned: DataFrame después de convertir las listas a cadenas y eliminar duplicados.
         """
-        # Convertir listas a cadenas
         df_cleaned = df.applymap(lambda x: str(x) if isinstance(x, list) else x)
-
-        # Eliminar filas duplicadas
         df_cleaned = df_cleaned.drop_duplicates()
 
         return df_cleaned
