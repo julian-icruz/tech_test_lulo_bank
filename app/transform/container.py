@@ -29,9 +29,9 @@ class TransformContainer(DeclarativeContainer):
     dask_profiling_adapter = Singleton(DaskProfiling)
 
     profiling_adapters = Dict(
-        pandas=PandasProfiling,
-        polars=PolarsProfiling,
-        dask=DaskProfiling,
+        pandas=pandas_profiling_adapter,
+        polars=polars_profiling_adapter,
+        dask=dask_profiling_adapter,
     )
 
     profiling_service = Singleton(
