@@ -1,3 +1,4 @@
+from csv import reader
 from dependency_injector.containers import DeclarativeContainer
 from dependency_injector.providers import Dict, Factory, Singleton
 
@@ -59,6 +60,8 @@ from app.file_io.infrastructure.adapters.writers import (
     PDFKitWriter,
     PDFWriterToS3,
 )
+
+from app.file_io.application.services import ReaderWriterSelectorService
 
 
 class FileIOContainer(DeclarativeContainer):
@@ -206,4 +209,10 @@ class FileIOContainer(DeclarativeContainer):
     writers = Dict(
         local=local_writers,
         aws=aws_writers,
+    )
+
+    reader_writer_selector_service = Factory(
+        ReaderWriterSelectorService,
+        reader_factory=readers,
+        writer_factory=writers,
     )
