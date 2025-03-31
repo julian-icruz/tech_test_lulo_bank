@@ -41,7 +41,12 @@ class ProfilingService:
                             missing values, duplicates, correlations, and column type profiles.
         """
         results = {}
-        data = self.transformation_adapter.merge_dataframes(data)
+        data_flattened = []
+        for df in data:
+            data_flattened.append(
+                self.transformation_adapter.flatten_nested_structures(df)
+            )
+        data = self.transformation_adapter.merge_dataframes(data_flattened)
         results["descriptive_statistics"] = (
             self.profiling_adapter.generate_descriptive_statistics(data)
         )

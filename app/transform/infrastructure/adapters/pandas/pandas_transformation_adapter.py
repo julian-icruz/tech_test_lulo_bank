@@ -8,7 +8,7 @@ from app.transform.domain.ports.data_transformation_port import DataTransformati
 @dataclass
 class PandasTransformation(DataTransformationPort):
     def flatten_nested_structures(self, data: Any) -> Any:
-        pass
+        return pd.json_normalize(data["_embedded"]["show"])
 
     def convert_date_time_columns(self, data: Any) -> Any:
         pass
