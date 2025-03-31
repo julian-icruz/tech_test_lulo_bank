@@ -31,4 +31,5 @@ class PandasTransformation(DataTransformationPort):
         """
         if not data_list:
             raise ValueError("No data provided for merging.")
-        return pd.concat(data_list, ignore_index=True)
+        data_cleaned = [df.dropna(axis=1, how="all") for df in data_list]
+        return pd.concat(data_cleaned, ignore_index=True)

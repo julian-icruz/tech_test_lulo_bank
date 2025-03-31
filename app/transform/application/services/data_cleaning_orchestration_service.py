@@ -47,8 +47,8 @@ class DataCleaninOrchestrationService:
             if file.endswith(reader_config.file_format):
                 data_list.append(file_reader.read(file_path))
 
-        profiling_results = self.data_cleaning_service(data_list)
-
+        self.data_cleaning_service._select_adapter(reader_config.engine)
+        cleaning_results = self.data_cleaning_service(data_list)
         file_writer = self.reader_writer_selector("writer", writer_config)
         # file_writer.write(profiling_results, path_io.output_path + "/report.html")
 
