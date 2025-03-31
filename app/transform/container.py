@@ -12,6 +12,7 @@ from app.transform.infrastructure.adapters import (
 )
 from app.transform.domain.services import (
     ProfilingService,
+    DataCleaningService,
 )
 from app.transform.application.services import (
     ProfilingReportService,
@@ -51,6 +52,12 @@ class TransformContainer(DeclarativeContainer):
 
     profiling_service = Singleton(
         ProfilingService,
+        profiling_adapters=profiling_adapters,
+        transformation_adapters=transformation_adapters,
+    )
+
+    data_cleaning_service = Singleton(
+        DataCleaningService,
         profiling_adapters=profiling_adapters,
         transformation_adapters=transformation_adapters,
     )
