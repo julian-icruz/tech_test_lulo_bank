@@ -327,5 +327,8 @@ json/
 profiling/
 notebooks/
 data/
+postgres_data/
+db/
+model/
 
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,visualstudiocode,terraform,terragrunt,macos,linux,windows
