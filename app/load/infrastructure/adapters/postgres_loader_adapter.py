@@ -13,7 +13,7 @@ class PostgresLoaderAdapter(DataLoaderPort):
         db_service (DatabaseConnectionService): Service to manage database connections.
     """
 
-    db_service: DatabaseConnectionService
+    db_service: dict[str, DatabaseConnectionService]
 
     def load_data(self, data: list[dict], model_class) -> None:
         """
