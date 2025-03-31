@@ -20,26 +20,7 @@ def get_tv_schedule(
     ),
 ):
     """
-    Generates a data profiling report using the provided configuration DTOs.
-
-    This endpoint performs the following steps:
-        1. Reads the input data using the file reader defined by reader_config.
-        2. Processes the data with the profiling service to obtain descriptive statistics,
-            missing values, duplicates, correlations, and column type profiles.
-        3. Generates an HTML report using the report generator adapter.
-        4. Writes the report to the output path specified in path_io, ensuring the output directory exists.
-
-    Args:
-        reader_config (ReaderConfigDTO): Configuration for selecting the file reader.
-        writer_config (WriterConfigDTO): Configuration for selecting the file writer.
-        path_io (PathIODTO): DTO containing the input path, output path, and an optional bucket.
-        profiling_report_service (ProfilingReportService): Service used to generate and write the profiling report.
-
-    Returns:
-        dict: A JSON object containing a success message along with the reader, writer, and path configuration details.
-
-    Raises:
-        HTTPException: If any error occurs during the profiling report generation process.
+    Generates a profiling report based on the provided configurations.
     """
     try:
         profiling_report_service(
