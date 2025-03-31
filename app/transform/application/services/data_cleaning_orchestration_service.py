@@ -48,13 +48,17 @@ class DataCleaninOrchestrationService:
                 data_list.append(file_reader.read(file_path))
 
         self.data_cleaning_service._select_adapter(reader_config.engine)
-        data_shows, data_episodes = self.data_cleaning_service(data_list)
+        data_shows, data_episodes, data_web_channel = self.data_cleaning_service(
+            data_list
+        )
 
         path_shows = path_io.output_path + "shows/"
         path_episodes = path_io.output_path + "episodes/"
+        path_web_channel = path_io.output_path + "web_channel/"
 
         os.makedirs(path_shows, exist_ok=True)
         os.makedirs(path_episodes, exist_ok=True)
+        os.makedirs(path_web_channel, exist_ok=True)
 
         file_writer = self.reader_writer_selector("writer", writer_config)
         file_writer.write(
@@ -67,6 +71,13 @@ class DataCleaninOrchestrationService:
         file_writer.write(
             data_episodes,
             path_episodes + "data.snappy.parquet",
+            compression="snappy",
+            engine="pyarrow",
+        )
+
+        file_writer.write(
+            data_web_channel,
+            path_web_channel + "data.snappy.parquet",
             compression="snappy",
             engine="pyarrow",
         )

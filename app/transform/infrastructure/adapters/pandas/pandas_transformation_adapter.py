@@ -100,6 +100,47 @@ class PandasTransformation(DataTransformationPort):
         )
         return df_cleaned
 
+    def get_df_web_channel(self, data: Any) -> Any:
+        """
+        Obtiene el DataFrame de la columna 'web_channel'.
+
+        Args:
+            data (Any): Input data (e.g., a pandas DataFrame).
+
+        Returns:
+            Any: The DataFrame for the 'web_channel' column.
+        """
+
+        webchannel_columns = [col for col in data.columns if "webChannel" in col]
+        webchannel_columns_to_drop = [
+            col for col in webchannel_columns if col != "webChannel_id"
+        ]
+        df_webchannel = data[webchannel_columns].drop_duplicates().dropna(how="all")
+        df_without_webchannel = data.drop(columns=webchannel_columns_to_drop)
+        return df_without_webchannel, df_webchannel
+
+    def rename_columns(self, data: Any) -> Any:
+        """
+        Renames columns in a pandas DataFrame.
+
+        Args:
+            data (Any): A pandas DataFrame.
+
+        Returns:
+            Any: The DataFrame with renamed columns.
+        """
+        new_columns = {}
+        seen = {}
+        for col in data.columns:
+            new_name = col.split("_", 1)[-1] if "_" in col else col
+            if new_name in seen:
+                seen[new_name] += 1
+                new_name = f"{new_name}_{seen[new_name]}"
+            else:
+                seen[new_name] = 0
+            new_columns[col] = new_name
+        return data.rename(columns=new_columns)
+
     def convert_date_time_columns(self, data: Any) -> Any:
         pass
 
