@@ -1,14 +1,31 @@
 from dataclasses import dataclass
 
 from typing import Any, Dict
-from transform.domain.ports import DataProfilingPort
+from app.transform.domain.ports import DataProfilingPort
 
 
 @dataclass
 class ProfilingService:
-    profiling_adapter: DataProfilingPort
+    profiling_adapters: dict[str, DataProfilingPort]
+    profiling_adapter: DataProfilingPort = None
 
-    def profile(self, data: Any) -> Dict[str, Any]:
+    def _select_adapter(self, key: str) -> None:
+        """
+        Selects the appropriate profiling adapter from the available adapters using the provided key.
+
+        Args:
+            key (str): The key identifying the profiling adapter to use.
+
+        Raises:
+            ValueError: If the key is not found in the profiling_adapters dictionary.
+        """
+        if key not in self.profiling_adapters:
+            raise ValueError(
+                f"Adapter key '{key}' not found in available profiling adapters."
+            )
+        self.profiling_adapter = self.profiling_adapters[key]
+
+    def __call__(self, data: Any) -> Dict[str, Any]:
         """
         Orchestrates the data profiling process by invoking methods from the data profiling adapter.
 

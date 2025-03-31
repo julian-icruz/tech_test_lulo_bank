@@ -25,7 +25,7 @@ class ProfilingReportService:
         Executes the complete profiling report process by performing the following steps:
 
         1. Reads data from the specified input path using the selected file reader.
-        2. Generates profiling results by invoking the profiling service.
+        2. Generates profiling results by invoking the profiling servicea.
         3. Creates an HTML report from the profiling results using the report generator adapter.
         4. Ensures the output directory exists and writes the generated report using the selected file writer.
 
