@@ -40,7 +40,8 @@ class ProfilingReportService:
         file_reader = self.reader_writer_selector("reader", reader_config)
         data = file_reader.read(path_io.input_path, bucket=path_io.bucket)
 
-        profiling_results = self.profiling_service.profile(data)
+        self.profiling_service._select_adapter(writer_config.engine)
+        profiling_results = self.profiling_service(data)
         report_content = self.report_generator.generate_report(profiling_results)
 
         output_dir = os.path.dirname(path_io.output_path)
