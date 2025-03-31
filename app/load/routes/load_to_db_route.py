@@ -1,7 +1,8 @@
 from dependency_injector.wiring import inject, Provide
 from fastapi import APIRouter, HTTPException, Depends
 
-from app.container import AppContainer
+# from app.container import AppContainer
+from app.load.container import LoadContainer
 from app.load.application.services import LoadOrchestrationService
 
 from app.file_io.application.dtos import ReaderConfigDTO, PathIODTO
@@ -16,7 +17,7 @@ def load_db(
     reader_config: ReaderConfigDTO,
     path_io: PathIODTO,
     load_service: LoadOrchestrationService = Depends(
-        Provide[AppContainer.load.load_orchestration_service]
+        Provide[LoadContainer.load_orchestration_service]
     ),
 ):
     """
@@ -24,8 +25,8 @@ def load_db(
     """
     try:
         load_service(
-            reader_config=reader_config,
             path_io=path_io,
+            reader_config=reader_config,
             database=database,
         )
         return {
@@ -35,5 +36,5 @@ def load_db(
             "database": database,
         }
     except Exception as e:
-        print(f"Failed to generate cleaning: {str(e)}")
+        print(f"Failed to load data to database: {str(e)}")
         raise HTTPException(status_code=500)

@@ -1,10 +1,10 @@
 import os
-
 from dataclasses import dataclass
-from typing import Any
 
 from app.load.infrastructure.adapters import PostgresLoaderAdapter
 from app.file_io.application.services import ReaderWriterSelectorService
+
+from app.file_io.application.dtos import ReaderConfigDTO, PathIODTO
 
 
 @dataclass
@@ -22,9 +22,8 @@ class LoadOrchestrationService:
 
     def __call__(
         self,
-        path_io: Any,
-        reader_config: Any,
-        model_class: Any,
+        path_io: PathIODTO,
+        reader_config: ReaderConfigDTO,
         database: str = "postgres",
     ) -> int:
         """
@@ -44,13 +43,16 @@ class LoadOrchestrationService:
         self.data_loader_adapter.db_service.select_connector(database)
 
         file_reader = self.reader_writer_selector("reader", reader_config)
-        total_records = 0
 
-        for filename in os.listdir(path_io.input_path):
-            if filename.endswith(".parquet"):
-                file_path = os.path.join(path_io.input_path, filename)
-                records = file_reader.read(file_path)
-                total_records += len(records)
-                self.data_loader_adapter.load_data(records, model_class)
+        paths_suffix = ["shows", "episodes", "web_channel"]
+        dfs_list = []
 
-        return total_records
+        for suffix in paths_suffix:
+            path = os.path.join(path_io.input_path, suffix)
+            dfs_list.append(file_reader.read(path))
+
+        df_shows = dfs_list[0]
+        df_episodes = dfs_list[1]
+        df_web_channel = dfs_list[2]
+
+        return
