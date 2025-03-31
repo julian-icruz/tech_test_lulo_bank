@@ -18,7 +18,22 @@ services:
       - 80:80
     volumes:
       - .${PGADMIN_SERVER_JSON_FILE}:/servers.json
-  tech-test-lulo:
+
+  db-migrations:
+    build:
+      context: ./
+      dockerfile: dockerfiles/dockerfile.local
+    image: tech-test-lulo:latest
+    container_name: db_migrations
+    volumes:
+      - ./app:/src/app
+    env_file:
+      - .env
+    depends_on:
+      - postgres-lulo-bank
+    command: [ "sh", "-c", "python /src/app/load/scripts/init_db.py && exit" ]
+
+  ech-test-lulo:
     build:
       context: ./
       dockerfile: dockerfiles/dockerfile.local
@@ -35,7 +50,6 @@ services:
       - "8080:8080"
     depends_on:
       - postgres-lulo-bank
-
     # tech-test-lulo-debug:
     #   build:
     #     context: ./
