@@ -13,5 +13,5 @@ class AppContainer(containers.DeclarativeContainer):
         file_io=file_io,
     )
     transform = TransformContainer(
-        file_io=file_io,
+        reader_writer_selector=file_io.reader_writer_selector_service,
     )

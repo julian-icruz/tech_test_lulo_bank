@@ -1,4 +1,3 @@
-from csv import reader
 from dependency_injector.containers import DeclarativeContainer
 from dependency_injector.providers import Dict, Factory, Singleton
 
@@ -213,6 +212,6 @@ class FileIOContainer(DeclarativeContainer):
 
     reader_writer_selector_service = Factory(
         ReaderWriterSelectorService,
-        reader=readers,
+        readers=readers,
         writers=writers,
     )
