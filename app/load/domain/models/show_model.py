@@ -1,5 +1,15 @@
 from sqlalchemy.dialects.postgresql import ARRAY
-from sqlalchemy import Column, String, Integer, Float, Text, ForeignKey, Date, DateTime
+from sqlalchemy import (
+    Column,
+    String,
+    Integer,
+    Float,
+    Text,
+    ForeignKey,
+    Date,
+    DateTime,
+    BigInteger,
+)
 
 from app.load.domain.models import Base
 
@@ -7,14 +17,14 @@ from app.load.domain.models import Base
 class Show(Base):
     __tablename__ = "shows"
 
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(BigInteger, primary_key=True, index=True)
     url = Column(String(255), nullable=True)
     name = Column(String(100), nullable=True)
     type = Column(String(50), nullable=True)
     language = Column(String(50), nullable=True)
     genres = Column(ARRAY(String), nullable=True)
     status = Column(String(50), nullable=True)
-    averageRuntime = Column(Float, nullable=True)
+    averageRuntime = Column(Integer, nullable=True)
     premiered = Column(Date, nullable=True)
     ended = Column(Date, nullable=True)
     officialSite = Column(String(255), nullable=True)
@@ -29,9 +39,9 @@ class Show(Base):
     links_previousepisode_href = Column(String(255), nullable=True)
     links_previousepisode_name = Column(String(255), nullable=True)
     summary = Column(Text, nullable=True)
-    thetvdb = Column(Float, nullable=True)
-    runtime = Column(Float, nullable=True)
-    id_2 = Column(Float, nullable=True)
+    thetvdb = Column(BigInteger, nullable=True)
+    runtime = Column(Integer, nullable=True)
+    id_2 = Column(Integer, nullable=True)
     name_1 = Column(String(100), nullable=True)
     country_name = Column(String(100), nullable=True)
     country_code = Column(String(10), nullable=True)
@@ -39,6 +49,6 @@ class Show(Base):
     officialSite_1 = Column(String(255), nullable=True)
     imdb = Column(String(100), nullable=True)
     average = Column(Float, nullable=True)
-    tvrage = Column(Float, nullable=True)
+    tvrage = Column(BigInteger, nullable=True)
     links_nextepisode_href = Column(String(255), nullable=True)
     links_nextepisode_name = Column(String(255), nullable=True)

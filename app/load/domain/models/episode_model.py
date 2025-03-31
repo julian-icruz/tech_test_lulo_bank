@@ -8,6 +8,7 @@ from sqlalchemy import (
     Date,
     Time,
     DateTime,
+    BigInteger,
 )
 
 from app.load.domain.models import Base
@@ -16,7 +17,7 @@ from app.load.domain.models import Base
 class Episode(Base):
     __tablename__ = "episodes"
 
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(BigInteger, primary_key=True, index=True)
     url = Column(String(255), nullable=True)
     name = Column(String(150), nullable=True)
     season = Column(Integer, nullable=True)
@@ -25,7 +26,7 @@ class Episode(Base):
     airdate = Column(Date, nullable=True)
     airtime = Column(Time, nullable=True)
     airstamp = Column(DateTime, nullable=True)
-    runtime = Column(Float, nullable=True)
+    runtime = Column(Integer, nullable=True)
     rating = Column(Float, nullable=True)
     summary = Column(Text, nullable=True)
-    show_id = Column(Integer, ForeignKey("shows.id"), nullable=False)
+    show_id = Column(BigInteger, ForeignKey("shows.id"), nullable=False)

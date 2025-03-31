@@ -1,10 +1,14 @@
 import os
+import ast
+import pandas as pd
+import numpy as np
 from dataclasses import dataclass
 
+from app.load.domain.models import Show, Episode, WebChannel
 from app.load.infrastructure.adapters import PostgresLoaderAdapter
-from app.file_io.application.services import ReaderWriterSelectorService
 
 from app.file_io.application.dtos import ReaderConfigDTO, PathIODTO
+from app.file_io.application.services import ReaderWriterSelectorService
 
 
 @dataclass
@@ -55,4 +59,41 @@ class LoadOrchestrationService:
         df_episodes = dfs_list[1]
         df_web_channel = dfs_list[2]
 
+        df_shows.rename(columns={"id_1": "web_channel_id"}, inplace=True)
+        df_shows["updated"] = pd.to_datetime(df_shows["updated"], errors="coerce")
+
+        df_shows = df_shows.where(pd.notnull(df_shows), None)
+        df_episodes = df_episodes.where(pd.notnull(df_episodes), None)
+        df_web_channel = df_web_channel.where(pd.notnull(df_web_channel), None)
+
+        columns = [
+            "id",
+            "averageRuntime",
+            "weight",
+            "thetvdb",
+            "runtime",
+            "id_2",
+            "tvrage",
+        ]
+
+        df_shows[columns] = df_shows[columns].apply(pd.to_numeric, errors="coerce")
+        df_shows[columns] = df_shows[columns].astype("Int64")
+        df_shows = df_shows.replace({pd.NA: None, np.nan: None})
+        df_shows["genres"] = df_shows["genres"].apply(lambda x: ast.literal_eval(x))
+
+        columns = ["id", "season", "number", "runtime", "show_id"]
+        df_episodes[columns] = df_episodes[columns].apply(
+            pd.to_numeric, errors="coerce"
+        )
+        df_episodes[columns] = df_episodes[columns].astype("Int64")
+        df_episodes = df_episodes.replace({pd.NA: None, np.nan: None})
+        df_episodes["airtime"] = df_episodes["airtime"].replace("", None)
+
+        shows_data = df_shows.to_dict(orient="records")
+        episodes_data = df_episodes.to_dict(orient="records")
+        web_channel_data = df_web_channel.to_dict(orient="records")
+
+        self.data_loader_adapter.load_data(web_channel_data, WebChannel)
+        self.data_loader_adapter.load_data(shows_data, Show)
+        self.data_loader_adapter.load_data(episodes_data, Episode)
         return
