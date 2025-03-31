@@ -8,6 +8,7 @@ services:
     volumes:
       - ./app:/src/app
       - ./json:/src/json
+      - ./profiling:/src/profiling
     env_file:
       - .env
     ports:
@@ -22,6 +23,7 @@ services:
   #   volumes:
   #     - ./app:/src/app
   #     - ./json:/src/json
+  #     - ./profiling:/src/profiling
   #   env_file:
   #     - .env
   #   ports:
