@@ -48,38 +48,39 @@ class DataCleaninOrchestrationService:
                 data_list.append(file_reader.read(file_path))
 
         self.data_cleaning_service._select_adapter(reader_config.engine)
-        data_shows, data_episodes, data_web_channel = self.data_cleaning_service(
-            data_list
+        data_shows, data_episodes, data_web_channel, df_networks = (
+            self.data_cleaning_service(data_list)
         )
 
-        path_shows = path_io.output_path + "shows/"
-        path_episodes = path_io.output_path + "episodes/"
-        path_web_channel = path_io.output_path + "web_channel/"
+        data_files = {
+            "shows": data_shows,
+            "episodes": data_episodes,
+            "web_channels": data_web_channel,
+            "networks": df_networks,
+        }
 
-        os.makedirs(path_shows, exist_ok=True)
-        os.makedirs(path_episodes, exist_ok=True)
-        os.makedirs(path_web_channel, exist_ok=True)
-
-        file_writer = self.reader_writer_selector("writer", writer_config)
-        file_writer.write(
-            data_shows,
-            path_shows + "data.snappy.parquet",
-            compression="snappy",
-            engine="pyarrow",
-        )
-
-        file_writer.write(
-            data_episodes,
-            path_episodes + "data.snappy.parquet",
-            compression="snappy",
-            engine="pyarrow",
-        )
-
-        file_writer.write(
-            data_web_channel,
-            path_web_channel + "data.snappy.parquet",
-            compression="snappy",
-            engine="pyarrow",
-        )
-
+        self.write_data_files(path_io, writer_config, data_files)
         return
+
+    def write_data_files(
+        self, path_io: Any, writer_config: Any, data_files: dict
+    ) -> None:
+        """
+        Writes multiple DataFrames to separate files in specified folders.
+        Each DataFrame is written to a folder named after the key in the data_files dictionary.
+        The DataFrames are saved in Parquet format with Snappy compression.
+        Args:
+            path_io (Any): PathIODTO containing the output path.
+            writer_config (Any): WriterConfigDTO containing the configuration for the file writer.
+            data_files (dict): Dictionary where keys are folder names and values are DataFrames to be written.
+        """
+        base_path = path_io.output_path
+        file_writer = self.reader_writer_selector("writer", writer_config)
+
+        for folder, data in data_files.items():
+            output_folder = os.path.join(base_path, folder)
+            os.makedirs(output_folder, exist_ok=True)
+
+            file_path = os.path.join(output_folder, "data.snappy.parquet")
+
+            file_writer.write(data, file_path, compression="snappy", engine="pyarrow")

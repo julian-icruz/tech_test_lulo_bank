@@ -1,3 +1,5 @@
+import ast
+import numpy as np
 import pandas as pd
 from typing import Any, List
 from dataclasses import dataclass
@@ -100,7 +102,7 @@ class PandasTransformation(DataTransformationPort):
         )
         return df_cleaned
 
-    def get_df_web_channel(self, data: Any) -> Any:
+    def get_sub_dfs(self, data: Any) -> Any:
         """
         Obtiene el DataFrame de la columna 'web_channel'.
 
@@ -112,40 +114,132 @@ class PandasTransformation(DataTransformationPort):
         """
 
         webchannel_columns = [col for col in data.columns if "webChannel" in col]
+        network_columns = [col for col in data.columns if "network" in col]
+
         webchannel_columns_to_drop = [
             col for col in webchannel_columns if col != "webChannel_id"
         ]
-        df_webchannel = data[webchannel_columns].drop_duplicates().dropna(how="all")
-        df_without_webchannel = data.drop(columns=webchannel_columns_to_drop)
-        return df_without_webchannel, df_webchannel
+        network_columns_to_drop = [
+            col for col in network_columns if col != "network_id"
+        ]
 
-    def rename_columns(self, data: Any) -> Any:
+        df_webchannel = data[webchannel_columns].drop_duplicates().dropna(how="all")
+        df_network = data[network_columns].drop_duplicates().dropna(how="all")
+
+        df_without = data.drop(
+            columns=webchannel_columns_to_drop + network_columns_to_drop
+        )
+        return df_without, df_webchannel, df_network
+
+    def rename_columns(self, data: Any, skip_ids: bool = True) -> Any:
         """
         Renames columns in a pandas DataFrame.
 
+        If skip_ids is True, the columns 'network_id' and 'webchannel_id' remain unchanged.
+
         Args:
             data (Any): A pandas DataFrame.
+            skip_ids (bool, optional): Flag to determine if 'network_id' and 'webchannel_id' should be skipped. Defaults to True.
 
         Returns:
             Any: The DataFrame with renamed columns.
         """
+        data.columns = data.columns.str.lower()
         new_columns = {}
         seen = {}
+
         for col in data.columns:
+            if skip_ids and col in ["network_id", "webchannel_id"]:
+                new_columns[col] = col
+                continue
+
             new_name = col.split("_", 1)[-1] if "_" in col else col
+
             if new_name in seen:
                 seen[new_name] += 1
                 new_name = f"{new_name}_{seen[new_name]}"
             else:
                 seen[new_name] = 0
+
             new_columns[col] = new_name
+
         return data.rename(columns=new_columns)
 
-    def convert_date_time_columns(self, data: Any) -> Any:
-        pass
+    def convert_date_time_columns(self, data: Any, column) -> Any:
+        """
+        Converts a specified column in a pandas DataFrame to datetime format.
+        Args:
+            data (Any): A pandas DataFrame.
+            column (str): The name of the column to convert.
+        Returns:
+            Any: The DataFrame with the specified column converted to datetime format.
+        """
+        data[column] = pd.to_datetime(data[column], errors="coerce")
+        return data
 
-    def normalize_columns(self, data: Any) -> Any:
-        pass
+    def replace_nan_with_none(self, data: Any) -> Any:
+        """
+        Replaces NaN values in a pandas DataFrame with None.
+        Args:
+            data (Any): A pandas DataFrame.
+        Returns:
+            Any: The DataFrame with NaN values replaced with None.
+        """
+        return data.where(pd.notnull(data), None)
+
+    def normalize_columns(
+        self,
+        data: Any,
+        numeric_columns: list,
+        replacement_dict: dict = None,
+    ) -> Any:
+        """
+        Normalizes specified columns in a pandas DataFrame.
+
+        Args:
+            data (Any): A pandas DataFrame.
+            numeric_columns (list): List of columns to convert to numeric.
+            replacement_dict (dict, optional): Dictionary for replacing values. Defaults to None.
+
+        Returns:
+            Any: The DataFrame with normalized columns.
+        """
+        data[numeric_columns] = data[numeric_columns].apply(
+            pd.to_numeric, errors="coerce"
+        )
+        data[numeric_columns] = data[numeric_columns].astype("Int64")
+
+        if replacement_dict is None:
+            replacement_dict = {pd.NA: None, np.nan: None}
+        data = data.replace(replacement_dict)
+
+        return data
+
+    def evaluate_literal_column(self, data: Any, column: str) -> Any:
+        """
+        Evaluates a column in a pandas DataFrame containing string representations of Python literals.
+        Args:
+            data (pd.DataFrame): The DataFrame containing the column to evaluate.
+            column (str): The name of the column to evaluate.
+        Returns:
+            pd.DataFrame: The DataFrame with the evaluated column.
+        """
+        data[column] = data[column].apply(
+            lambda x: ast.literal_eval(x) if pd.notnull(x) else x
+        )
+        return data
+
+    def replace_empty_with_none(self, data: Any, column: str) -> Any:
+        """
+        Replaces empty strings in a specified column of a pandas DataFrame with None.
+        Args:
+            data (Any): A pandas DataFrame.
+            column (str): The name of the column to process.
+        Returns:
+            Any: The DataFrame with empty strings replaced with None.
+        """
+        data[column] = data[column].replace("", None)
+        return data
 
     def categorize_columns(self, data: Any) -> Any:
         pass
