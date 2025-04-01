@@ -47,13 +47,15 @@ class DataCleaningService(BaseTransformService):
             merged_episodes
         )
 
-        df_shows, df_web_channel, df_networks = (
-            self.transformation_adapter.get_df_web_channel(df_shows)
+        df_shows, df_web_channel, df_networks = self.transformation_adapter.get_sub_dfs(
+            df_shows
         )
 
         df_shows = self.transformation_adapter.rename_columns(df_shows)
-        df_web_channel = self.transformation_adapter.rename_columns(df_web_channel)
-        df_networks = self.transformation_adapter.rename_columns(df_networks)
+        df_web_channel = self.transformation_adapter.rename_columns(
+            df_web_channel, False
+        )
+        df_networks = self.transformation_adapter.rename_columns(df_networks, False)
 
         df_shows = self.transformation_adapter.convert_date_time_columns(
             df_shows, "updated"
@@ -86,6 +88,7 @@ class DataCleaningService(BaseTransformService):
         df_shows = self.transformation_adapter.evaluate_literal_column(
             df_shows, "genres"
         )
+        df_shows = self.transformation_adapter.evaluate_literal_column(df_shows, "days")
 
         df_episodes = self.transformation_adapter.replace_empty_with_none(
             df_episodes, "airtime"

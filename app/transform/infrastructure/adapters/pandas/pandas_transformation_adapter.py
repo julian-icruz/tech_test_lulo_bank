@@ -102,7 +102,7 @@ class PandasTransformation(DataTransformationPort):
         )
         return df_cleaned
 
-    def get_df_web_channel(self, data: Any) -> Any:
+    def get_sub_dfs(self, data: Any) -> Any:
         """
         Obtiene el DataFrame de la columna 'web_channel'.
 
@@ -131,12 +131,15 @@ class PandasTransformation(DataTransformationPort):
         )
         return df_without, df_webchannel, df_network
 
-    def rename_columns(self, data: Any) -> Any:
+    def rename_columns(self, data: Any, skip_ids: bool = True) -> Any:
         """
         Renames columns in a pandas DataFrame.
 
+        If skip_ids is True, the columns 'network_id' and 'webchannel_id' remain unchanged.
+
         Args:
             data (Any): A pandas DataFrame.
+            skip_ids (bool, optional): Flag to determine if 'network_id' and 'webchannel_id' should be skipped. Defaults to True.
 
         Returns:
             Any: The DataFrame with renamed columns.
@@ -146,7 +149,7 @@ class PandasTransformation(DataTransformationPort):
         seen = {}
 
         for col in data.columns:
-            if col in ["network_id", "webchannel_id"]:
+            if skip_ids and col in ["network_id", "webchannel_id"]:
                 new_columns[col] = col
                 continue
 

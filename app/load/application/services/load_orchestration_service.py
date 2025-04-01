@@ -1,10 +1,9 @@
 import os
-import ast
-import pandas as pd
 import numpy as np
+import pandas as pd
 from dataclasses import dataclass
 
-from app.load.domain.models import Show, Episode, WebChannel
+from app.load.domain.models import Show, Episode, WebChannel, Network
 from app.load.infrastructure.adapters import PostgresLoaderAdapter
 
 from app.file_io.application.dtos import ReaderConfigDTO, PathIODTO
@@ -48,7 +47,7 @@ class LoadOrchestrationService:
 
         file_reader = self.reader_writer_selector("reader", reader_config)
 
-        paths_suffix = ["shows", "episodes", "web_channel"]
+        paths_suffix = ["shows", "episodes", "web_channels", "networks"]
         dfs_list = []
 
         for suffix in paths_suffix:
@@ -58,42 +57,41 @@ class LoadOrchestrationService:
         df_shows = dfs_list[0]
         df_episodes = dfs_list[1]
         df_web_channel = dfs_list[2]
+        df_networks = dfs_list[3]
 
-        df_shows.rename(columns={"id_1": "web_channel_id"}, inplace=True)
-        df_shows["updated"] = pd.to_datetime(df_shows["updated"], errors="coerce")
+        numeric_columns_shows = ["id", "thetvdb", "tvrage"]
+        df_shows = self.normalize_numeric_columns(df_shows, numeric_columns_shows)
 
-        df_shows = df_shows.where(pd.notnull(df_shows), None)
-        df_episodes = df_episodes.where(pd.notnull(df_episodes), None)
-        df_web_channel = df_web_channel.where(pd.notnull(df_web_channel), None)
-
-        columns = [
-            "id",
-            "averageRuntime",
-            "weight",
-            "thetvdb",
-            "runtime",
-            "id_2",
-            "tvrage",
-        ]
-
-        df_shows[columns] = df_shows[columns].apply(pd.to_numeric, errors="coerce")
-        df_shows[columns] = df_shows[columns].astype("Int64")
-        df_shows = df_shows.replace({pd.NA: None, np.nan: None})
-        df_shows["genres"] = df_shows["genres"].apply(lambda x: ast.literal_eval(x))
-
-        columns = ["id", "season", "number", "runtime", "show_id"]
-        df_episodes[columns] = df_episodes[columns].apply(
-            pd.to_numeric, errors="coerce"
+        numeric_columns_episodes = ["id", "season", "number", "runtime", "show_id"]
+        df_episodes = self.normalize_numeric_columns(
+            df_episodes, numeric_columns_episodes
         )
-        df_episodes[columns] = df_episodes[columns].astype("Int64")
-        df_episodes = df_episodes.replace({pd.NA: None, np.nan: None})
-        df_episodes["airtime"] = df_episodes["airtime"].replace("", None)
 
         shows_data = df_shows.to_dict(orient="records")
         episodes_data = df_episodes.to_dict(orient="records")
         web_channel_data = df_web_channel.to_dict(orient="records")
+        networks_data = df_networks.to_dict(orient="records")
 
         self.data_loader_adapter.load_data(web_channel_data, WebChannel)
+        self.data_loader_adapter.load_data(networks_data, Network)
         self.data_loader_adapter.load_data(shows_data, Show)
         self.data_loader_adapter.load_data(episodes_data, Episode)
         return
+
+    def normalize_numeric_columns(
+        self, data: pd.DataFrame, numeric_columns: list
+    ) -> pd.DataFrame:
+        """
+        Normalize numeric columns in the DataFrame to handle NaN values.
+        Args:
+            data (pd.DataFrame): DataFrame containing the data to be normalized.
+            numeric_columns (list): List of column names to be normalized.
+        Returns:
+            pd.DataFrame: DataFrame with normalized numeric columns.
+        """
+        data[numeric_columns] = data[numeric_columns].apply(
+            pd.to_numeric, errors="coerce"
+        )
+        data[numeric_columns] = data[numeric_columns].astype("Int64")
+        data = data.replace({pd.NA: None, np.nan: None})
+        return data
