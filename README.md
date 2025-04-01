@@ -1,36 +1,37 @@
 # Lulo Bank Technical Test 🏦
 
 ## 📚 Tabla de Contenido
-- [🔍 Descripción del Proyecto](#🔍-descripción-del-proyecto)
-    - [🎯 Objetivos](#🎯-objetivos)
-    - [🚀 Beneficios](#🚀-beneficios)
+- [🔍 Descripción del Proyecto](#descripción-del-proyecto)
+    - [🎯 Objetivos](#objetivos)
+    - [🚀 Beneficios](#beneficios)
 
-- [🗂️ Estructura del Proyecto](#🗂️-estructura-del-proyecto)
-- [🎨 Patrones Aplicados](#patrones-aplicados-🎯)
-- [🚀 Despliegue de la Aplicación](#despliegue-de-la-aplicación-🚀)
+- [🗂️ Estructura del Proyecto](#estructura-del-proyecto)
+- [🎨 Patrones Aplicados](#patrones-aplicados)
+- [🚀 Despliegue de la Aplicación](#despliegue-de-la-aplicación)
 - [📖 Resumen de Endpoints y Cómo Usarlos](#resumen-de-endpoints-y-cómo-usarlos)
     - [Endpoints de Extract](#endpoints-de-extract)
     - [Endpoints de Transform](#endpoints-de-transform)
     - [Endpoint de Load](#endpoint-de-load)
+- [✅ Ejecutar Tests Unitarios](#ejecutar-tests-unitarios)
 
 
 
-## 🔍 Descripción del Proyecto
+## Descripción del Proyecto
 El proyecto **Lulo Bank Tech Test** es una aplicación que demuestra cómo construir una solución técnica robusta usando Python y FastAPI. Su enfoque principal es implementar procesos ETL (Extracción, Transformación y Carga) y microservicios para resolver desafíos empresariales.
 
-### 🎯 Objetivos
+### Objetivos
 - **Evaluación Técnica:** Mostrar buenas prácticas (SOLID, patrones de diseño).
 - **Integración:** Combinar extracción de datos (API TVMaze), transformación y carga en bases de datos (Postgres/MySQL).
 - **Microservicios:** Construir una arquitectura modular y escalable con FastAPI.
 - **Calidad y Testeo:** Asegurar un código mantenible y bien probado.
 
-### 🚀 Beneficios
+### Beneficios
 - **Mantenibilidad:** Código modular y fácil de actualizar.
 - **Escalabilidad:** Arquitectura preparada para crecer según las necesidades.
 - **Flexibilidad:** Soporte para múltiples formatos y motores de lectura/escritura (CSV, JSON, Parquet, YAML, HTML, PDF) tanto en local como en AWS S3.
 ¿Te parece bien este formato o deseas ajustar algún detalle?
 
-## 🗂️ Estructura del Proyecto
+## Estructura del Proyecto
 
 El proyecto está organizado de manera modular para facilitar su mantenimiento y escalabilidad. A continuación, se muestra un resumen de la estructura principal:
 
@@ -64,7 +65,7 @@ El proyecto está organizado de manera modular para facilitar su mantenimiento y
 
 Cada módulo se apoya en principios de inyección de dependencias y patrones de diseño, asegurando un código desacoplado, testable y fácil de extender.
 
-## Patrones Aplicados 🎯
+## Patrones Aplicados
 
 - **Inyección de Dependencias** 🔄
   Separa la creación y gestión de objetos mediante contenedores, lo que facilita el desacoplamiento y la testabilidad del sistema.
@@ -81,7 +82,7 @@ Cada módulo se apoya en principios de inyección de dependencias y patrones de 
 - **Patrones de Diseño** 🔍
   Soluciones reutilizables a problemas comunes que ayudan a estructurar y organizar el código de forma clara y escalable.
 
-## Despliegue de la Aplicación 🚀
+## Despliegue de la Aplicación
 
 Sigue estos pasos para desplegar la aplicación:
 
@@ -306,3 +307,11 @@ curl --location 'http://localhost:8080/v1/load/to_db?database=postgres' \
 Utiliza estos comandos para interactuar y probar los endpoints de la API. Ajusta las fechas y la configuración según sea necesario.
 
 > Una vez se ejecutan los endpoints se generan los folders que se pedian en el challenge.
+
+## Ejecutar Tests Unitarios
+
+Para correr los tests unitarios, abre una terminal y ejecuta:
+
+~~~bash
+poetry run pytest
+~~~
