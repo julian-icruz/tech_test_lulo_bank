@@ -279,7 +279,7 @@ El cuerpo de la solicitud debe incluir la configuración del lector y la ruta de
 
 > Este solo se puede ejecutar una unica vez para cargar los datos luego tira error por lo que los datos yasse cargaron y se repetirian los IDs, si se quiere ejecutar nuevamete desde el PGADMIN se puede hacer
 
-```bash
+```sql
 DELETE FROM <table_name>;
 ```
 
