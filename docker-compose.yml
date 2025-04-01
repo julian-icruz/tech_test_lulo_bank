@@ -1,5 +1,39 @@
 services:
-  tech-test-lulo:
+  postgres-lulo-bank:
+    image: postgres:latest
+    container_name: postgres_lulo_bank
+    env_file:
+      - .env
+    ports:
+      - 5432:5432
+    # volumes:
+    #   - .${POSTGRES_LOCAL_DATA_PATH}:/var/lib/postgresql/data
+
+  pgadmin-lulo-bank:
+    image: dpage/pgadmin4:9.0.0
+    container_name: pgadmin_lulo_bank
+    env_file:
+      - .env
+    ports:
+      - 80:80
+    volumes:
+      - .${PGADMIN_SERVER_JSON_FILE}:/servers.json
+
+  db-migrations:
+    build:
+      context: ./
+      dockerfile: dockerfiles/dockerfile.local
+    image: tech-test-lulo:latest
+    container_name: db_migrations
+    volumes:
+      - ./app:/src/app
+    env_file:
+      - .env
+    depends_on:
+      - postgres-lulo-bank
+    command: [ "sh", "-c", "python /src/app/load/scripts/init_db.py && exit" ]
+
+  ech-test-lulo:
     build:
       context: ./
       dockerfile: dockerfiles/dockerfile.local
@@ -7,21 +41,30 @@ services:
     container_name: tech-test-lulo
     volumes:
       - ./app:/src/app
+      - ./json:/src/json
+      - ./profiling:/src/profiling
+      - ./data:/src/data
     env_file:
       - .env
     ports:
       - "8080:8080"
-
-  # tech-test-lulo-debug:
-  #   build:
-  #     context: ./
-  #     dockerfile: dockerfiles/dockerfile.debug
-  #   image: tech-test-lulo:debug
-  #   container_name: tech-test-lulo-debug
-  #   volumes:
-  #     - ./app:/src/app
-  #   env_file:
-  #     - .env
-  #   ports:
-  #     - 5678:5678
-  #     - 8081:8080
+    depends_on:
+      - postgres-lulo-bank
+    # tech-test-lulo-debug:
+    #   build:
+    #     context: ./
+    #     dockerfile: dockerfiles/dockerfile.debug
+    #   image: tech-test-lulo:debug
+    #   container_name: tech-test-lulo-debug
+    #   volumes:
+    #     - ./app:/src/app
+    #     - ./json:/src/json
+    #     - ./profiling:/src/profiling
+    #     - ./data:/src/data
+    #   env_file:
+    #     - .env
+    #   ports:
+    #     - 5678:5678
+    #     - 8081:8080
+    #   depends_on:
+    #     - postgres-lulo-bank

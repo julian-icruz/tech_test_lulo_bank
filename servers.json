@@ -1,0 +1,13 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "lulo_bank_server",
+            "Group": "lulo_bank_group",
+            "Host": "postgres_lulo_bank",
+            "Port": 5432,
+            "MaintenanceDB": "lulo_bank_db",
+            "Username": "lulo_bank_user",
+            "SSLMode": "prefer"
+        }
+    }
+}

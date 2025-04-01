@@ -18,16 +18,6 @@ async def get_tv_schedule(
 ) -> list[dict]:
     """
     Endpoint to fetch the TV schedule for a given date.
-
-    Args:
-        date (str): The date for which to fetch the TV schedule (e.g., "2024-01-01").
-        extract_service (ExtractService): The service used to fetch and process the schedule data.
-
-    Returns:
-        list[dict]: A list of TV schedule data for the specified date.
-
-    Raises:
-        HTTPException: If there is an error in fetching the schedule.
     """
     try:
         schedule = await extract_service.get_schedule(date)

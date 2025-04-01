@@ -60,6 +60,8 @@ from app.file_io.infrastructure.adapters.writers import (
     PDFWriterToS3,
 )
 
+from app.file_io.application.services import ReaderWriterSelectorService
+
 
 class FileIOContainer(DeclarativeContainer):
     """
@@ -206,4 +208,10 @@ class FileIOContainer(DeclarativeContainer):
     writers = Dict(
         local=local_writers,
         aws=aws_writers,
+    )
+
+    reader_writer_selector_service = Factory(
+        ReaderWriterSelectorService,
+        readers=readers,
+        writers=writers,
     )
