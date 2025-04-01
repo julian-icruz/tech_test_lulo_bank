@@ -11,4 +11,4 @@ class Network(Base):
     country_name = Column(String(100), nullable=True)
     country_code = Column(String(10), nullable=True)
     country_timezone = Column(String(50), nullable=True)
-    officialSite = Column(String(255), nullable=True)
+    officialsite = Column(String(255), nullable=True)
