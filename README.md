@@ -89,7 +89,7 @@ Sigue estos pasos para desplegar la aplicación:
 1. **Clonar el repositorio** 📥
 Clona el proyecto desde GitHub:
 ```bash
-git clone https://github.com/tu_usuario/tu_repositorio.git
+git clone https://github.com/julian-icruz/tech_test_lulo_bank
 cd tu_repositorio
 ```
 
