@@ -90,7 +90,7 @@ Sigue estos pasos para desplegar la aplicación:
 Clona el proyecto desde GitHub:
 ```bash
 git clone https://github.com/julian-icruz/tech_test_lulo_bank
-cd tu_repositorio
+cd tech_test_lulo_bank
 ```
 
 2. **Configurar variables de entorno** 🔧
@@ -131,13 +131,13 @@ POSTGRES_LOCAL_DATA_PATH=/postgres_data
 > Asegurarse de tener una version de python correcta tal y como lo dice el .toml
 ```bash
 poetry install
-poetry .venv/bin/activate
+source .venv/bin/activate
 ```
 
 4. **Ejecutar Docker Compose** 🐳
    Levanta los contenedores (Postgres, pgAdmin, migraciones y la aplicación) con:
 ```bash
-docker-compose up --build
+docker-compose up -d --build
 ```
 
 5. **Verificar el despliegue** 👀
@@ -281,7 +281,10 @@ El cuerpo de la solicitud debe incluir la configuración del lector y la ruta de
 > Este solo se puede ejecutar una unica vez para cargar los datos luego tira error por lo que los datos yasse cargaron y se repetirian los IDs, si se quiere ejecutar nuevamete desde el PGADMIN se puede hacer
 
 ```sql
-DELETE FROM <table_name>;
+DELETE FROM episodes;
+DELETE FROM shows;
+DELETE FROM networks;
+DELETE FROM web_channels;
 ```
 
 > recuerda la dependencia entre tablas para su eliminacion
